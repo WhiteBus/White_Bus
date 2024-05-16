@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xhdpi_icon_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xhdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_white_bus_logo2.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\white_bus_logo2.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_icon_background.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_icon_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_icon_foreground.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\layout_fragment_camera.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_icon_foreground.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxhdpi_icon_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxhdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_icon_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\ic_baseline_photo_camera_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_ic_minus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\ic_minus.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-54:/layout_fragment_camera.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_media_pipe_banner.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\media_pipe_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\color_bg_nav_item.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\color\\bg_nav_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxhdpi_icon_foreground.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxhdpi\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xhdpi_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxxhdpi_icon_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxxhdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxxhdpi_icon_foreground.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxxhdpi\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-anydpi-v26_icon_round.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-anydpi-v26\\icon_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-anydpi-v26_icon.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-anydpi-v26\\icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_icn_chevron_up.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\icn_chevron_up.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xhdpi_icon_foreground.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xhdpi\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\drawable_ic_baseline_photo_library_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\drawable\\ic_baseline_photo_library_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-mdpi_white_bus_logo2.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-mdpi\\white_bus_logo2.png"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-54:\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-56:\\mipmap-xxhdpi\\icon.png"
+    }
+]
