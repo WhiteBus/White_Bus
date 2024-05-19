@@ -17,9 +17,9 @@
 
         <ImageView
             android:id="@+id/iv_main_hamburger_iv"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
             android:src="@drawable/hamburger"
             app:layout_constraintBottom_toBottomOf="@id/iv_main_search_place_et"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,15 +27,17 @@
 
         <EditText
             android:id="@+id/iv_main_search_place_et"
-            android:layout_width="350dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/searchbar"
             android:hint="이동할 장소를 검색해주세요."
-            android:paddingLeft="30dp"
+            android:paddingLeft="15dp"
             android:textColorHint="@color/black"
-            android:textSize="23dp"
-            app:layout_constraintStart_toEndOf="@id/iv_main_hamburger_iv"/>
+            android:textSize="22dp"
+            android:imeOptions="actionSearch"
+            app:layout_constraintStart_toEndOf="@id/iv_main_hamburger_iv"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -43,7 +45,6 @@
         android:layout_width="match_parent"
         android:layout_height="600dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vi_header_cl"
         app:layout_constraintHeight_max="400dp"

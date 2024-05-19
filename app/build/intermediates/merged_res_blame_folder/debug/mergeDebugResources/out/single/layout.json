@@ -1,78 +1,94 @@
 [
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_address.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_address.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_dropin_bus.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_dropin_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_main.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_popup.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_popup.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/fragment_camera.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/fragment_camera.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_read_des.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_read_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_vi_place_registration.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_vi_place_registration.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_wait_bus.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_wait_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_wait_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_wait_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_login.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_login.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_ending.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_ending.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_main.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_matching_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_matching_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_ending.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_ending.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_vi_search_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_vi_search_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_app_user_determinant.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_app_user_determinant.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_bus_number_input.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_bus_number_input.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_bus_number_input.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_bus_number_input.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_splash.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_splash.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_bus_arrival.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_vi_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_vi_main.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/item_bus_arrival.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/item_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_popup.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_popup.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_nearest_station.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_nearest_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_vi_drawer.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_vi_drawer.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_place_registration.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_place_registration.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_login.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_login.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/item_station.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/item_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_vi_read_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_vi_read_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/fragment_camera.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/fragment_camera.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/item_drawer.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/item_drawer.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_app_user_determinant.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_app_user_determinant.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_address.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_address.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/activity_user_dropin_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/activity_user_dropin_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/item_vi_search_des.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/item_vi_search_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-53:/layout/item_vi_search_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-56:/layout/item_vi_search_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_search_des.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_search_des.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_vi_drawer.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_vi_drawer.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_user_matching_bus.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_user_matching_bus.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/activity_splash.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-3:/layout/item_drawer.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-6:/layout/item_drawer.xml"
     }
 ]

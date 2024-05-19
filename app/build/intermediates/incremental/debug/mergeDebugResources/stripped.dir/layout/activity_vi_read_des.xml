@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VI_ReadDesActivity">
+
+    <LinearLayout
+        android:id="@+id/vi_read_des_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        android:paddingLeft="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/vi_des_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="목적지를"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vi_des_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="말해주세요."
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="듣고 있습니다..."
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/vi_read_des_speaker_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/vi_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vi_read_des_description"
+        android:layout_marginBottom="40dp"
+        android:padding="30dp"/>
+
+    <TextView
+        android:id="@+id/vi_read_des_touch_twice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="화면을 두 번 누른 뒤 말해주세요."
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/vi_read_des_speaker_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
