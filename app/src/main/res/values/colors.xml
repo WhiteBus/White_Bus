@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    ~ Copyright 2023 The TensorFlow Authors. All Rights Reserved.
-    ~
-    ~ Licensed under the Apache License, Version 2.0 (the "License");
-    ~ you may not use this file except in compliance with the License.
-    ~ You may obtain a copy of the License at
-    ~
-    ~       http://www.apache.org/licenses/LICENSE-2.0
-    ~
-    ~ Unless required by applicable law or agreed to in writing, software
-    ~ distributed under the License is distributed on an "AS IS" BASIS,
-    ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    ~ See the License for the specific language governing permissions and
-    ~ limitations under the License.
--->
 <resources>
-    <color name="mp_color_primary">#007F8B</color>
-    <color name="mp_color_primary_variant">#12B5CB</color>
-    <color name="mp_color_primary_dark">#00676D</color>
-    <color name="mp_color_secondary">#FBBC04</color>
-    <color name="mp_color_secondary_variant">#F9AB00</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_gray">#393939</color>
+    <color name="ivory">#EFEFFB</color>
+    <color name="deep_ivory">#DEDEF9</color>
+    <color name="light_gray">#E5E5E5</color>
+    <color name="yellow_orange">#F2C94C</color>
+    <color name="gray">#ECECEC</color>
+    <color name="grapefruit">#EF8374</color>
+    <color name="transparent">#00ff0000</color>
+    <color name="sky_blue">#BAD2FF</color>
+    <color name="blue_gray">#AAA9EF</color>
+    <color name="dark_ivory">#F5F5F5</color>
+    <color name="neon_green">#D4EA60</color>
+    <color name="white_gray">#919191</color>
+    <color name="sky_blue_main">#B9ECFF</color>
+    <color name="red_orange">#F1C7A6</color>
+    <color name="lemon">#FBE7A2</color>
+    <color name="green">#83DEA2</color>
+    <color name="red_pink">#FEB9B9</color>
+    <color name="purple_pink">#E1BBFF</color>
+    <color name="pink">#FFB5DD</color>
+    <color name="white_ivory">#FDFDFD</color>
+    <color name="deep_white_gray">#B4B4B4</color>
+    <color name="very_white_gray">#DCDCDC</color>
+    <color name="toast_gray">#99000000</color>
+    <color name="red">#FF0000</color>
+    <color name="navi_gray">#676D75</color>
+    <color name="search_dst">#F2C94C</color>
+    <color name="btn">#FF9D25</color>
+    <color name="mp_color_primary">#6200EE</color>
+    <color name="mp_color_primary_variant">#3700B3</color>
+    <color name="mp_color_primary_dark">#000000</color>
+    <color name="mp_color_secondary">#03DAC6</color>
+    <color name="mp_color_secondary_variant">#018786</color>
     <color name="mp_color_error">#B00020</color>
-    <color name="toolbar_background">#E0E0E0</color>
-    <color name="ic_launcher_background">#FFFFFF</color>
-    <color name="bottom_sheet_background">#EEEEEE</color>
-    <color name="bottom_sheet_text_color">@android:color/black</color>
-    <color name="icActive">#FFFFFFFF</color>
-    <color name="icFocused">#DDFFFFFF</color>
-    <color name="icPressed">#AAFFFFFF</color>
 </resources>
