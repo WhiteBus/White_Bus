@@ -19,7 +19,7 @@
             tools:ignore="MissingConstraints"
             >
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/busNum_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,16 +35,16 @@
                 android:src="@drawable/white_bus_logo2"/>
 
 
-            <Button
+            <android.widget.Button
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
+                android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="15dp"
-                android:text="하차"
-                android:textSize="180dp"
-                android:fontFamily="@font/freesentation"
                 android:background="@drawable/rounded_corner"
                 android:backgroundTint="@color/btn"
-                android:layout_marginHorizontal="15dp"/>
+                android:fontFamily="@font/agro_medium"
+                android:text="하차"
+                android:textSize="180dp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
