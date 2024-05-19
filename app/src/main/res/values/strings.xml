@@ -43,6 +43,13 @@
         Threshold</string>
     <string name="label_num_faces">Number of Faces</string>
     <string name="label_delegate">Delegate</string>
+    <string name="facetitletext"><b>얼굴 위치 설정하기</b></string>
+    <string name="facesettext"><b>얼굴을 감지 할수 있도록 카메라를 거치해주세요</b></string>
+    <string name="driveend"><b>주행 종료</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stoptext"><b>현재 탑승중인 시각장애인이 \n  이번 정류장에서 하차할 예정입니다.</b></string>
+    <string name="sleeptext"><b>졸음 감지!!! \n 경고 !!!!!</b></string>
 
     <string-array name="delegate_spinner_titles">
         <item>CPU</item>
