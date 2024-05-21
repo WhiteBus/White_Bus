@@ -1,25 +1,17 @@
-package com.google.mediapipe.examples.facelandmarker.remote.Adapter
+package com.google.mediapipe.examples.facelandmarker.remote.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des
 import com.google.mediapipe.examples.facelandmarker.R
-import com.google.mediapipe.examples.facelandmarker.remote.dto.Station
+import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationInfo
 
-class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() {
+class SearchStationAdapter(private val itemClickListener: Main_vi_Search_des) : RecyclerView.Adapter<SearchStationAdapter.StationViewHolder>() {
 
-    private var stationList: List<Station> = listOf() // 역 정보 리스트
-    private var itemClickListener: OnItemClickListener? = null
-
-    interface OnItemClickListener {
-        fun onItemClick(station: Station)
-    }
-
-    fun setOnItemClickListener(listener: OnItemClickListener) {
-        this.itemClickListener = listener
-    }
+    private var stationList: List<SearchStationInfo> = listOf() // 역 정보 리스트
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StationViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_station, parent, false)
@@ -35,10 +27,9 @@ class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() 
         holder.locationTextView.text = location
         val stationId = "stationId: ${station.stationID}"
         holder.stationIdView.text = stationId
-
-        // 아이템 클릭 시 이벤트 처리
+        // 아이템 클릭 리스너 설정
         holder.itemView.setOnClickListener {
-            itemClickListener?.onItemClick(station)
+            itemClickListener.onItemClick(station)
         }
     }
 
@@ -46,7 +37,7 @@ class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() 
         return stationList.size
     }
 
-    fun setStationList(stationList: List<Station>) {
+    fun setStationList(stationList: List<SearchStationInfo>) {
         this.stationList = stationList
         notifyDataSetChanged()
     }
@@ -57,7 +48,3 @@ class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() 
         val stationIdView: TextView = itemView.findViewById(R.id.stationId)
     }
 }
-
-
-
-

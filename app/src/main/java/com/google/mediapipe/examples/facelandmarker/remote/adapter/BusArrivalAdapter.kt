@@ -1,4 +1,4 @@
-package com.google.mediapipe.examples.facelandmarker.remote.Adapter
+package com.google.mediapipe.examples.facelandmarker.remote.adapter
 
 import android.view.LayoutInflater
 import android.view.View

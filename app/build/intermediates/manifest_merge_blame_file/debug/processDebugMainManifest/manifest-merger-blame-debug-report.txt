@@ -41,227 +41,502 @@
 24-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:5-80
 24-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:22-77
 25
-26    <permission
-26-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-27        android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
-29
-30    <uses-permission android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-30-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-31    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:22-76
-33
-34    <application
-34-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:20:5-55:19
-35        android:allowBackup="true"
-35-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:21:9-35
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-37        android:debuggable="true"
-38        android:extractNativeLibs="false"
-39        android:icon="@mipmap/white_bus_logo2"
-39-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:22:9-47
-40        android:label="Drowsiness Detection"
-40-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:23:9-45
-41        android:roundIcon="@mipmap/white_bus_logo2"
-41-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:24:9-52
-42        android:supportsRtl="true"
-42-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:25:9-35
-43        android:taskAffinity=""
-43-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:26:9-32
-44        android:testOnly="true"
-45        android:theme="@style/AppTheme" >
-45-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:27:9-40
-46        <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" />
-46-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:30:9-52
-46-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:30:19-49
-47        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
-47-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:31:9-57
-47-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:31:19-54
-48        <activity android:name="com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity" />
-48-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:32:9-60
-48-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:32:19-57
-49        <activity android:name="com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity" />
-49-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:33:9-64
-49-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:33:19-61
-50        <activity android:name="com.google.mediapipe.examples.facelandmarker.FaceSettingActivity" />
-50-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:34:9-57
-50-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:34:19-54
-51        <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
-51-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:9-50
-51-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:19-47
-52        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
-52-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:9-57
-52-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:19-54
-53        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
-53-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:9-53
-53-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:19-51
-54        <activity
-54-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:42:9-50:20
-55            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
-55-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:43:13-42
-56            android:exported="true" >
-56-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:13-36
-57            <intent-filter>
-57-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:13-49:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:46:17-69
-58-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:46:25-66
-59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:48:17-77
-60-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:48:27-74
-61            </intent-filter>
-62        </activity>
-63        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
-63-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:51:9-55
-63-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:51:19-53
-64
-65        <uses-library
-65-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:23:9-25:40
-66            android:name="androidx.window.extensions"
-66-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:24:13-54
-67            android:required="false" />
-67-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:25:13-37
-68        <uses-library
-68-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:26:9-28:40
-69            android:name="androidx.window.sidecar"
-69-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:27:13-51
-70            android:required="false" />
-70-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/1c0bcb13a609a750354658f261738187/transformed/window-1.1.0-alpha03/AndroidManifest.xml:28:13-37
-71
-72        <activity
-72-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c61bc61f1571f402178097b967e7c3/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
-73            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-73-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c61bc61f1571f402178097b967e7c3/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
-74            android:exported="false"
-74-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c61bc61f1571f402178097b967e7c3/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
-75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-75-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c61bc61f1571f402178097b967e7c3/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+26    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+27    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:5-79
+28-->[com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:22-76
+29    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+29-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+29-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+30
+31    <uses-feature
+31-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:7:5-9:35
+32        android:glEsVersion="0x00020000"
+32-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:8:9-41
+33        android:required="true" />
+33-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:9:9-32
+34    <uses-feature
+34-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:10:5-12:36
+35        android:name="android.hardware.wifi"
+35-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:11:9-45
+36        android:required="false" />
+36-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:12:9-33
+37
+38    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+38-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:16:5-76
+38-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:16:22-73
+39
+40    <permission
+40-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+41        android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+45
+46    <application
+46-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:20:5-61:19
+47        android:allowBackup="true"
+47-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:21:9-35
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:extractNativeLibs="false"
+51        android:icon="@mipmap/white_bus_logo2"
+51-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:22:9-47
+52        android:label="Drowsiness Detection"
+52-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:23:9-45
+53        android:roundIcon="@mipmap/white_bus_logo2"
+53-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:24:9-52
+54        android:supportsRtl="true"
+54-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:25:9-35
+55        android:taskAffinity=""
+55-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:26:9-32
+56        android:testOnly="true"
+57        android:theme="@style/AppTheme" >
+57-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:27:9-40
+58        <meta-data
+58-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:30:9-32:42
+59            android:name="com.naver.maps.map.CLIENT_ID"
+59-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:31:13-56
+60            android:value="v4ud3zha1i" />
+60-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:32:13-39
+61
+62        <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" />
+62-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:35:9-52
+62-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:35:19-49
+63        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
+63-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:9-57
+63-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:19-54
+64        <activity android:name="com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity" />
+64-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:9-60
+64-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:19-57
+65        <activity android:name="com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity" />
+65-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:9-64
+65-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:19-61
+66        <activity android:name="com.google.mediapipe.examples.facelandmarker.FaceSettingActivity" />
+66-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:9-57
+66-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:19-54
+67        <activity android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity" />
+67-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:9-56
+67-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:19-53
+68        <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
+68-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:43:9-50
+68-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:43:19-47
+69        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
+69-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:9-57
+69-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:19-54
+70        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
+70-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:9-53
+70-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:19-51
+71        <activity
+71-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:48:9-56:20
+72            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
+72-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:49:13-42
+73            android:exported="true" >
+73-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:50:13-36
+74            <intent-filter>
+74-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:51:13-55:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:52:17-69
+75-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:52:25-66
 76
-77        <meta-data
-77-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/d6085789b3618d7a3034f5291b304b02/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
-78            android:name="com.google.android.gms.version"
-78-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/d6085789b3618d7a3034f5291b304b02/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
-79            android:value="@integer/google_play_services_version" />
-79-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/d6085789b3618d7a3034f5291b304b02/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
-80
-81        <service
-81-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:25:9-34:19
-82            android:name="androidx.camera.core.impl.MetadataHolderService"
-82-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:26:13-75
-83            android:enabled="false"
-83-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:27:13-36
-84            android:exported="false" >
-84-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:28:13-37
-85            <meta-data
-85-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:31:13-33:89
-86                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-86-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:32:17-103
-87                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-87-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/fe52bf45519f40d5d10d4ee8fce1dd9a/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:33:17-86
-88        </service>
-89
-90        <provider
-90-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-91            android:name="androidx.startup.InitializationProvider"
-91-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-92            android:authorities="com.google.mediapipe.examples.facelandmarker.androidx-startup"
-92-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-93            android:exported="false" >
-93-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-94            <meta-data
-94-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-95-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-96                android:value="androidx.startup" />
-96-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/251f41e049d084566479e26abb31eaef/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-97            <meta-data
-97-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/ad2b69a66818ba20e1b281f33fc1f79c/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-98-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/ad2b69a66818ba20e1b281f33fc1f79c/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-99                android:value="androidx.startup" />
-99-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/ad2b69a66818ba20e1b281f33fc1f79c/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-100            <meta-data
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-102                android:value="androidx.startup" />
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-103        </provider>
-104
-105        <receiver
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-107            android:directBootAware="false"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-108            android:enabled="true"
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-109            android:exported="true"
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-110            android:permission="android.permission.DUMP" >
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-111            <intent-filter>
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-113            </intent-filter>
-114            <intent-filter>
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-116            </intent-filter>
-117            <intent-filter>
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-119            </intent-filter>
-120            <intent-filter>
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/542aa3bbdf874b434da35d342b2801a5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-122            </intent-filter>
-123        </receiver>
-124
-125        <service
-125-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
-126            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-126-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
-127            android:exported="false" >
-127-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
-128            <meta-data
-128-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
-129                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-129-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
-130                android:value="cct" />
-130-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/e370df76a27f063a2260e757684cdc5c/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
-131        </service>
-132        <service
-132-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
-133            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-133-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
-134            android:exported="false"
-134-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
-135            android:permission="android.permission.BIND_JOB_SERVICE" >
-135-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
-136        </service>
-137
-138        <receiver
-138-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
-139            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-139-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
-140            android:exported="false" />
-140-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/80c2b0f596856bc388e6ee543f47a83c/transformed/transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
-141    </application>
-142
-143</manifest>
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:54:17-77
+77-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:54:27-74
+78            </intent-filter>
+79        </activity>
+80        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
+80-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:57:9-55
+80-->/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:57:19-53
+81
+82        <service
+82-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:9:9-15:19
+83            android:name="com.google.firebase.components.ComponentDiscoveryService"
+83-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:10:13-84
+84            android:directBootAware="true"
+84-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+85            android:exported="false" >
+85-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:11:13-37
+86            <meta-data
+86-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:12:13-14:85
+87                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+87-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:13:17-129
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:14:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:32:13-34:85
+90                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+90-->[com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:33:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:34:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
+93                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+93-->[com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:17:13-19:85
+96                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+96-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:18:17-122
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:19:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:20:13-22:85
+99                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+99-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:21:17-111
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:22:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-auth-ktx:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c4aeb1d77e8595af3f77c3e12835b912/transformed/jetified-firebase-auth-ktx-23.0.0/AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+102-->[com.google.firebase:firebase-auth-ktx:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c4aeb1d77e8595af3f77c3e12835b912/transformed/jetified-firebase-auth-ktx-23.0.0/AndroidManifest.xml:12:17-119
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-auth-ktx:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c4aeb1d77e8595af3f77c3e12835b912/transformed/jetified-firebase-auth-ktx-23.0.0/AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
+105                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+105-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/85ddb739f2f4759dd7f61571901d4bee/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+108                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/85ddb739f2f4759dd7f61571901d4bee/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/85ddb739f2f4759dd7f61571901d4bee/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+111                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+111-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+113        </service>
+114
+115        <uses-library
+115-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:23:9-25:40
+116            android:name="androidx.window.extensions"
+116-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:24:13-54
+117            android:required="false" />
+117-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:25:13-37
+118        <uses-library
+118-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:26:9-28:40
+119            android:name="androidx.window.sidecar"
+119-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:27:13-51
+120            android:required="false" />
+120-->[androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:28:13-37
+121
+122        <activity
+122-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
+123            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+123-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
+124            android:excludeFromRecents="true"
+124-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
+125            android:exported="true"
+125-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
+126            android:launchMode="singleTask"
+126-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
+127            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+127-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
+128            <intent-filter>
+128-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
+129                <action android:name="android.intent.action.VIEW" />
+129-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+129-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+130
+131                <category android:name="android.intent.category.DEFAULT" />
+131-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+131-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+132                <category android:name="android.intent.category.BROWSABLE" />
+132-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+132-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+133
+134                <data
+134-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+135                    android:host="firebase.auth"
+135-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+136                    android:path="/"
+136-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+137                    android:scheme="genericidp" />
+137-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+138            </intent-filter>
+139        </activity>
+140        <activity
+140-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
+141            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+141-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
+142            android:excludeFromRecents="true"
+142-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
+143            android:exported="true"
+143-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
+144            android:launchMode="singleTask"
+144-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+145-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
+146            <intent-filter>
+146-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
+147                <action android:name="android.intent.action.VIEW" />
+147-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+147-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+148
+149                <category android:name="android.intent.category.DEFAULT" />
+149-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+149-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+150                <category android:name="android.intent.category.BROWSABLE" />
+150-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+150-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+151
+152                <data
+152-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+153                    android:host="firebase.auth"
+153-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+154                    android:path="/"
+154-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+155                    android:scheme="recaptcha" />
+155-->[com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+156            </intent-filter>
+157        </activity>
+158
+159        <service
+159-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+160            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+160-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+161            android:enabled="true"
+161-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+162            android:exported="false" >
+162-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+163            <meta-data
+163-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+164                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+164-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+165                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+165-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+166        </service>
+167
+168        <activity
+168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+169            android:name="androidx.credentials.playservices.HiddenActivity"
+169-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+170            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+170-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+171            android:enabled="true"
+171-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+172            android:exported="false"
+172-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+173            android:fitsSystemWindows="true"
+173-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+174            android:theme="@style/Theme.Hidden" >
+174-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/seohyeonpark/.gradle/caches/transforms-3/eac53ef684a98508a0a29eab8a042ac8/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+175        </activity>
+176        <activity
+176-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+177            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+177-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+178            android:excludeFromRecents="true"
+178-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+179            android:exported="false"
+179-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+181        <!--
+182            Service handling Google Sign-In user revocation. For apps that do not integrate with
+183            Google Sign-In, this service will never be started.
+184        -->
+185        <service
+185-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+186            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+186-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+187            android:exported="true"
+187-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+188            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+188-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+189            android:visibleToInstantApps="true" />
+189-->[com.google.android.gms:play-services-auth:20.7.0] /Users/seohyeonpark/.gradle/caches/transforms-3/0f7ca289190b31a48fcaaf4f06677a25/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+190
+191        <activity
+191-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8a19343f91fa3ff46cef5c816e5c595d/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+192            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+192-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8a19343f91fa3ff46cef5c816e5c595d/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8a19343f91fa3ff46cef5c816e5c595d/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+194            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+194-->[com.google.android.gms:play-services-base:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8a19343f91fa3ff46cef5c816e5c595d/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+195
+196        <provider
+196-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+197            android:name="com.google.firebase.provider.FirebaseInitProvider"
+197-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+198            android:authorities="com.google.mediapipe.examples.facelandmarker.firebaseinitprovider"
+198-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+199            android:directBootAware="true"
+199-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+200            android:exported="false"
+200-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+201            android:initOrder="100" />
+201-->[com.google.firebase:firebase-common:21.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/6cdb4a6702c7ca06709f05716bc41e26/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+202
+203        <meta-data
+203-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f7ac6679ffd23958df3161f51665c5f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+204            android:name="com.google.android.gms.version"
+204-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f7ac6679ffd23958df3161f51665c5f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+205            android:value="@integer/google_play_services_version" />
+205-->[com.google.android.gms:play-services-basement:18.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f7ac6679ffd23958df3161f51665c5f3/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+206
+207        <activity
+207-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:19:9-23:51
+208            android:name="com.naver.maps.map.app.LegendActivity"
+208-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:20:13-65
+209            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+209-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:21:13-91
+210            android:label="@string/navermap_legend"
+210-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:22:13-52
+211            android:theme="@style/navermap_app" />
+211-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:23:13-48
+212        <activity
+212-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:24:9-28:51
+213            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+213-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:25:13-70
+214            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+214-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:26:13-91
+215            android:label="@string/navermap_legal_notice"
+215-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:27:13-58
+216            android:theme="@style/navermap_app" />
+216-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:28:13-48
+217        <activity
+217-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:29:9-33:51
+218            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+218-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:30:13-76
+219            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+219-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:31:13-91
+220            android:label="@string/navermap_open_source_license"
+220-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:32:13-65
+221            android:theme="@style/navermap_app" />
+221-->[com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:33:13-48
+222
+223        <service
+223-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:25:9-34:19
+224            android:name="androidx.camera.core.impl.MetadataHolderService"
+224-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:26:13-75
+225            android:enabled="false"
+225-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:27:13-36
+226            android:exported="false" >
+226-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:28:13-37
+227            <meta-data
+227-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:31:13-33:89
+228                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+228-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:32:17-103
+229                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+229-->[androidx.camera:camera-camera2:1.2.0-alpha02] /Users/seohyeonpark/.gradle/caches/transforms-3/6a00784a18f9f3cbb6a3d4467187278e/transformed/jetified-camera-camera2-1.2.0-alpha02/AndroidManifest.xml:33:17-86
+230        </service>
+231
+232        <provider
+232-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+233            android:name="androidx.startup.InitializationProvider"
+233-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+234            android:authorities="com.google.mediapipe.examples.facelandmarker.androidx-startup"
+234-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+235            android:exported="false" >
+235-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+236            <meta-data
+236-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+237                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+237-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+238                android:value="androidx.startup" />
+238-->[androidx.emoji2:emoji2:1.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/89c7e24b9d264ae7cb5499cfe2feab12/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+239            <meta-data
+239-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/657a4b3a657300f3d968af2b8c106b22/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+240                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+240-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/657a4b3a657300f3d968af2b8c106b22/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+241                android:value="androidx.startup" />
+241-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/seohyeonpark/.gradle/caches/transforms-3/657a4b3a657300f3d968af2b8c106b22/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+242            <meta-data
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+243                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+243-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+244                android:value="androidx.startup" />
+244-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+245        </provider>
+246        <provider
+246-->[com.squareup.picasso:picasso:2.71828] /Users/seohyeonpark/.gradle/caches/transforms-3/06560b35cb8ebd567626e6f860322efb/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+247            android:name="com.squareup.picasso.PicassoProvider"
+247-->[com.squareup.picasso:picasso:2.71828] /Users/seohyeonpark/.gradle/caches/transforms-3/06560b35cb8ebd567626e6f860322efb/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+248            android:authorities="com.google.mediapipe.examples.facelandmarker.com.squareup.picasso"
+248-->[com.squareup.picasso:picasso:2.71828] /Users/seohyeonpark/.gradle/caches/transforms-3/06560b35cb8ebd567626e6f860322efb/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+249            android:exported="false" />
+249-->[com.squareup.picasso:picasso:2.71828] /Users/seohyeonpark/.gradle/caches/transforms-3/06560b35cb8ebd567626e6f860322efb/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+250
+251        <receiver
+251-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+252            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+252-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+253            android:directBootAware="false"
+253-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+254            android:enabled="true"
+254-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+255            android:exported="true"
+255-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+256            android:permission="android.permission.DUMP" >
+256-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+257            <intent-filter>
+257-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+258                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+259            </intent-filter>
+260            <intent-filter>
+260-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+261                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+261-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+261-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+262            </intent-filter>
+263            <intent-filter>
+263-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+264                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+264-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+264-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+265            </intent-filter>
+266            <intent-filter>
+266-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+267                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+267-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+267-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/seohyeonpark/.gradle/caches/transforms-3/3bd4ab787f284cddf4478779dd7b4cfe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+268            </intent-filter>
+269        </receiver>
+270
+271        <service
+271-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
+272            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+272-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
+273            android:exported="false" >
+273-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
+274            <meta-data
+274-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
+275                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+275-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
+276                android:value="cct" />
+276-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
+277        </service>
+278        <service
+278-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
+279            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+279-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
+280            android:exported="false"
+280-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
+281            android:permission="android.permission.BIND_JOB_SERVICE" >
+281-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
+282        </service>
+283
+284        <receiver
+284-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
+285            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+285-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
+286            android:exported="false" />
+286-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
+287    </application>
+288
+289</manifest>

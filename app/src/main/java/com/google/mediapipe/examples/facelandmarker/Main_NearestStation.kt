@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.google.mediapipe.examples.facelandmarker.R
-import com.google.mediapipe.examples.facelandmarker.remote.Adapter.StationAdapter
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.StationAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.FindNearestStationGetRes
 import com.google.mediapipe.examples.facelandmarker.remote.dto.Station
 import com.google.mediapipe.examples.facelandmarker.remote.service.FindNearestStationService

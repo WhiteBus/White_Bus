@@ -1,5 +1,7 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityFaceSettingBinding
@@ -18,7 +20,14 @@ class FaceSettingActivity: AppCompatActivity() {
 
     private fun clickListener() {
         binding.startDriveCardView.setOnClickListener {
-            // switchActivity() // 맵 뷰로 가야지~!!
+            switchActivity(DriverMainActivity());
         }
+    }
+
+    // Switch the Activity function
+    private fun switchActivity(activity: Activity) {
+        val intent = Intent(this, activity::class.java)
+        startActivity(intent)
+        overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
     }
 }

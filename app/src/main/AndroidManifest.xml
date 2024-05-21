@@ -27,11 +27,17 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
 
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="v4ud3zha1i" />
+
+
         <activity android:name=".SplashActivity" />
         <activity android:name=".Main_NearestStation" />
         <activity android:name=".BusNumberInputActivity" />
         <activity android:name=".AppUserDeterminantActivity" />
         <activity android:name=".FaceSettingActivity" />
+        <activity android:name=".DriverMainActivity" />
 
 
         <activity android:name=".MainActivity" />

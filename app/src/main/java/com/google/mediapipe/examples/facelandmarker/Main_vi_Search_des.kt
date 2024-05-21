@@ -5,26 +5,15 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.annotations.SerializedName
-import com.google.mediapipe.examples.facelandmarker.R
-import com.google.mediapipe.examples.facelandmarker.remote.Adapter.SearchStationAdapter
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.SearchStationAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationInfo
 import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationResponse
 import com.google.mediapipe.examples.facelandmarker.remote.service.SearchStationService
 import com.google.mediapipe.examples.facelandmarker.remote.view.SearchStationView
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface OnItemClickListener {
     fun onItemClick(station: SearchStationInfo)
