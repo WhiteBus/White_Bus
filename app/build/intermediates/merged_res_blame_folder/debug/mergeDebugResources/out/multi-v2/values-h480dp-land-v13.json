@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-54:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-61:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/987dc067e85947f49dd62ea542628370/transformed/material-1.7.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",

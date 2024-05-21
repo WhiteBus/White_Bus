@@ -31,7 +31,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://naver.jfrog.io/artifactory/maven/")
+        }
     }
 }
-rootProject.name = "MP Face Landmarker"
+rootProject.name = "White_Bus_Project"
 include ':app'

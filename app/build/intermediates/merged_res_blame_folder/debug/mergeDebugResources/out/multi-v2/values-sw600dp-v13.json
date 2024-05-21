@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-54:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-61:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/580721a38d280d74378e3bcc453138cc/transformed/appcompat-1.5.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/c6e3c5d229b73844ace5d1db03fe5836/transformed/appcompat-1.6.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
