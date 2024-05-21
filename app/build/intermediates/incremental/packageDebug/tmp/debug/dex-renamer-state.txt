@@ -1,4 +1,4 @@
-#Sun May 19 17:37:48 KST 2024
+#Tue May 21 09:29:13 KST 2024
 base.0=C\:\\Users\\kimtaegyu\\Documents\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\kimtaegyu\\Documents\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\kimtaegyu\\Documents\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex

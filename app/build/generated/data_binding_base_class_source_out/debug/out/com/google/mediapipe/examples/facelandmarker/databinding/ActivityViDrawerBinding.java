@@ -7,10 +7,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.navigation.NavigationView;
 import com.google.mediapipe.examples.facelandmarker.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,10 +19,13 @@ import java.lang.String;
 
 public final class ActivityViDrawerBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final DrawerLayout rootView;
 
   @NonNull
-  public final ConstraintLayout drawerLayout;
+  public final DrawerLayout drawerLayout;
+
+  @NonNull
+  public final NavigationView navigation;
 
   @NonNull
   public final RecyclerView viDrawerRv;
@@ -29,18 +33,19 @@ public final class ActivityViDrawerBinding implements ViewBinding {
   @NonNull
   public final TextView viDrawerTv;
 
-  private ActivityViDrawerBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout drawerLayout, @NonNull RecyclerView viDrawerRv,
-      @NonNull TextView viDrawerTv) {
+  private ActivityViDrawerBinding(@NonNull DrawerLayout rootView,
+      @NonNull DrawerLayout drawerLayout, @NonNull NavigationView navigation,
+      @NonNull RecyclerView viDrawerRv, @NonNull TextView viDrawerTv) {
     this.rootView = rootView;
     this.drawerLayout = drawerLayout;
+    this.navigation = navigation;
     this.viDrawerRv = viDrawerRv;
     this.viDrawerTv = viDrawerTv;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -65,7 +70,13 @@ public final class ActivityViDrawerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      ConstraintLayout drawerLayout = (ConstraintLayout) rootView;
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
+      id = R.id.navigation;
+      NavigationView navigation = ViewBindings.findChildViewById(rootView, id);
+      if (navigation == null) {
+        break missingId;
+      }
 
       id = R.id.vi_drawer_rv;
       RecyclerView viDrawerRv = ViewBindings.findChildViewById(rootView, id);
@@ -79,8 +90,8 @@ public final class ActivityViDrawerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViDrawerBinding((ConstraintLayout) rootView, drawerLayout, viDrawerRv,
-          viDrawerTv);
+      return new ActivityViDrawerBinding((DrawerLayout) rootView, drawerLayout, navigation,
+          viDrawerRv, viDrawerTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

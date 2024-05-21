@@ -6,12 +6,8 @@
     <dist:module dist:instant="true" /> <!-- Declare features -->
     <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
-    <!-- Use Internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Use Naver Map -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Use Internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Use Naver Map -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
@@ -27,6 +23,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".activity_vi_search_des"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
@@ -40,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Main_NearestStation"
             android:exported="true">
@@ -50,10 +49,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main_vi_Search_des"/>
-        <activity
-            android:name=".Main_searchPubPathT" />
-        <activity android:name=".Main_Bus_Arrival"/>
+        <activity android:name=".Main_vi_Search_des" />
+        <activity android:name=".Main_searchPubPathT" />
+        <activity android:name=".Main_Bus_Arrival" />
     </application>
 
 </manifest>
