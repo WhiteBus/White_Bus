@@ -1,126 +1,134 @@
 [
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/stopnot.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/stopnot.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_maps.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_maps.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_exit.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_exit.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_read_des.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_read_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_station.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_station.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_profile.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_main.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_station.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_search_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_search_des.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_main.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/driver_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/driver_main.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_ending.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_ending.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_place_registration.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_place_registration.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_popup.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_popup.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_bus_arrival.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_bus_arrival.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_nearest_station.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_nearest_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_vi_search_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_vi_search_des.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_bus_number_input.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_bus_number_input.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_drawer.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_drawer.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/sleepnot.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/sleepnot.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_matching_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_matching_bus.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_bus_arrival.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_wait_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_wait_bus.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_search_des.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_search_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_login.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_login.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_bus_arrival.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_address.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_address.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/stopnot.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/stopnot.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_bus_number_input.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_bus_number_input.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_vi_search_des.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_vi_search_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/face_setting.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/face_setting.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_wait_bus.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_wait_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_read_des.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_read_des.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_nearest_station.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_nearest_station.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_address.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_address.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_main.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_dropin_bus.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_dropin_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_app_user_determinant.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_app_user_determinant.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_matching_bus.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_matching_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_maps.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_maps.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_app_user_determinant.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_app_user_determinant.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/toast.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/toast.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_drawer.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_drawer.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_popup.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_popup.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_face_setting.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_face_setting.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/item_drawer.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_drawer.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_face_setting.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_face_setting.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_bus_arrival.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_bus_arrival.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_login.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_login.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_dropin_bus.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_dropin_bus.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_place_registration.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_place_registration.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_profile.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_profile.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/toast.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/toast.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_camera.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_camera.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_splash.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_user_ending.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_ending.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_vi_drawer.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_drawer.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/sleepnot.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/sleepnot.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/driver_main.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/driver_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/activity_splash.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_splash.xml"
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_exit.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_exit.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/face_setting.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/face_setting.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-55:/layout/fragment_camera.xml",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_camera.xml"
     }
 ]

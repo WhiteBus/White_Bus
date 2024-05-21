@@ -27,6 +27,11 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fab_close
+anim fab_open
+anim fadein
+anim fadeout
+anim fadeout2
 anim fragment_fast_out_extra_slow_in
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
@@ -39,6 +44,9 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim screen_exit
+anim screen_none
+anim screen_start
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -2893,10 +2901,12 @@ id aligned
 id all
 id allStates
 id always
+id android_logo
 id android_splash
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
+id announce_camera_tv
 id antiClockwise
 id anticipate
 id arc
@@ -2925,6 +2935,7 @@ id btn1
 id btnCancel
 id busNum_btn
 id bus_driver_button
+id bus_number_error_tv
 id button1
 id button2
 id button3
@@ -3228,7 +3239,8 @@ id rounded
 id row_index_key
 id rtl
 id rv_arrivalBus
-id sample_EditText
+id sample_et
+id save_bus_number_btn
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3285,6 +3297,8 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id start_drive_card_view
+id start_drive_tv
 id staticLayout
 id staticPostLayout
 id stationId
@@ -3524,6 +3538,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_app_user_determinant
 layout activity_bus_number_input
+layout activity_face_setting
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -3557,7 +3572,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout driver_main
-layout face_setting
 layout fragment_camera
 layout fragment_exit
 layout fragment_maps

@@ -20,15 +20,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView androidSplash;
+  public final ImageView androidLogo;
 
   @NonNull
   public final ImageView login;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView androidSplash,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView androidLogo,
       @NonNull ImageView login) {
     this.rootView = rootView;
-    this.androidSplash = androidSplash;
+    this.androidLogo = androidLogo;
     this.login = login;
   }
 
@@ -59,9 +59,9 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.android_splash;
-      ImageView androidSplash = ViewBindings.findChildViewById(rootView, id);
-      if (androidSplash == null) {
+      id = R.id.android_logo;
+      ImageView androidLogo = ViewBindings.findChildViewById(rootView, id);
+      if (androidLogo == null) {
         break missingId;
       }
 
@@ -71,7 +71,7 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, androidSplash, login);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, androidLogo, login);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

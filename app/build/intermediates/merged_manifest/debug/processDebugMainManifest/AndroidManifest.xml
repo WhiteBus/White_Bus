@@ -43,23 +43,16 @@
         android:taskAffinity=""
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
-            android:exported="false" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.FaceSettingActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
         <activity
             android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.Bus_Number_input"
-            android:exported="false" />
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.app_user_determinant"
-            android:exported="false" />
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,8 +61,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
 
         <uses-library
             android:name="androidx.window.extensions"

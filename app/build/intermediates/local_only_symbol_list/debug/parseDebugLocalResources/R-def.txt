@@ -1,5 +1,13 @@
 R_DEF: Internal format may change without notice
 local
+anim fab_close
+anim fab_open
+anim fadein
+anim fadeout
+anim fadeout2
+anim screen_exit
+anim screen_none
+anim screen_start
 array delegate_spinner_titles
 color bg_nav_item
 color black
@@ -97,7 +105,9 @@ id EditText_ex
 id action_camera_to_permissions
 id action_permissions_to_camera
 id address_board
+id android_logo
 id android_splash
+id announce_camera_tv
 id arrive_busstop
 id board_ending
 id bottom_navigation_view
@@ -106,6 +116,7 @@ id btn1
 id btnCancel
 id busNum_btn
 id bus_driver_button
+id bus_number_error_tv
 id button1
 id button2
 id button3
@@ -144,7 +155,10 @@ id overlay
 id permissions_fragment
 id recyclerView
 id rv_arrivalBus
-id sample_EditText
+id sample_et
+id save_bus_number_btn
+id start_drive_card_view
+id start_drive_tv
 id stationId
 id stationNameTextView
 id statusTextView
@@ -182,6 +196,7 @@ id visual_impaired_button
 integer bottom_sheet_control_text_min_ems
 layout activity_app_user_determinant
 layout activity_bus_number_input
+layout activity_face_setting
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -199,7 +214,6 @@ layout activity_vi_place_registration
 layout activity_vi_read_des
 layout activity_vi_search_des
 layout driver_main
-layout face_setting
 layout fragment_camera
 layout fragment_exit
 layout fragment_maps

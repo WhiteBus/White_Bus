@@ -4,6 +4,7 @@ package com.google.mediapipe.examples.facelandmarker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,18 +26,27 @@ public final class ActivityBusNumberInputBinding implements ViewBinding {
   public final TextView EditTextEx;
 
   @NonNull
+  public final TextView busNumberErrorTv;
+
+  @NonNull
   public final ImageView inputBusNumLogo;
 
   @NonNull
-  public final EditText sampleEditText;
+  public final EditText sampleEt;
+
+  @NonNull
+  public final Button saveBusNumberBtn;
 
   private ActivityBusNumberInputBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView EditTextEx, @NonNull ImageView inputBusNumLogo,
-      @NonNull EditText sampleEditText) {
+      @NonNull TextView EditTextEx, @NonNull TextView busNumberErrorTv,
+      @NonNull ImageView inputBusNumLogo, @NonNull EditText sampleEt,
+      @NonNull Button saveBusNumberBtn) {
     this.rootView = rootView;
     this.EditTextEx = EditTextEx;
+    this.busNumberErrorTv = busNumberErrorTv;
     this.inputBusNumLogo = inputBusNumLogo;
-    this.sampleEditText = sampleEditText;
+    this.sampleEt = sampleEt;
+    this.saveBusNumberBtn = saveBusNumberBtn;
   }
 
   @Override
@@ -72,20 +82,32 @@ public final class ActivityBusNumberInputBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.bus_number_error_tv;
+      TextView busNumberErrorTv = ViewBindings.findChildViewById(rootView, id);
+      if (busNumberErrorTv == null) {
+        break missingId;
+      }
+
       id = R.id.input_bus_num_logo;
       ImageView inputBusNumLogo = ViewBindings.findChildViewById(rootView, id);
       if (inputBusNumLogo == null) {
         break missingId;
       }
 
-      id = R.id.sample_EditText;
-      EditText sampleEditText = ViewBindings.findChildViewById(rootView, id);
-      if (sampleEditText == null) {
+      id = R.id.sample_et;
+      EditText sampleEt = ViewBindings.findChildViewById(rootView, id);
+      if (sampleEt == null) {
+        break missingId;
+      }
+
+      id = R.id.save_bus_number_btn;
+      Button saveBusNumberBtn = ViewBindings.findChildViewById(rootView, id);
+      if (saveBusNumberBtn == null) {
         break missingId;
       }
 
       return new ActivityBusNumberInputBinding((ConstraintLayout) rootView, EditTextEx,
-          inputBusNumLogo, sampleEditText);
+          busNumberErrorTv, inputBusNumLogo, sampleEt, saveBusNumberBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
