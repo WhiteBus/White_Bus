@@ -41,6 +41,7 @@
         android:roundIcon="@mipmap/white_bus_logo2"
         android:supportsRtl="true"
         android:taskAffinity=""
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
