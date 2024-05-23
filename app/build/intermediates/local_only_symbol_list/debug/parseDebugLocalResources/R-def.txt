@@ -94,6 +94,7 @@ drawable searchbar
 drawable select_bd
 drawable select_iv
 drawable sleep
+drawable speech
 drawable start_kakao
 drawable stop
 drawable vi_record
@@ -122,6 +123,7 @@ id bottom_navigation_view
 id btn
 id btn1
 id btnCancel
+id btnSpeech
 id busNum_btn
 id busTransitCount
 id bus_driver_button
@@ -171,6 +173,7 @@ id locationTextView
 id login
 id main
 id main_container
+id menu
 id nav_graph
 id naverMap
 id number_of_passenger_tv
@@ -187,6 +190,7 @@ id sample_et
 id save_bus_number_btn
 id section_distance
 id section_time
+id speech
 id start_drive_card_view
 id start_drive_tv
 id stationId

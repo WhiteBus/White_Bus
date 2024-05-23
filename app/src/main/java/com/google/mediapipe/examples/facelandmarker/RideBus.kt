@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -26,7 +25,7 @@ class RideBus : AppCompatActivity() {
         var busNumber = 303 //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
-        var stationid = "123"
+        var stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID.toString()
 
 
 //커렌트 유저블라인드해서 밑에 함수 적용
@@ -70,14 +69,14 @@ class RideBus : AppCompatActivity() {
 
         ridingbtn.setOnClickListener{
             if (nickname != null && profileImageUrl != null) {
-                addBlindToBus(busNumber, nickname, profileImageUrl)
+                addBlindToBus(busNumber.toString(), nickname, profileImageUrl, stationid)
             }
             val intent = Intent(this@RideBus, user_dropin_bus::class.java)
             startActivity(intent)
         }
     }
 
-    fun addBlindToBus(busnumber: Int?, nickname: String, profileImageUrl: String) {
+    fun addBlindToBus(busnumber: String, nickname: String, profileImageUrl: String, stationid: String) {
         val firebaseUser = auth.currentUser
         firebaseUser?.let {
             val uid = it.uid
@@ -85,14 +84,30 @@ class RideBus : AppCompatActivity() {
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
 
-            db.collection("OnBus").document(busnumber.toString()).collection("blindUser").document(uid)
+            // removeBlindToStation 함수를 호출하여 스테이션에서 사용자 제거
+            removeBlindToStation(uid, stationid)
+
+            // OnBus 컬렉션에 사용자 추가
+            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
                 .set(blind)
                 .addOnSuccessListener { documentReference ->
-                    Log.d(TAG, "DocumentSnapshot added with ID: ")
+                    Log.d(TAG, "DocumentSnapshot added with ID: $uid")
                 }
                 .addOnFailureListener { e ->
                     Log.w(TAG, "Error adding document", e)
                 }
         }
+    }
+
+    fun removeBlindToStation(uid: String, stationid: String) {
+        // OnStation 컬렉션에서 사용자 제거
+        db.collection("OnStation").document(stationid).collection("stayUser").document(uid)
+            .delete()
+            .addOnSuccessListener {
+                Log.d(TAG, "DocumentSnapshot successfully deleted! :$uid")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error deleting document", e)
+            }
     }
 }

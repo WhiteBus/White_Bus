@@ -27,7 +27,7 @@ class user_dropin_bus : AppCompatActivity() {
         var busNumber = 303 //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
-        var stationid = "123"
+        var stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID.toString()
 
 
 
