@@ -78,7 +78,7 @@ class LoginActivity : AppCompatActivity() {
                                     }else if(blindtype?.toInt() == 2){
                                         Log.d(TAG, "Firebase sign in succeeded: blindtype 2")
 
-                                        val intent = Intent(this@LoginActivity, OnStationUser::class.java)
+                                        val intent = Intent(this@LoginActivity, Main_NearestStation::class.java)
                                         startActivity(intent)
                                     }
                                     else {

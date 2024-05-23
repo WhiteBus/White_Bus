@@ -24,15 +24,31 @@ class user_dropin_bus : AppCompatActivity() {
 
 
         val removebtn = findViewById<Button>(R.id.dropbtn)
-        var busNumber = 303 //버스 번호판 네자리 가져오기
+        var busNumber: String = "" //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
         var stationid = "123"
 
+        val usid = auth.currentUser?.uid ?: return
+        val busnDocRef = db.collection("OnStation").document(stationid).collection("stayUser").document(usid)
 
+        busnDocRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                if (documentSnapshot.exists()) {
+                    val data = documentSnapshot.data
+                    data?.let {
+                        busNumber = (it["pickupNum"] as? String).toString()
+                    }
+                } else {
+                    println("No such document")
+                }
+            }
+            .addOnFailureListener { e ->
+                println("Error getting user data: $e")
+            }
 
         val userid = auth.currentUser?.uid ?: return
-        val userDocRef = db.collection("OnBus").document(busNumber.toString()).collection("blindUser").document(
+        val userDocRef = db.collection("OnBus").document(busNumber).collection("blindUser").document(
             uid.toString()
         )
 
@@ -47,12 +63,12 @@ class user_dropin_bus : AppCompatActivity() {
         }
     }
 
-    fun removeBlindToBus(busnumber: Int?, uid: String) {
+    fun removeBlindToBus(busnumber: String, uid: String) {
         val firebaseUser = auth.currentUser
         firebaseUser?.let {
             val uid = it.uid
 
-            db.collection("OnBus").document(busnumber.toString()).collection("blindUser").document(uid)
+            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
                 .delete()
                 .addOnSuccessListener { documentReference ->
                     Log.d(TAG, "DocumentSnapshot added with ID: ")

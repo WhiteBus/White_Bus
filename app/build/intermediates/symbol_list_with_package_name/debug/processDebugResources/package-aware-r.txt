@@ -3021,6 +3021,7 @@ font pretendard_bold
 font pretendard_medium
 font pretendard_regular
 id ALT
+id ArrivalSec
 id BOTTOM_END
 id BOTTOM_START
 id BusNum
@@ -3165,6 +3166,7 @@ id button4_text2
 id buttonPanel
 id button_continue
 id button_create
+id button_current_location
 id button_done
 id button_next
 id button_resend_email
@@ -3563,6 +3565,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id sectionContainer
 id section_distance
 id section_time
 id select_dialog_listview

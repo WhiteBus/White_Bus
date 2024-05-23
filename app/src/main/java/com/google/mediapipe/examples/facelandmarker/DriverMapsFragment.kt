@@ -1,9 +1,5 @@
-package com.google.mediapipe.examples.facelandmarker
-
 import android.Manifest
 import android.content.pm.PackageManager
-import android.location.Geocoder
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,21 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.mediapipe.examples.facelandmarker.databinding.FragmentDriverMapsBinding
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.CameraPosition
 import com.naver.maps.map.CameraUpdate
-import com.naver.maps.map.LocationTrackingMode
 import com.naver.maps.map.MapView
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
-import com.naver.maps.map.util.FusedLocationSource
-import java.util.Locale
+import com.naver.maps.map.overlay.Marker
+import com.naver.maps.map.overlay.OverlayImage
 
 class DriverMapsFragment : Fragment(), OnMapReadyCallback {
 
@@ -34,11 +30,15 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var naverMap: NaverMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
+    private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentDriverMapsBinding.inflate(layoutInflater, container, false)
         mapView = binding.naverMap
         mapView.onCreate(savedInstanceState)
@@ -72,6 +72,34 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
                 requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
             }
         }
+        addBusStopMarker()
+    }
+
+    private fun addBusStopMarker() {
+        val busStopLatitude = 37.44893
+        val busStopLongitude = 127.1270
+
+        auth = FirebaseAuth.getInstance()
+
+        val uid = auth.uid
+        val meid = "mH4lZtV9gdOLQyK9c7GceGs7Fje2"
+
+        db.collection("users").document(meid)
+            .get()
+            .addOnSuccessListener { documents ->
+                    // 문서에서 필드 값 가져오기
+                val fieldData = documents.data?.get("profileImageUrl")
+                println("Field Value: $fieldData")
+            }
+            .addOnFailureListener { e->
+                Log.d("hi", "get failed with ", e)
+            }
+
+        val marker = Marker()
+        marker.position = LatLng(busStopLatitude, busStopLongitude)
+        marker.width = 100 // Set width of the marker image
+        marker.height = 100 // Set height of the marker image
+        marker.map = naverMap
     }
 
     private fun hasLocationPermission(): Boolean {

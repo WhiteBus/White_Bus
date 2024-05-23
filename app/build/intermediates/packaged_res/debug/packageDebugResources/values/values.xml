@@ -94,7 +94,7 @@
     <string name="stoptext"><b>현재 탑승중인 시각장애인이 \n  이번 정류장에서 하차할 예정입니다.</b></string>
     <string name="tv_gallery_placeholder">Click + to add an image or a video
         to begin running the face landmarker.</string>
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/mp_color_primary</item>
         <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>

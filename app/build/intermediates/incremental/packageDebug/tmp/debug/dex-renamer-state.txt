@@ -1,17 +1,17 @@
-#Thu May 23 16:07:06 KST 2024
-base.0=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.10=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.11=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.12=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
-base.2=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.4=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.5=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.6=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.7=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.8=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.9=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+#Fri May 24 04:45:15 KST 2024
+base.0=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.11=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.12=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
+base.2=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.5=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.6=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.7=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.8=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.9=C\:\\Users\\toler\\WhiteBus_db\\whitebus_final\\White_Bus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes2.dex

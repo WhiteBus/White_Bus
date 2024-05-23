@@ -23,10 +23,31 @@ class RideBus : AppCompatActivity() {
         val uid = auth.uid
 
         val ridingbtn = findViewById<Button>(R.id.riding_btn)
-        var busNumber = 303 //버스 번호판 네자리 가져오기
+        var busNumber: String = "" //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
         var stationid = "123"
+        var busnumData:String=""
+
+        val usid = auth.currentUser?.uid ?: return
+        val busnDocRef = db.collection("BlindUser").document(usid)
+
+        busnDocRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                if (documentSnapshot.exists()) {
+                    val data = documentSnapshot.data
+                    data?.let {
+                        nickname = (it["nickname"] as? String).toString()
+                        profileImageUrl = (it["profileImageUrl"] as? String).toString()
+                        busNumber = (it["pickupNum"] as? String).toString()
+                    }
+                } else {
+                    println("No such document")
+                }
+            }
+            .addOnFailureListener { e ->
+                println("Error getting user data: $e")
+            }
 
 
 //커렌트 유저블라인드해서 밑에 함수 적용
@@ -36,9 +57,8 @@ class RideBus : AppCompatActivity() {
             .addOnSuccessListener { documents ->
                 for (document in documents) {
                     // 문서에서 필드 값 가져오기
-                    val fieldData = document.data["busNumb"]
+                    busnumData = document.data["busNumb"].toString()
 
-                    println("Field Value: $fieldData")
                 }
             }
             .addOnFailureListener { e->
@@ -77,16 +97,31 @@ class RideBus : AppCompatActivity() {
         }
     }
 
-    fun addBlindToBus(busnumber: Int?, nickname: String, profileImageUrl: String) {
+    fun addBlindToBus(busnumber: String, nickname: String, profileImageUrl: String) {
         val firebaseUser = auth.currentUser
         firebaseUser?.let {
             val uid = it.uid
             val blind: MutableMap<String, Any> = HashMap()
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
-
-            db.collection("OnBus").document(busnumber.toString()).collection("blindUser").document(uid)
+            removeBlindToStation(busnumber, uid)
+            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
                 .set(blind)
+                .addOnSuccessListener { documentReference ->
+                    Log.d(TAG, "DocumentSnapshot added with ID: ")
+                }
+                .addOnFailureListener { e ->
+                    Log.w(TAG, "Error adding document", e)
+                }
+        }
+    }
+    fun removeBlindToStation(busnumber: String, uid: String) {
+        val firebaseUser = auth.currentUser
+        firebaseUser?.let {
+            val uid = it.uid
+
+            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
+                .delete()
                 .addOnSuccessListener { documentReference ->
                     Log.d(TAG, "DocumentSnapshot added with ID: ")
                 }

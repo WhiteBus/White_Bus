@@ -58,7 +58,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
                 val subPathInfoList = mutableListOf<SubPathInfo>()
                 path.subPaths.forEachIndexed { subPathIndex, subPath ->
                     subPath.lane?.forEach { lane ->
-                        val busNo = lane.busNo
+                        val busNo = lane.busNo//.toString()
                         if (busNo != null) {
                             subPathInfoList.add(
                                 SubPathInfo(
@@ -108,14 +108,12 @@ class searchPubPathT : AppCompatActivity(), PathView {
             startActivity(intent)
             println(ArrayList(busNumbers))
         } else {
-            println("Error: PathResult paths is null")
+            println("Error: PathResult paths is null: ${paths}")
         }
     }
 
     override fun onSearchPathFailure(errorMessage: String) {
         println("Error occurred: $errorMessage")
     }
-
 }
-
 
