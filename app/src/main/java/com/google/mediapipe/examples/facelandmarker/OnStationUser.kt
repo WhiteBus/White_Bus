@@ -24,7 +24,7 @@ class OnStationUser : AppCompatActivity() {
         val staybtn = findViewById<Button>(R.id.btn)
         var nickname:String = ""
         var profileImageUrl:String = ""
-        val stationid = "123"//정류장 id가져오기
+        val stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID //정류장 id가져오기
 
 
         val userid = auth.currentUser?.uid ?: return
@@ -47,7 +47,7 @@ class OnStationUser : AppCompatActivity() {
             }
         staybtn.setOnClickListener{
             if (nickname != null && profileImageUrl!= null) {
-                addBlindToStation(stationid, nickname, profileImageUrl)
+                addBlindToStation(stationid.toString(), nickname, profileImageUrl)
             }
             val intent = Intent(this@OnStationUser, RideBus::class.java)
             startActivity(intent)

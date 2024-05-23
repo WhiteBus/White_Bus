@@ -3003,6 +3003,7 @@ int drawable searchbar 0x7f080168
 int drawable select_bd 0x7f080169
 int drawable select_iv 0x7f08016a
 int drawable sleep 0x7f08016b
+int drawable speech 0x7f080175
 int drawable start_kakao 0x7f08016c
 int drawable stop 0x7f08016d
 int drawable test_level_drawable 0x7f08016e
@@ -3144,6 +3145,7 @@ int id browser_actions_menu_view 0x7f0a0079
 int id btn 0x7f0a007a
 int id btn1 0x7f0a007b
 int id btnCancel 0x7f0a007c
+int id btnSpeech 0x7f0a02cd
 int id btn_holder 0x7f0a007d
 int id busNum_btn 0x7f0a007e
 int id busTransitCount 0x7f0a007f
@@ -3398,6 +3400,7 @@ int id material_timepicker_view 0x7f0a0177
 int id material_value_index 0x7f0a0178
 int id matrix 0x7f0a0179
 int id media_actions 0x7f0a017a
+int id menu 0x7f0a02ce
 int id message 0x7f0a017b
 int id microsoft_signin_button 0x7f0a017c
 int id middle 0x7f0a017d
@@ -3590,6 +3593,7 @@ int id snapMargins 0x7f0a0237
 int id south 0x7f0a0238
 int id spacer 0x7f0a0239
 int id special_effects_controller_view_tag 0x7f0a023a
+int id speech 0x7f0a02cf
 int id spline 0x7f0a023b
 int id split_action_bar 0x7f0a023c
 int id spread 0x7f0a023d
