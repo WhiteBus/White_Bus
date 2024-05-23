@@ -50,6 +50,9 @@ android {
         viewBinding true
         dataBinding true
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 // import DownloadMPTasks task

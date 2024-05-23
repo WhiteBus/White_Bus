@@ -32,9 +32,9 @@ class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() 
         // 역 이름과 위치 정보를 ViewHolder의 View에 바인딩
         holder.stationNameTextView.text = station.stationName
         val location = "위도: ${station.y}, 경도: ${station.x}"
-        holder.locationTextView.text = location
-        val stationId = "stationId: ${station.stationID}"
-        holder.stationIdView.text = stationId
+//        holder.locationTextView.text = location
+//        val stationId = "stationId: ${station.stationID}"
+//        holder.stationIdView.text = stationId
 
         // 아이템 클릭 시 이벤트 처리
         holder.itemView.setOnClickListener {
@@ -53,8 +53,8 @@ class StationAdapter : RecyclerView.Adapter<StationAdapter.StationViewHolder>() 
 
     class StationViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val stationNameTextView: TextView = itemView.findViewById(R.id.stationNameTextView)
-        val locationTextView: TextView = itemView.findViewById(R.id.locationTextView)
-        val stationIdView: TextView = itemView.findViewById(R.id.stationId)
+//        val locationTextView: TextView = itemView.findViewById(R.id.locationTextView)
+//        val stationIdView: TextView = itemView.findViewById(R.id.stationId)
     }
 }
 

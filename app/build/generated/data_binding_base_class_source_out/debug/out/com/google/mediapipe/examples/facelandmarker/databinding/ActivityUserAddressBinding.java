@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.mediapipe.examples.facelandmarker.R;
@@ -26,10 +27,10 @@ public final class ActivityUserAddressBinding implements ViewBinding {
   public final ConstraintLayout dstInfo;
 
   @NonNull
-  public final ConstraintLayout locationBtn;
+  public final ConstraintLayout transitInfo;
 
   @NonNull
-  public final TextView userAddress;
+  public final RecyclerView transitRecyclerView;
 
   @NonNull
   public final TextView userAddressDstName;
@@ -42,14 +43,14 @@ public final class ActivityUserAddressBinding implements ViewBinding {
 
   private ActivityUserAddressBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout addressBoard, @NonNull ConstraintLayout dstInfo,
-      @NonNull ConstraintLayout locationBtn, @NonNull TextView userAddress,
+      @NonNull ConstraintLayout transitInfo, @NonNull RecyclerView transitRecyclerView,
       @NonNull TextView userAddressDstName, @NonNull TextView userDistance,
       @NonNull TextView userTime) {
     this.rootView = rootView;
     this.addressBoard = addressBoard;
     this.dstInfo = dstInfo;
-    this.locationBtn = locationBtn;
-    this.userAddress = userAddress;
+    this.transitInfo = transitInfo;
+    this.transitRecyclerView = transitRecyclerView;
     this.userAddressDstName = userAddressDstName;
     this.userDistance = userDistance;
     this.userTime = userTime;
@@ -94,15 +95,15 @@ public final class ActivityUserAddressBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.location_btn;
-      ConstraintLayout locationBtn = ViewBindings.findChildViewById(rootView, id);
-      if (locationBtn == null) {
+      id = R.id.transit_info;
+      ConstraintLayout transitInfo = ViewBindings.findChildViewById(rootView, id);
+      if (transitInfo == null) {
         break missingId;
       }
 
-      id = R.id.user_address;
-      TextView userAddress = ViewBindings.findChildViewById(rootView, id);
-      if (userAddress == null) {
+      id = R.id.transit_recyclerView;
+      RecyclerView transitRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (transitRecyclerView == null) {
         break missingId;
       }
 
@@ -125,7 +126,7 @@ public final class ActivityUserAddressBinding implements ViewBinding {
       }
 
       return new ActivityUserAddressBinding((ConstraintLayout) rootView, addressBoard, dstInfo,
-          locationBtn, userAddress, userAddressDstName, userDistance, userTime);
+          transitInfo, transitRecyclerView, userAddressDstName, userDistance, userTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

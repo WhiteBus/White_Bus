@@ -4,7 +4,7 @@ package com.google.mediapipe.examples.facelandmarker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -25,13 +25,13 @@ public final class ActivityViNearestStationBinding implements ViewBinding {
   public final TextView detailProject;
 
   @NonNull
-  public final Button locationButton;
+  public final ImageButton locationButton;
 
   @NonNull
   public final RecyclerView recyclerView;
 
   private ActivityViNearestStationBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView detailProject, @NonNull Button locationButton,
+      @NonNull TextView detailProject, @NonNull ImageButton locationButton,
       @NonNull RecyclerView recyclerView) {
     this.rootView = rootView;
     this.detailProject = detailProject;
@@ -73,7 +73,7 @@ public final class ActivityViNearestStationBinding implements ViewBinding {
       }
 
       id = R.id.locationButton;
-      Button locationButton = ViewBindings.findChildViewById(rootView, id);
+      ImageButton locationButton = ViewBindings.findChildViewById(rootView, id);
       if (locationButton == null) {
         break missingId;
       }

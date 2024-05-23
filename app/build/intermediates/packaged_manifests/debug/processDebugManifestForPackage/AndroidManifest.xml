@@ -57,16 +57,15 @@
             android:value="v4ud3zha1i" />
 
         <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
+        <!-- <activity android:name=".Main_NearestStation" /> -->
         <activity android:name="com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.FaceSettingActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity" />
         <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
+            android:name="com.google.mediapipe.examples.facelandmarker.repository.activity_home"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -75,6 +74,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.searchPubPathT" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

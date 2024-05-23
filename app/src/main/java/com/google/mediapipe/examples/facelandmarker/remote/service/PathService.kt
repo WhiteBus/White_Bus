@@ -9,36 +9,27 @@ import retrofit2.Response
 import retrofit2.Retrofit
 
 class PathService(private val retrofit: Retrofit) {
+    fun searchPath(lang: String, SX: Double, SY: Double, EX: Double, EY: Double, searchPathType: Int, apiKey: String, pathView: PathView) {
+        val service = retrofit.create(PathInterface::class.java)
+        val call = service.getpathBusNum(lang, SX, SY, EX, EY, searchPathType, apiKey)
 
-    private val pathInterface: PathInterface = retrofit.create(PathInterface::class.java)
-
-    fun searchPath(
-        lang: String,
-        SX: Double,
-        SY: Double,
-        EX: Double,
-        EY: Double,
-        SearchPathType: Int,
-        apiKey: String,
-        callback: PathView
-    ) {
-        pathInterface.getpathBusNum(lang, SX, SY, EX, EY, SearchPathType, apiKey)
-            .enqueue(object : Callback<PathResult> {
-                override fun onResponse(call: Call<PathResult>, response: Response<PathResult>) {
-                    if (response.isSuccessful) {
-                        response.body()?.let {
-                            callback.onSearchStationSuccess(it)
-                        } ?: run {
-                            callback.onSearchStationFailure("Response body is null.")
-                        }
+        call.enqueue(object : Callback<PathResult> {
+            override fun onResponse(call: Call<PathResult>, response: Response<PathResult>) {
+                if (response.isSuccessful) {
+                    val pathResult = response.body()
+                    if (pathResult != null) {
+                        pathView.onSearchPathSuccess(pathResult, SX, SY, EX, EY)
                     } else {
-                        callback.onSearchStationFailure("Failed to get response.")
+                        pathView.onSearchPathFailure("Response body is null")
                     }
+                } else {
+                    pathView.onSearchPathFailure(response.message())
                 }
+            }
 
-                override fun onFailure(call: Call<PathResult>, t: Throwable) {
-                    callback.onSearchStationFailure(t.message ?: "Unknown error occurred.")
-                }
-            })
+            override fun onFailure(call: Call<PathResult>, t: Throwable) {
+                pathView.onSearchPathFailure(t.message ?: "Unknown error")
+            }
+        })
     }
 }

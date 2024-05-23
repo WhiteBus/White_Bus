@@ -36,4 +36,8 @@
     <color name="mp_color_secondary">#03DAC6</color>
     <color name="mp_color_secondary_variant">#018786</color>
     <color name="mp_color_error">#B00020</color>
+    <color name="home_button1">#0099FF</color>
+    <color name="home_button2">#F582C6</color>
+    <color name="home_button3">#04CD80</color>
+    <color name="home_button4">#04CDCD</color>
 </resources>
