@@ -3,32 +3,51 @@ package com.google.mediapipe.examples.facelandmarker
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityAppUserDeterminantBinding
 
-class AppUserDeterminantActivity : AppCompatActivity() {
+private const val TAG = "app_user_determinant"
 
+class AppUserDeterminantActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
+    private var isBlindTypeSelected = false
     private lateinit var binding: ActivityAppUserDeterminantBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAppUserDeterminantBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = FirebaseAuth.getInstance()
 
-        clickListener()
+        clickListener(auth)
     }
 
     // When Button is clicked
-    private fun clickListener() {
+    private fun clickListener(auth: FirebaseAuth) {
         // Dedicated button for the visually impaired
         binding.visualImpairedButton.setOnClickListener {
             // Move *** Activity -> 나중에 변경
             // switchActivity();
+            if (!isBlindTypeSelected) {
+                val a = updateUserBlindType(2)
+                transferUserData(a)
+                switchActivity(RideBus());
+
+            }
         }
 
         // Dedicated button for the bus driver
         binding.busDriverButton.setOnClickListener {
             // Move Login Activity
-            switchActivity(BusNumberInputActivity());
+            if (!isBlindTypeSelected) {
+                val a = updateUserBlindType(1)
+                transferUserData(a)
+                switchActivity(BusNumberInputActivity());
+
+            }
         }
     }
 
@@ -37,5 +56,95 @@ class AppUserDeterminantActivity : AppCompatActivity() {
         val intent = Intent(this, activity::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
+    }
+    fun transferUserData(blindtype: Int) {
+        Log.d(TAG, "entered collection ")
+
+        val uid = auth.currentUser?.uid ?: return
+        val blindType = blindtype
+        val userDocRef = db.collection("users").document(uid)
+
+        userDocRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                if (documentSnapshot.exists()) {
+                    val data = documentSnapshot.data
+                    data?.let {
+                        val nickname = it["nickname"] as? String
+                        val profileImageUrl = it["profileImageUrl"] as? String
+
+                        if (blindType == 1) {
+                            if (nickname != null) {
+                                addDriver(nickname)
+                            }
+                        } else if (blindType == 2) {
+                            if (nickname != null) {
+                                if (profileImageUrl != null) {
+                                    addBlind(uid, nickname, profileImageUrl)
+                                }
+                            }
+                        }else{
+                            println(blindType)
+                            println(nickname)
+                        }
+                    }
+                } else {
+                    println("No such document")
+                }
+            }
+            .addOnFailureListener { e ->
+                println("Error getting user data: $e")
+            }
+    }
+    //driver 컬렉션에 유저 이동
+    fun addDriver( nickname: String) {
+        val firebaseUser = auth.currentUser
+        firebaseUser?.let {
+            val uid = it.uid
+            val driver: MutableMap<String, Any> = HashMap()
+            driver["nickname"] = nickname
+            db.collection("DriverUser").document(uid)
+                .set(driver)
+                .addOnSuccessListener { documentReference ->
+                    Log.d(TAG, "DocumentSnapshot added with ID: ")
+                }
+                .addOnFailureListener { e ->
+                    Log.w(TAG, "Error adding document", e)
+                }
+        }
+    }
+    //blind 컬렉션에 유저 이동
+    fun addBlind(uid: String, nickname: String, profileImageUrl: String) {
+        println('4')
+        val firebaseUser = auth.currentUser
+        firebaseUser?.let {
+            val uid = it.uid
+            val blind: MutableMap<String, Any> = HashMap()
+            blind["nickname"] = nickname
+            blind["profileImageUrl"] = profileImageUrl
+
+            db.collection("BlindUser").document(uid)
+                .set(blind)
+                .addOnSuccessListener { documentReference ->
+                    Log.d(TAG, "DocumentSnapshot added with ID: ")
+                }
+                .addOnFailureListener { e ->
+                    Log.w(TAG, "Error adding document", e)
+                }
+        }
+    }
+    private fun updateUserBlindType(isBlind: Int): Int {
+        val user = auth.currentUser
+        user?.let {
+            val userRef = db.collection("users").document(it.uid)
+            userRef.update("blindtype", isBlind)
+                .addOnSuccessListener {
+                    Log.d(TAG, "Blind type updated successfully.")
+                    isBlindTypeSelected = true
+                }
+                .addOnFailureListener { e ->
+                    Log.e(TAG, "Failed to update blind type.${e.message}", e)
+                }
+        }
+        return isBlind
     }
 }

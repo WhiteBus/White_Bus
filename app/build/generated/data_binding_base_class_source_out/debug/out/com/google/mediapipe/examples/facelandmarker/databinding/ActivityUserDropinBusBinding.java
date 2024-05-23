@@ -23,12 +23,16 @@ public final class ActivityUserDropinBusBinding implements ViewBinding {
   public final Button busNumBtn;
 
   @NonNull
+  public final Button dropbtn;
+
+  @NonNull
   public final ConstraintLayout userBtnBoard;
 
   private ActivityUserDropinBusBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button busNumBtn, @NonNull ConstraintLayout userBtnBoard) {
+      @NonNull Button busNumBtn, @NonNull Button dropbtn, @NonNull ConstraintLayout userBtnBoard) {
     this.rootView = rootView;
     this.busNumBtn = busNumBtn;
+    this.dropbtn = dropbtn;
     this.userBtnBoard = userBtnBoard;
   }
 
@@ -65,13 +69,20 @@ public final class ActivityUserDropinBusBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.dropbtn;
+      Button dropbtn = ViewBindings.findChildViewById(rootView, id);
+      if (dropbtn == null) {
+        break missingId;
+      }
+
       id = R.id.user_btn_board;
       ConstraintLayout userBtnBoard = ViewBindings.findChildViewById(rootView, id);
       if (userBtnBoard == null) {
         break missingId;
       }
 
-      return new ActivityUserDropinBusBinding((ConstraintLayout) rootView, busNumBtn, userBtnBoard);
+      return new ActivityUserDropinBusBinding((ConstraintLayout) rootView, busNumBtn, dropbtn,
+          userBtnBoard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
