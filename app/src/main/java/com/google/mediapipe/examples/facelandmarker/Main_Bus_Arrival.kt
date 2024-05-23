@@ -4,8 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.mediapipe.examples.facelandmarker.R
-import com.google.mediapipe.examples.facelandmarker.remote.Adapter.BusArrivalAdapter
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.BusArrivalAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.RealtimeBusArrivalRes
 import com.google.mediapipe.examples.facelandmarker.remote.retrofit.BusArrivalInterface
 

@@ -48,6 +48,19 @@
             android:name=".MainActivity"
             android:exported="false"/>
 
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="v4ud3zha1i" />
+
+
+        <activity android:name=".BusNumberInputActivity" />
+        <activity android:name=".AppUserDeterminantActivity" />
+        <activity android:name=".FaceSettingActivity" />
+        <activity android:name=".DriverMainActivity" />
+        <activity android:name=".Main_searchPubPathT" />
+        <activity android:name=".Main_Bus_Arrival"/>
+
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -58,8 +71,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main_vi_Search_des"/>
-        <activity android:name=".Main_searchPubPathT" />
-        <activity android:name=".Main_Bus_Arrival"/>
         <activity android:name=".RideBus"/>
         <activity android:name=".OnStationUser"/>
         <activity android:name=".user_dropin_bus"/>

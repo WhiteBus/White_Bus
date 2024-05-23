@@ -21,10 +21,8 @@ import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityMainBinding
-import com.google.mediapipe.examples.facelandmarker.fragment.CameraFragment
-import com.google.mediapipe.examples.facelandmarker.fragment.PermissionsFragment
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
@@ -53,6 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
         finish();
     }
 }

@@ -21,7 +21,7 @@ class Bus_Number_input : AppCompatActivity() {
         setContentView(R.layout.activity_bus_number_input)
 
         // Initialize the EditText
-        busNumberEditText = findViewById(R.id.sample_EditText)
+        busNumberEditText = findViewById(R.id.EditText_ex)
 
 
 
@@ -30,7 +30,7 @@ class Bus_Number_input : AppCompatActivity() {
 
         // You can add a listener to get the text when needed, for example on a button click
         // Assuming there is a button with id 'submit_button' in your layout (not shown in your provided XML)
-        val submitButton = findViewById<Button>(R.id.submit_button)
+        val submitButton = findViewById<Button>(R.id.save_bus_number_btn)
         submitButton.setOnClickListener {
             busNumber = busNumberEditText.text.toString()
             addBusNumberFieldToDriver(uid, busNumber)

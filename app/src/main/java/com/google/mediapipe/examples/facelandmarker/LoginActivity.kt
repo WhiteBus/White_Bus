@@ -15,6 +15,10 @@ import com.google.firebase.initialize
 import com.google.firebase.ktx.initialize
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.user.UserApiClient
+import android.app.Activity
+import com.google.mediapipe.examples.facelandmarker.databinding.ActivityAppUserDeterminantBinding
+import com.google.mediapipe.examples.facelandmarker.databinding.ActivityLoginBinding
+
 
 private const val TAG = "LoginActivity"
 
