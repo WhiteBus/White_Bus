@@ -2937,6 +2937,7 @@ drawable searchbar
 drawable select_bd
 drawable select_iv
 drawable sleep
+drawable speech
 drawable start_kakao
 drawable stop
 drawable test_level_drawable
@@ -3075,6 +3076,7 @@ id browser_actions_menu_view
 id btn
 id btn1
 id btnCancel
+id btnSpeech
 id busNum_btn
 id busTransitCount
 id bus_driver_button
@@ -3296,6 +3298,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id menu
 id message
 id middle
 id mini
@@ -3472,6 +3475,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id speech
 id spline
 id split_action_bar
 id spread
