@@ -10,6 +10,7 @@
 
     <!-- Use Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- Use Naver Map -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

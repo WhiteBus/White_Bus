@@ -3069,9 +3069,6 @@ int id btnCancel 0x7f0a0077
 int id busNum_btn 0x7f0a0078
 int id bus_driver_button 0x7f0a0079
 int id bus_number_error_tv 0x7f0a007a
-int id button1 0x7f0a007b
-int id button2 0x7f0a007c
-int id button3 0x7f0a007d
 int id buttonPanel 0x7f0a007e
 int id byehand 0x7f0a007f
 int id byetoast 0x7f0a0080
@@ -3312,6 +3309,7 @@ int id multiply 0x7f0a016a
 int id nav_controller_view_tag 0x7f0a016b
 int id nav_graph 0x7f0a016c
 int id nav_host_fragment_container 0x7f0a016d
+int id naverMap 0x7f0a0275
 int id navermap_bar 0x7f0a016e
 int id navermap_compass 0x7f0a016f
 int id navermap_compass_icon 0x7f0a0170

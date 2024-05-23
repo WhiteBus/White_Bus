@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-63:12
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:2:1-64:12
 MERGED from [androidx.databinding:databinding-adapters:8.3.2] /Users/seohyeonpark/.gradle/caches/transforms-3/d6ab06a3e52cba7a18171253a997fca7/transformed/databinding-adapters-8.3.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.3.2] /Users/seohyeonpark/.gradle/caches/transforms-3/c77f83e526f5c489bd2bffd67aedad9e/transformed/jetified-databinding-ktx-8.3.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.3.2] /Users/seohyeonpark/.gradle/caches/transforms-3/724982d3da4066bbae6b8efe9727c120/transformed/databinding-runtime-8.3.2/AndroidManifest.xml:2:1-7:12
@@ -157,25 +157,47 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /User
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+MERGED from [com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:15:5-79
+MERGED from [com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:15:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.57.2] /Users/seohyeonpark/.gradle/caches/transforms-3/da0ad303b617518e7504073bbe5343a0/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.57.2] /Users/seohyeonpark/.gradle/caches/transforms-3/da0ad303b617518e7504073bbe5343a0/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:15:5-81
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:16:5-79
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:16:22-76
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:17:5-85
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:5-85
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:17:22-82
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:22-82
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:5-80
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:18:22-77
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:19:22-77
 application
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:20:5-61:19
-INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:20:5-61:19
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:21:5-62:19
+INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:21:5-62:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/652f32004f6a25d0de08c927242c591a/transformed/jetified-firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/seohyeonpark/.gradle/caches/transforms-3/b5d387ca8c9bb87af3af43b3b7e0756d/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
@@ -247,83 +269,83 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/se
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/seohyeonpark/.gradle/caches/transforms-3/a5a84c09d7fa584ab51ce349e946ac52/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:25:9-35
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:26:9-35
 	android:label
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:23:9-45
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:24:9-45
 	tools:ignore
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:28:9-35
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:29:9-35
 	android:roundIcon
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:24:9-52
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:25:9-52
 	android:icon
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:22:9-47
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:23:9-47
 	android:allowBackup
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:27:9-40
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:28:9-40
 	android:taskAffinity
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:26:9-32
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:27:9-32
 meta-data#com.naver.maps.map.CLIENT_ID
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:30:9-32:42
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:31:9-33:42
 	android:value
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:32:13-39
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:33:13-39
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:31:13-56
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:32:13-56
 activity#com.google.mediapipe.examples.facelandmarker.SplashActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:35:9-52
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:9-52
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:35:19-49
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:19-49
 activity#com.google.mediapipe.examples.facelandmarker.Main_NearestStation
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:9-57
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:9-57
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:36:19-54
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:19-54
 activity#com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:9-60
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:9-60
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:37:19-57
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:19-57
 activity#com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:9-64
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:9-64
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:38:19-61
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:19-61
 activity#com.google.mediapipe.examples.facelandmarker.FaceSettingActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:9-57
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:9-57
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:39:19-54
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:19-54
 activity#com.google.mediapipe.examples.facelandmarker.DriverMainActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:9-56
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:41:9-56
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:40:19-53
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:41:19-53
 activity#com.google.mediapipe.examples.facelandmarker.MainActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:43:9-50
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:9-50
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:43:19-47
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:19-47
 activity#com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:9-57
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:9-57
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:44:19-54
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:19-54
 activity#com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:9-53
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:46:9-53
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:45:19-51
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:46:19-51
 activity#com.google.mediapipe.examples.facelandmarker.LoginActivity
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:48:9-56:20
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:49:9-57:20
 	android:exported
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:50:13-36
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:49:13-42
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:50:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:51:13-55:29
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:52:17-69
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:53:17-69
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:52:25-66
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:54:17-77
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:54:27-74
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:55:27-74
 activity#com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des
-ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:57:9-55
+ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:58:9-55
 	android:name
-		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:57:19-53
+		ADDED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml:58:19-53
 uses-sdk
 INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/src/main/AndroidManifest.xml
@@ -590,26 +612,6 @@ ADDED from [androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/ca
 		ADDED from [androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:28:13-37
 	android:name
 		ADDED from [androidx.window:window:1.1.0-alpha03] /Users/seohyeonpark/.gradle/caches/transforms-3/93436507cf5d9a4da2684f0ff58fdebf/transformed/jetified-window-1.1.0-alpha03/AndroidManifest.xml:27:13-51
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/c0e4ffd926964fa7cfef5a3d216f1b68/transformed/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/18ce85fb6ae6c3ac71a1c28706c21540/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/seohyeonpark/.gradle/caches/transforms-3/634b0d8fbff159aaf3a6476a23b8aa8d/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8c7a700a76fb8c018ba7cd800bdfaa7e/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:8:5-79
-MERGED from [com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:15:5-79
-MERGED from [com.naver.maps:map-sdk:3.17.0] /Users/seohyeonpark/.gradle/caches/transforms-3/8b88f31fd0226fafae0d634b6e86e64b/transformed/jetified-map-sdk-3.17.0/AndroidManifest.xml:15:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/f0bf5e098e046fa74aa06563759a95eb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] /Users/seohyeonpark/.gradle/caches/transforms-3/be7b6e7b5fe76d716377787020105de6/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:22:5-79
-MERGED from [io.grpc:grpc-android:1.57.2] /Users/seohyeonpark/.gradle/caches/transforms-3/da0ad303b617518e7504073bbe5343a0/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
-MERGED from [io.grpc:grpc-android:1.57.2] /Users/seohyeonpark/.gradle/caches/transforms-3/da0ad303b617518e7504073bbe5343a0/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:25:22-76
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:20.0.5] /Users/seohyeonpark/.gradle/caches/transforms-3/80c0edb809355718e01df18bb0de5c78/transformed/jetified-firebase-database-20.0.5/AndroidManifest.xml:32:13-34:85
 	android:value

@@ -117,9 +117,6 @@ id btnCancel
 id busNum_btn
 id bus_driver_button
 id bus_number_error_tv
-id button1
-id button2
-id button3
 id byehand
 id byetoast
 id byetoastLay
@@ -151,6 +148,7 @@ id login
 id main
 id main_container
 id nav_graph
+id naverMap
 id number_of_passenger_tv
 id overlay
 id passenger_name_tv
