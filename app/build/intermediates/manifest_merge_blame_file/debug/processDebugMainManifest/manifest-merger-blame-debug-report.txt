@@ -10,269 +10,793 @@
 10        android:targetSdkVersion="34" />
 11    <!-- Enable instant app support -->
 12    <dist:module dist:instant="true" /> <!-- Declare features -->
-12-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:6:5-40
-12-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:6:18-37
+12-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:6:5-40
+12-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:6:18-37
 13    <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
-13-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:7:5-60
-13-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:7:19-57
+13-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:7:5-60
+13-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:7:19-57
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:8:5-65
-14-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:8:22-62
+14-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:8:5-65
+14-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:8:22-62
 15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-15-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:9:5-77
-15-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:9:22-74
+15-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:9:5-77
+15-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:9:22-74
 16
 17    <!-- Use Internet -->
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:12:5-67
-18-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:12:22-64
+18-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:12:5-67
+18-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:12:22-64
 19
 20    <!-- Use Naver Map -->
 21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-21-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:15:5-81
-21-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:15:22-78
+21-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:15:5-81
+21-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:15:22-78
 22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:5-79
-22-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:22-76
+22-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:16:5-79
+22-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:16:22-76
 23    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-23-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:17:5-85
-23-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:17:22-82
+23-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:17:5-85
+23-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:17:22-82
 24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-24-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:18:5-80
-24-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:18:22-77
-25
-26    <permission
-26-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-27        android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-29
-30    <uses-permission android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-30-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-31    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:5-79
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:22-76
-33
-34    <application
-34-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:20:5-57:19
-35        android:allowBackup="true"
-35-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:21:9-35
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.9.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\a5a84c09d7fa584ab51ce349e946ac52\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-37        android:debuggable="true"
-38        android:extractNativeLibs="false"
-39        android:icon="@mipmap/white_bus_logo2"
-39-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:22:9-47
-40        android:label="Drowsiness Detection"
-40-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:23:9-45
-41        android:roundIcon="@mipmap/white_bus_logo2"
-41-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:24:9-52
-42        android:supportsRtl="true"
-42-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:25:9-35
-43        android:taskAffinity=""
-43-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:26:9-32
-44        android:theme="@style/AppTheme" >
-44-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:27:9-40
-45        <activity
-45-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:29:9-31:40
-46            android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
-46-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:30:13-43
-47            android:exported="false" />
-47-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:31:13-37
-48        <activity
-48-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:32:9-34:40
-49            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
-49-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:33:13-42
-50            android:exported="false" />
-50-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:34:13-37
-51        <activity
-51-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:35:9-37:40
-52            android:name="com.google.mediapipe.examples.facelandmarker.Bus_Number_input"
-52-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:36:13-45
-53            android:exported="false" />
-53-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:37:13-37
-54        <activity
-54-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:38:9-40:40
-55            android:name="com.google.mediapipe.examples.facelandmarker.app_user_determinant"
-55-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:39:13-49
-56            android:exported="false" />
-56-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:40:13-37
-57        <activity
-57-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:41:9-43:39
-58            android:name="com.google.mediapipe.examples.facelandmarker.MainActivity"
-58-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:42:13-41
-59            android:exported="false" />
-59-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:43:13-37
-60        <activity
-60-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:44:9-52:20
-61            android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation"
-61-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:45:13-48
-62            android:exported="true" >
-62-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:46:13-36
-63            <intent-filter>
-63-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:47:13-51:29
-64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:48:17-69
-64-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:48:25-66
-65
-66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:50:17-77
-66-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:50:27-74
-67            </intent-filter>
-68        </activity>
-69        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
-69-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:53:9-55
-69-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:53:19-53
-70        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
-70-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:54:9-55:51
-70-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:55:13-48
-71        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
-71-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:56:9-53
-71-->C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:56:19-51
-72
-73        <uses-library
-73-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:23:9-25:40
-74            android:name="androidx.window.extensions"
-74-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:24:13-54
-75            android:required="false" />
-75-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:25:13-37
-76        <uses-library
-76-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:26:9-28:40
-77            android:name="androidx.window.sidecar"
-77-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:27:13-51
-78            android:required="false" />
-78-->[androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:28:13-37
-79
+24-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:18:5-80
+24-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:18:22-77
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:12:5-79
+25-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:12:22-76
+26    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+26-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7af723d2f40d6841396f5ac65b5a75b\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+26-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7af723d2f40d6841396f5ac65b5a75b\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:5-68
+27-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:22-65
+28    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+28-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:25:5-79
+28-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:25:22-76
+29    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+29-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:26:5-88
+29-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:26:22-85
+30    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+30-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:27:5-82
+30-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:27:22-79
+31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+31-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:26:5-110
+31-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:26:22-107
+32
+33    <queries>
+33-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:9:5-22:15
+34        <package android:name="com.kakao.talk" />
+34-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:10:9-50
+34-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:10:18-47
+35        <package android:name="com.kakao.talk.alpha" />
+35-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:11:9-56
+35-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:11:18-53
+36        <package android:name="com.kakao.talk.sandbox" />
+36-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:12:9-58
+36-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:12:18-55
+37        <package android:name="com.kakao.onetalk" />
+37-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:13:9-53
+37-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:13:18-50
+38
+39        <intent>
+39-->[com.kakao.sdk:v2-common:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1295b5560951be2d9170bed77de68402\transformed\v2-common-2.20.1\AndroidManifest.xml:15:9-21:18
+40            <action android:name="android.intent.action.VIEW" />
+40-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:17-69
+40-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:25-66
+41
+42            <category android:name="android.intent.category.BROWSABLE" />
+42-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:17-78
+42-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:27-75
+43
+44            <data android:scheme="https" />
+44-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:17-78:78
+44-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:78:21-75
+45        </intent>
+46    </queries>
+47
+48    <permission
+48-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+49        android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.google.mediapipe.examples.facelandmarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+53
+54    <application
+54-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:20:5-81:19
+55        android:name="com.google.mediapipe.examples.facelandmarker.MyApplication"
+55-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:21:9-38
+56        android:allowBackup="true"
+56-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:22:9-35
+57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+57-->[androidx.core:core:1.9.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fd53589f0baa3dbeaf5a2901392487c3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+58        android:debuggable="true"
+59        android:extractNativeLibs="false"
+60        android:icon="@mipmap/white_bus_logo2"
+60-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:23:9-47
+61        android:label="Drowsiness Detection"
+61-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:24:9-45
+62        android:roundIcon="@mipmap/white_bus_logo2"
+62-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:25:9-52
+63        android:supportsRtl="true"
+63-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:26:9-35
+64        android:taskAffinity=""
+64-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:27:9-32
+65        android:testOnly="true"
+66        android:theme="@style/AppTheme" >
+66-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:28:9-40
+67        <meta-data
+67-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:30:9-32:63
+68            android:name="com.kakao.sdk.AppKey"
+68-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:31:13-48
+69            android:value="46d9f78dd50186c6c666f893e65a737b" />
+69-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:32:13-61
+70
+71        <activity
+71-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:34:9-36:39
+72            android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation"
+72-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:35:13-48
+73            android:exported="false" />
+73-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:36:13-37
+74        <activity
+74-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:37:9-39:40
+75            android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
+75-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:38:13-43
+76            android:exported="false" />
+76-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:39:13-37
+77        <activity
+77-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:41:9-43:40
+78            android:name="com.google.mediapipe.examples.facelandmarker.Bus_Number_input"
+78-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:42:13-45
+79            android:exported="false" />
+79-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:43:13-37
 80        <activity
-80-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\89c61bc61f1571f402178097b967e7c3\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
-81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-81-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\89c61bc61f1571f402178097b967e7c3\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
-82            android:exported="false"
-82-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\89c61bc61f1571f402178097b967e7c3\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
-83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-83-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\89c61bc61f1571f402178097b967e7c3\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
-84
-85        <meta-data
-85-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\d6085789b3618d7a3034f5291b304b02\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-86            android:name="com.google.android.gms.version"
-86-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\d6085789b3618d7a3034f5291b304b02\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-87            android:value="@integer/google_play_services_version" />
-87-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\d6085789b3618d7a3034f5291b304b02\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-88
-89        <service
-89-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:25:9-34:19
-90            android:name="androidx.camera.core.impl.MetadataHolderService"
-90-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:26:13-75
-91            android:enabled="false"
-91-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:27:13-36
-92            android:exported="false" >
-92-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:28:13-37
-93            <meta-data
-93-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:31:13-33:89
-94                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-94-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:32:17-103
-95                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-95-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\kimtaegyu\.gradle\caches\transforms-3\fe52bf45519f40d5d10d4ee8fce1dd9a\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:33:17-86
-96        </service>
-97
-98        <provider
-98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-99            android:name="androidx.startup.InitializationProvider"
-99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-100            android:authorities="com.google.mediapipe.examples.facelandmarker.androidx-startup"
-100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-101            android:exported="false" >
-101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-102            <meta-data
-102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-103                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-104                android:value="androidx.startup" />
-104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\251f41e049d084566479e26abb31eaef\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-105            <meta-data
-105-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kimtaegyu\.gradle\caches\transforms-3\ad2b69a66818ba20e1b281f33fc1f79c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-106                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-106-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kimtaegyu\.gradle\caches\transforms-3\ad2b69a66818ba20e1b281f33fc1f79c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-107                android:value="androidx.startup" />
-107-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kimtaegyu\.gradle\caches\transforms-3\ad2b69a66818ba20e1b281f33fc1f79c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-108            <meta-data
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-109                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-110                android:value="androidx.startup" />
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-111        </provider>
-112
-113        <receiver
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-114            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-115            android:directBootAware="false"
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-116            android:enabled="true"
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-117            android:exported="true"
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-118            android:permission="android.permission.DUMP" >
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-120                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-121            </intent-filter>
-122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-123                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-124            </intent-filter>
-125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-126                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-127            </intent-filter>
-128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-129                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\542aa3bbdf874b434da35d342b2801a5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-130            </intent-filter>
-131        </receiver>
-132
-133        <service
-133-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
-134            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-134-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
-135            android:exported="false" >
-135-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
-136            <meta-data
-136-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
-137                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-137-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
-138                android:value="cct" />
-138-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\e370df76a27f063a2260e757684cdc5c\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
-139        </service>
-140        <service
-140-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
-141            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-141-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
-142            android:exported="false"
-142-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
-143            android:permission="android.permission.BIND_JOB_SERVICE" >
-143-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
-144        </service>
-145
-146        <receiver
-146-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
-147            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-147-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
-148            android:exported="false" />
-148-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\80c2b0f596856bc388e6ee543f47a83c\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
-149    </application>
-150
-151</manifest>
+80-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:44:9-46:40
+81            android:name="com.google.mediapipe.examples.facelandmarker.app_user_determinant"
+81-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:45:13-49
+82            android:exported="false" />
+82-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:46:13-37
+83        <activity
+83-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:47:9-49:39
+84            android:name="com.google.mediapipe.examples.facelandmarker.MainActivity"
+84-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:48:13-41
+85            android:exported="false" />
+85-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:49:13-37
+86        <activity
+86-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:51:9-59:20
+87            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
+87-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:52:13-42
+88            android:exported="true" >
+88-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:53:13-36
+89            <intent-filter>
+89-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:54:13-58:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:55:17-69
+90-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:55:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:57:17-77
+92-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:57:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
+95-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:60:9-55
+95-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:60:19-53
+96        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT" />
+96-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:61:9-57
+96-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:61:19-54
+97        <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
+97-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:62:9-53
+97-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:62:19-51
+98        <activity android:name="com.google.mediapipe.examples.facelandmarker.RideBus" />
+98-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:63:9-44
+98-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:63:19-42
+99        <activity android:name="com.google.mediapipe.examples.facelandmarker.OnStationUser" />
+99-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:64:9-50
+99-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:64:19-48
+100        <activity android:name="com.google.mediapipe.examples.facelandmarker.user_dropin_bus" />
+100-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:65:9-52
+100-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:65:19-50
+101
+102        <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
+103        <activity
+103-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:70:9-80:20
+104            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+104-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:70:19-76
+105            android:exported="true"
+105-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:71:13-36
+106            android:launchMode="singleTask"
+106-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:18:13-44
+107            android:theme="@style/TransparentCompat" >
+107-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:19:13-53
+108            <intent-filter>
+108-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:72:13-79:29
+109                <action android:name="android.intent.action.VIEW" />
+109-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:17-69
+109-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:25-66
+110
+111                <category android:name="android.intent.category.DEFAULT" />
+111-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:17-76
+111-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:27-73
+112                <category android:name="android.intent.category.BROWSABLE" />
+112-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:17-78
+112-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:27-75
+113
+114                <data
+114-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:17-78:78
+115                    android:host="oauth"
+115-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:23-43
+116                    android:scheme="kakao46d9f78dd50186c6c666f893e65a737b" />
+116-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:78:21-75
+117            </intent-filter>
+118        </activity>
+119        <activity
+119-->[com.kakao.sdk:v2-user:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\2d85d81581e68f3c9ee44e0245299817\transformed\v2-user-2.20.1\AndroidManifest.xml:10:9-13:56
+120            android:name="com.kakao.sdk.user.ShippingAddressesHandlerActivity"
+120-->[com.kakao.sdk:v2-user:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\2d85d81581e68f3c9ee44e0245299817\transformed\v2-user-2.20.1\AndroidManifest.xml:11:13-79
+121            android:launchMode="singleTask"
+121-->[com.kakao.sdk:v2-user:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\2d85d81581e68f3c9ee44e0245299817\transformed\v2-user-2.20.1\AndroidManifest.xml:12:13-44
+122            android:theme="@style/TransparentCompat" />
+122-->[com.kakao.sdk:v2-user:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\2d85d81581e68f3c9ee44e0245299817\transformed\v2-user-2.20.1\AndroidManifest.xml:13:13-53
+123
+124        <meta-data
+124-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:16:9-18:69
+125            android:name="com.google.android.gms.version"
+125-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:17:13-58
+126            android:value="@integer/google_play_services_version" />
+126-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:18:13-66
+127        <meta-data
+127-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:19:9-21:63
+128            android:name="com.facebook.sdk.ApplicationId"
+128-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:20:13-58
+129            android:value="@string/facebook_application_id" />
+129-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:21:13-60
+130
+131        <activity
+131-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:23:9-27:61
+132            android:name="com.firebase.ui.auth.KickoffActivity"
+132-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:24:13-64
+133            android:exported="false"
+133-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:25:13-37
+134            android:label=""
+134-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:26:13-29
+135            android:theme="@style/FirebaseUI.Transparent" />
+135-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:27:13-58
+136        <activity
+136-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:28:9-32:61
+137            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+137-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:29:13-76
+138            android:exported="false"
+138-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:30:13-37
+139            android:label=""
+139-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:31:13-29
+140            android:theme="@style/FirebaseUI.Transparent" />
+140-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:32:13-58
+141        <activity
+141-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:33:9-37:61
+142            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+142-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:34:13-86
+143            android:exported="false"
+143-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:35:13-37
+144            android:label=""
+144-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:36:13-29
+145            android:theme="@style/FirebaseUI.Transparent" />
+145-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:37:13-58
+146        <activity
+146-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:38:9-42:58
+147            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+147-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:39:13-81
+148            android:exported="false"
+148-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:40:13-37
+149            android:label="@string/fui_title_recover_password_activity"
+149-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:41:13-72
+150            android:windowSoftInputMode="adjustResize" />
+150-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:42:13-55
+151        <activity
+151-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:43:9-47:58
+152            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+152-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:44:13-71
+153            android:exported="false"
+153-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:45:13-37
+154            android:label="@string/fui_sign_in_default"
+154-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:46:13-56
+155            android:windowSoftInputMode="adjustResize" />
+155-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:47:13-55
+156        <activity
+156-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:48:9-52:77
+157            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+157-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:49:13-71
+158            android:exported="false"
+158-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:50:13-37
+159            android:label="@string/fui_sign_in_with_phone_number"
+159-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:51:13-66
+160            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+160-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:52:13-74
+161        <activity
+161-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:53:9-57:58
+162            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+162-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:54:13-76
+163            android:exported="false"
+163-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:55:13-37
+164            android:label="@string/fui_title_welcome_back_idp_prompt"
+164-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:56:13-70
+165            android:windowSoftInputMode="adjustResize" />
+165-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:57:13-55
+166        <activity
+166-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:58:9-62:58
+167            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+167-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:59:13-83
+168            android:exported="false"
+168-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:60:13-37
+169            android:label="@string/fui_title_welcome_back_password_prompt"
+169-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:61:13-75
+170            android:windowSoftInputMode="adjustResize" />
+170-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:62:13-55
+171        <activity
+171-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:63:9-67:58
+172            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+172-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:64:13-84
+173            android:exported="false"
+173-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:65:13-37
+174            android:label="@string/fui_title_welcome_back_password_prompt"
+174-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:66:13-75
+175            android:windowSoftInputMode="adjustResize" />
+175-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:67:13-55
+176        <activity
+176-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:68:9-73:58
+177            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+177-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:69:13-82
+178            android:exported="false"
+178-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:70:13-37
+179            android:label=""
+179-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:71:13-29
+180            android:theme="@style/FirebaseUI.Transparent"
+180-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:72:13-58
+181            android:windowSoftInputMode="adjustResize" />
+181-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:73:13-55
+182        <activity
+182-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:74:9-78:58
+183            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+183-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:75:13-88
+184            android:exported="false"
+184-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:76:13-37
+185            android:label="@string/fui_sign_in_default"
+185-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:77:13-56
+186            android:windowSoftInputMode="adjustResize" />
+186-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:78:13-55
+187        <activity
+187-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:79:9-82:65
+188            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+188-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:80:13-80
+189            android:exported="false"
+189-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:81:13-37
+190            android:label="@string/fui_default_toolbar_title" />
+190-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:82:13-62
+191        <activity
+191-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:83:9-87:48
+192            android:name="com.facebook.FacebookActivity"
+192-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:84:13-57
+193            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+193-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:85:13-96
+194            android:label="@string/app_name" />
+194-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:86:13-45
+195        <activity
+195-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:88:9-100:20
+196            android:name="com.facebook.CustomTabActivity"
+196-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:89:13-58
+197            android:exported="true" >
+197-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:90:13-36
+198            <intent-filter>
+198-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:92:13-99:29
+199                <action android:name="android.intent.action.VIEW" />
+199-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:17-69
+199-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:25-66
+200
+201                <category android:name="android.intent.category.DEFAULT" />
+201-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:17-76
+201-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:27-73
+202                <category android:name="android.intent.category.BROWSABLE" />
+202-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:17-78
+202-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:27-75
+203
+204                <data android:scheme="@string/facebook_login_protocol_scheme" />
+204-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:17-78:78
+204-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:78:21-75
+205            </intent-filter>
+206        </activity>
+207
+208        <provider
+208-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:102:9-106:38
+209            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+209-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:103:13-79
+210            android:authorities="com.google.mediapipe.examples.facelandmarker.authuiinitprovider"
+210-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:104:13-70
+211            android:exported="false"
+211-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:105:13-37
+212            android:initOrder="90" />
+212-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\b414595f315e692cc6cf147dc150ec39\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:106:13-35
+213
+214        <service
+214-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:9:9-15:19
+215            android:name="com.google.firebase.components.ComponentDiscoveryService"
+215-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:10:13-84
+216            android:directBootAware="true"
+216-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+217            android:exported="false" >
+217-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:11:13-37
+218            <meta-data
+218-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:12:13-14:85
+219                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar"
+219-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:13:17-127
+220                android:value="com.google.firebase.components.ComponentRegistrar" />
+220-->[com.google.firebase:firebase-database-ktx:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\0abae96209ea13174604839d44ce7c10\transformed\firebase-database-ktx-20.3.1\AndroidManifest.xml:14:17-82
+221            <meta-data
+221-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+222                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+222-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+223                android:value="com.google.firebase.components.ComponentRegistrar" />
+223-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+224            <meta-data
+224-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+225                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+225-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
+226                android:value="com.google.firebase.components.ComponentRegistrar" />
+226-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
+227            <meta-data
+227-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+228                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+228-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+229                android:value="com.google.firebase.components.ComponentRegistrar" />
+229-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\1cd60bf0e3121e753165a3299c89e0bf\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+230            <meta-data
+230-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:29:13-31:85
+231                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+231-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:30:17-120
+232                android:value="com.google.firebase.components.ComponentRegistrar" />
+232-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:31:17-82
+233            <meta-data
+233-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:32:13-34:85
+234                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+234-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:33:17-109
+235                android:value="com.google.firebase.components.ComponentRegistrar" />
+235-->[com.google.firebase:firebase-database:20.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\fda2877efd5c6ea47a8e891ce89618d9\transformed\firebase-database-20.3.1\AndroidManifest.xml:34:17-82
+236            <meta-data
+236-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:37:13-39:85
+237                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+237-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:38:17-139
+238                android:value="com.google.firebase.components.ComponentRegistrar" />
+238-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:39:17-82
+239            <meta-data
+239-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+240                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+240-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+241                android:value="com.google.firebase.components.ComponentRegistrar" />
+241-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+242            <meta-data
+242-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+243                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+243-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+244                android:value="com.google.firebase.components.ComponentRegistrar" />
+244-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\427df463c35064ad1a955a0cfe0b61ae\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+245            <meta-data
+245-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\ce90def073511e53746d2f995ae5afca\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+246                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+246-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\ce90def073511e53746d2f995ae5afca\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+247                android:value="com.google.firebase.components.ComponentRegistrar" />
+247-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\ce90def073511e53746d2f995ae5afca\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+248            <meta-data
+248-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+249                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+249-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+250                android:value="com.google.firebase.components.ComponentRegistrar" />
+250-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+251        </service>
+252
+253        <activity
+253-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:10:9-15:56
+254            android:name="com.kakao.sdk.auth.TalkAuthCodeActivity"
+254-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:11:13-67
+255            android:configChanges="orientation|screenSize|keyboardHidden"
+255-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:12:13-74
+256            android:exported="false"
+256-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:13:13-37
+257            android:launchMode="singleTask"
+257-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:14:13-44
+258            android:theme="@style/TransparentCompat" />
+258-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:15:13-53
+259        <activity
+259-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:20:9-23:56
+260            android:name="com.kakao.sdk.auth.AppsHandlerActivity"
+260-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:21:13-66
+261            android:launchMode="singleTask"
+261-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:22:13-44
+262            android:theme="@style/TransparentCompat" />
+262-->[com.kakao.sdk:v2-auth:2.20.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cda84499f96fbbcc6be97a0d149da6cf\transformed\v2-auth-2.20.1\AndroidManifest.xml:23:13-53
+263
+264        <uses-library
+264-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:23:9-25:40
+265            android:name="androidx.window.extensions"
+265-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:24:13-54
+266            android:required="false" />
+266-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:25:13-37
+267        <uses-library
+267-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:26:9-28:40
+268            android:name="androidx.window.sidecar"
+268-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:27:13-51
+269            android:required="false" />
+269-->[androidx.window:window:1.1.0-alpha03] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\bb5f5ca14a1c78e1ff2339ad2ffe5610\transformed\window-1.1.0-alpha03\AndroidManifest.xml:28:13-37
+270
+271        <activity
+271-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:23:9-27:75
+272            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+272-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:24:13-93
+273            android:excludeFromRecents="true"
+273-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:25:13-46
+274            android:exported="false"
+274-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:26:13-37
+275            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+275-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:27:13-72
+276        <!--
+277            Service handling Google Sign-In user revocation. For apps that do not integrate with
+278            Google Sign-In, this service will never be started.
+279        -->
+280        <service
+280-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:33:9-37:51
+281            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+281-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:34:13-89
+282            android:exported="true"
+282-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:35:13-36
+283            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+283-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:36:13-107
+284            android:visibleToInstantApps="true" />
+284-->[com.google.android.gms:play-services-auth:21.1.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\305b846715ede3e5efcaeed4a23262f1\transformed\play-services-auth-21.1.1\AndroidManifest.xml:37:13-48
+285
+286        <activity
+286-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+287            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+287-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+288            android:excludeFromRecents="true"
+288-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+289            android:exported="true"
+289-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+290            android:launchMode="singleTask"
+290-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+291            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+291-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+292            <intent-filter>
+292-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+293                <action android:name="android.intent.action.VIEW" />
+293-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:17-69
+293-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:25-66
+294
+295                <category android:name="android.intent.category.DEFAULT" />
+295-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:17-76
+295-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:27-73
+296                <category android:name="android.intent.category.BROWSABLE" />
+296-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:17-78
+296-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:27-75
+297
+298                <data
+298-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:17-78:78
+299                    android:host="firebase.auth"
+299-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:23-43
+300                    android:path="/"
+301                    android:scheme="genericidp" />
+301-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:78:21-75
+302            </intent-filter>
+303        </activity>
+304        <activity
+304-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+305            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+305-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+306            android:excludeFromRecents="true"
+306-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+307            android:exported="true"
+307-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+308            android:launchMode="singleTask"
+308-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+309            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+309-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+310            <intent-filter>
+310-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\cab660017e22f15c581076fbd4907cc9\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+311                <action android:name="android.intent.action.VIEW" />
+311-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:17-69
+311-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:73:25-66
+312
+313                <category android:name="android.intent.category.DEFAULT" />
+313-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:17-76
+313-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:74:27-73
+314                <category android:name="android.intent.category.BROWSABLE" />
+314-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:17-78
+314-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:75:27-75
+315
+316                <data
+316-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:17-78:78
+317                    android:host="firebase.auth"
+317-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:77:23-43
+318                    android:path="/"
+319                    android:scheme="recaptcha" />
+319-->C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\src\main\AndroidManifest.xml:78:21-75
+320            </intent-filter>
+321        </activity>
+322        <activity
+322-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\6a8d378714bb7afb531255856074ddaa\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+323            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+323-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\6a8d378714bb7afb531255856074ddaa\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+324            android:exported="false"
+324-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\6a8d378714bb7afb531255856074ddaa\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+325            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+325-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\6a8d378714bb7afb531255856074ddaa\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+326
+327        <property
+327-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:30:9-32:61
+328            android:name="android.adservices.AD_SERVICES_CONFIG"
+328-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:31:13-65
+329            android:resource="@xml/ga_ad_services_config" />
+329-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\31635e276fe7def50a6b6d243d453ead\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:32:13-58
+330
+331        <provider
+331-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+332            android:name="com.google.firebase.provider.FirebaseInitProvider"
+332-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+333            android:authorities="com.google.mediapipe.examples.facelandmarker.firebaseinitprovider"
+333-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+334            android:directBootAware="true"
+334-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+335            android:exported="false"
+335-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+336            android:initOrder="100" />
+336-->[com.google.firebase:firebase-common:21.0.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\552e7ade85250e2781be857e2553c684\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+337
+338        <receiver
+338-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:29:9-33:20
+339            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+339-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:30:13-85
+340            android:enabled="true"
+340-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:31:13-35
+341            android:exported="false" >
+341-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:32:13-37
+342        </receiver>
+343
+344        <service
+344-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:35:9-38:40
+345            android:name="com.google.android.gms.measurement.AppMeasurementService"
+345-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:36:13-84
+346            android:enabled="true"
+346-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:37:13-35
+347            android:exported="false" />
+347-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:38:13-37
+348        <service
+348-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:39:9-43:72
+349            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+349-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:40:13-87
+350            android:enabled="true"
+350-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:41:13-35
+351            android:exported="false"
+351-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:42:13-37
+352            android:permission="android.permission.BIND_JOB_SERVICE" />
+352-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f92e94ca0273d90a3626a1ec5d4ee50d\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:43:13-69
+353
+354        <uses-library
+354-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\810920900557f547f5eabbedb7ec9eef\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+355            android:name="android.ext.adservices"
+355-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\810920900557f547f5eabbedb7ec9eef\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+356            android:required="false" />
+356-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\810920900557f547f5eabbedb7ec9eef\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+357
+358        <service
+358-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:25:9-34:19
+359            android:name="androidx.camera.core.impl.MetadataHolderService"
+359-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:26:13-75
+360            android:enabled="false"
+360-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:27:13-36
+361            android:exported="false" >
+361-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:28:13-37
+362            <meta-data
+362-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:31:13-33:89
+363                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+363-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:32:17-103
+364                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+364-->[androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\20daefcb133e087925f5346589cc603f\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:33:17-86
+365        </service>
+366
+367        <provider
+367-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+368            android:name="androidx.startup.InitializationProvider"
+368-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+369            android:authorities="com.google.mediapipe.examples.facelandmarker.androidx-startup"
+369-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+370            android:exported="false" >
+370-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+371            <meta-data
+371-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+372                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+372-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+373                android:value="androidx.startup" />
+373-->[androidx.emoji2:emoji2:1.2.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\04e4a2cf7e2fe5dbee5c6fa786676c61\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+374            <meta-data
+374-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\aa62b7a0a0fc3d8e436e241a086ea527\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+375                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+375-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\aa62b7a0a0fc3d8e436e241a086ea527\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+376                android:value="androidx.startup" />
+376-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\aa62b7a0a0fc3d8e436e241a086ea527\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+377            <meta-data
+377-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+378                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+378-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+379                android:value="androidx.startup" />
+379-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+380        </provider>
+381
+382        <receiver
+382-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+383            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+383-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+384            android:directBootAware="false"
+384-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+385            android:enabled="true"
+385-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+386            android:exported="true"
+386-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+387            android:permission="android.permission.DUMP" >
+387-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+388            <intent-filter>
+388-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+389                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+389-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+389-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+390            </intent-filter>
+391            <intent-filter>
+391-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+392                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+392-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+392-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+393            </intent-filter>
+394            <intent-filter>
+394-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+395                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+395-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+395-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+396            </intent-filter>
+397            <intent-filter>
+397-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+398                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+398-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+398-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4ee14fc96d8ea5f3cee36732a86dca4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+399            </intent-filter>
+400        </receiver>
+401
+402        <service
+402-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+403            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+403-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+404            android:exported="false" >
+404-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+405            <meta-data
+405-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+406                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+406-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+407                android:value="cct" />
+407-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f4136be040363f8ae55e0967bcdf1089\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+408        </service>
+409        <service
+409-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+410            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+410-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+411            android:exported="false"
+411-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+412            android:permission="android.permission.BIND_JOB_SERVICE" >
+412-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+413        </service>
+414
+415        <receiver
+415-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+416            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+416-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+417            android:exported="false" />
+417-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\toler\WhiteBus_db\kakao-git\White_Bus_Demo\app\.gradle\caches\transforms-3\f7e8a33caba68411dbd79bd80243109e\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+418    </application>
+419
+420</manifest>

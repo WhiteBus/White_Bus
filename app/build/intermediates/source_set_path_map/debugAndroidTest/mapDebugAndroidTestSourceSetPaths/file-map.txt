@@ -1,4 +1,4 @@
-com.google.mediapipe.examples.facelandmarker.test.app-androidTest-0 C:\Users\kimtaegyu\Documents\White_Bus\app\build\generated\res\resValues\androidTest\debug
-com.google.mediapipe.examples.facelandmarker.test.app-mergeDebugAndroidTestResources-1 C:\Users\kimtaegyu\Documents\White_Bus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.google.mediapipe.examples.facelandmarker.test.app-mergeDebugAndroidTestResources-2 C:\Users\kimtaegyu\Documents\White_Bus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.google.mediapipe.examples.facelandmarker.test.app-debugAndroidTest-3 C:\Users\kimtaegyu\Documents\White_Bus\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.google.mediapipe.examples.facelandmarker.test.app-androidTest-0 C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\build\generated\res\resValues\androidTest\debug
+com.google.mediapipe.examples.facelandmarker.test.app-mergeDebugAndroidTestResources-1 C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.google.mediapipe.examples.facelandmarker.test.app-mergeDebugAndroidTestResources-2 C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.google.mediapipe.examples.facelandmarker.test.app-debugAndroidTest-3 C:\Users\toler\WhiteBus_db\white_git\White_Bus\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

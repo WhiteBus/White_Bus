@@ -19,8 +19,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/mp_color_primary</item>
-        <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorPrimaryDark">@color/mp_color_primary_dark</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/mp_color_secondary</item>

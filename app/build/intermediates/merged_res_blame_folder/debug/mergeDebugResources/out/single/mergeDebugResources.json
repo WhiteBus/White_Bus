@@ -1,282 +1,362 @@
 [
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_agro_bold.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/agro_bold.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_nearest_station.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_nearest_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_main.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_main.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_sleep.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/sleep.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_endding.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/endding.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_plus.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_plus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_baseline_add_24.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_baseline_add_24.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_icon_background.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/icon_background.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_icon_background.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/icon_background.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_bottom_notstyle.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/bottom_notstyle.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_fragment_camera.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/fragment_camera.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-mdpi_white_bus_logo2.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-mdpi/white_bus_logo2.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_main.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_main.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_agro_medium.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/agro_medium.ttf"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_visual_impaired_button.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/visual_impaired_button.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_kakao_login_medium_narrow.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/kakao_login_medium_narrow.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_select_iv.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/select_iv.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_bus_arrival.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_vi_record.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/vi_record.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_profile.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_profile.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_baseline_photo_camera_24.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_baseline_photo_camera_24.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_minus.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_minus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_agro_regular.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/agro_regular.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_back_notstyle.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/back_notstyle.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_start_kakao.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/start_kakao.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_agro_bold.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/agro_bold.ttf"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_splash.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_splash.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_stop.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/stop.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_item_drawer.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_drawer.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_search_des.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_search_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_driver_main.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/driver_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_nearest_station.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_nearest_station.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_bus_driver_button.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/bus_driver_button.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/navigation_nav_graph.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/navigation/nav_graph.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_fragment_camera.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/fragment_camera.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_cam_permit.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/cam_permit.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_main.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_main.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_search_des.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_search_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_bus_arrival.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_bus_arrival.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_read_des.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_read_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_menu_selector_color.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/menu_selector_color.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_dropin_bus.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_dropin_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_location.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/location.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_ending.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_ending.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_media_pipe_banner.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/media_pipe_banner.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_login.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_login.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_cam_permit.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/cam_permit.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_media_pipe_banner.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/media_pipe_banner.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_hamburger.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/hamburger.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_item_bus_arrival.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_bus_arrival.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_splash.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_item_station.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_station.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_visual_impaired_button.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/visual_impaired_button.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_app_user_determinant.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_app_user_determinant.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_endding.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/endding.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_launcher_background.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_white_bus_splash.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/white_bus_splash.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_address.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_address.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/navigation_nav_graph.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_item_vi_search_des.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/item_vi_search_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_vi_record.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/vi_record.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_hand.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/hand.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_popup.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_popup.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_fragment_maps.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/fragment_maps.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_matching_bus.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_matching_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_login.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_login.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_read_des.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_read_des.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/color_bg_nav_item.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/color/bg_nav_item.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_baseline_photo_camera_24.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_place_registration.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_place_registration.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_toast.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/toast.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_item_station.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/item_station.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_hamburger.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/hamburger.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_exit.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_exit.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_item_drawer.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/item_drawer.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_pretendard_bold.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/pretendard_bold.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_popup.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_popup.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_pretendard_bold.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/pretendard_bold.ttf"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_plus.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_plus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_chevron_left.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/chevron_left.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/menu_menu_bottom_nav.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/menu/menu_bottom_nav.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_searchbar.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/searchbar.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_address.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_address.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_bus_driver_button.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/bus_driver_button.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_minus.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_minus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_baseline_photo_library_24.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_baseline_photo_library_24.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_icn_chevron_up.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/icn_chevron_up.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_rounded_corner.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/rounded_corner.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_freesentation.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/freesentation.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_wait_bus.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_wait_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_rounded_corner.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/rounded_corner.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_matching_bus.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_matching_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_pretendard_medium.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/pretendard_medium.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_ending.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_ending.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_white_bus_logo2.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/white_bus_logo2.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_item_bus_arrival.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/item_bus_arrival.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_white_bus_splash.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/white_bus_splash.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_pretendard_medium.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/pretendard_medium.ttf"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-mdpi_white_bus_logo2.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-mdpi/white_bus_logo2.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_bus_number_input.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_bus_number_input.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_location.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/location.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_app_user_determinant.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_app_user_determinant.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_agro_medium.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/agro_medium.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-hdpi_white_bus_logo2.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-hdpi/white_bus_logo2.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_ic_baseline_photo_library_24.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/ic_baseline_photo_library_24.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_bus_number_input.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_bus_number_input.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_select_bd.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/select_bd.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-hdpi_white_bus_logo2.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-hdpi/white_bus_logo2.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_user_dropin_bus.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_user_dropin_bus.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/drawable_select_bd.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/drawable/select_bd.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_face_setting.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/face_setting.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/color_bg_nav_item.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/color/bg_nav_item.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_drawer.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_drawer.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_user_wait_bus.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_user_wait_bus.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_start_kakao.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/start_kakao.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_item_vi_search_des.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/item_vi_search_des.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/layout_activity_vi_drawer.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/layout/activity_vi_drawer.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-56:/font_pretendard_regular.ttf.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-58:/font/pretendard_regular.ttf"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_white_bus_logo2.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/white_bus_logo2.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_fragment_profile.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_agro_regular.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/agro_regular.ttf"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_endbtn.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/endbtn.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_pretendard_regular.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/pretendard_regular.ttf"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_map.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_map.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_sleepnot.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/sleepnot.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_place_registration.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_place_registration.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_corner.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/corner.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_fragment_exit.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/fragment_exit.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_chevron_left.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/chevron_left.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_activity_vi_main.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/activity_vi_main.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_icn_chevron_up.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/icn_chevron_up.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_kakao_login_medium_narrow.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/kakao_login_medium_narrow.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_select_iv.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/select_iv.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/font_freesentation.ttf.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/font/freesentation.ttf"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/drawable_searchbar.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/drawable/searchbar.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-68:/layout_stopnot.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-70:/layout/stopnot.xml"
     }
 ]

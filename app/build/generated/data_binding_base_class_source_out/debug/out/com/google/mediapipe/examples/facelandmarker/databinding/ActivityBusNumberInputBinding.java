@@ -4,6 +4,7 @@ package com.google.mediapipe.examples.facelandmarker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,13 +31,17 @@ public final class ActivityBusNumberInputBinding implements ViewBinding {
   @NonNull
   public final EditText sampleEditText;
 
+  @NonNull
+  public final Button submitButton;
+
   private ActivityBusNumberInputBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView EditTextEx, @NonNull ImageView inputBusNumLogo,
-      @NonNull EditText sampleEditText) {
+      @NonNull EditText sampleEditText, @NonNull Button submitButton) {
     this.rootView = rootView;
     this.EditTextEx = EditTextEx;
     this.inputBusNumLogo = inputBusNumLogo;
     this.sampleEditText = sampleEditText;
+    this.submitButton = submitButton;
   }
 
   @Override
@@ -84,8 +89,14 @@ public final class ActivityBusNumberInputBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.submit_button;
+      Button submitButton = ViewBindings.findChildViewById(rootView, id);
+      if (submitButton == null) {
+        break missingId;
+      }
+
       return new ActivityBusNumberInputBinding((ConstraintLayout) rootView, EditTextEx,
-          inputBusNumLogo, sampleEditText);
+          inputBusNumLogo, sampleEditText, submitButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

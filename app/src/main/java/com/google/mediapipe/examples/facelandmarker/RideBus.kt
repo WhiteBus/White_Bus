@@ -1,5 +1,6 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -8,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
-private const val TAG = "Wait_bus"
+private const val TAG = "RIdeBus"
 
 class RideBus : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -21,14 +22,15 @@ class RideBus : AppCompatActivity() {
 
         val uid = auth.uid
 
-        val busnum = findViewById<EditText>(R.id.busNum_btn)
         val ridingbtn = findViewById<Button>(R.id.riding_btn)
         var busNumber = 303 //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
+        var stationid = "123"
+
 
 //커렌트 유저블라인드해서 밑에 함수 적용
-        db.collection("dirverid")
+        db.collection("DriverUser")
             .whereEqualTo("busNumb", busNumber)
             .get()
             .addOnSuccessListener { documents ->
@@ -43,15 +45,19 @@ class RideBus : AppCompatActivity() {
                 Log.d(TAG, "get failed with ", e)
             }
         val userid = auth.currentUser?.uid ?: return
-        val userDocRef = db.collection("OnStation").document(userid)
+        val userDocRef = db.collection("OnStation").document(stationid).collection("stayUser").document(
+            uid.toString()
+        )
 
         userDocRef.get()
             .addOnSuccessListener { documentSnapshot ->
-                if (documentSnapshot.exists()) {
+                if (documentSnapshot != null) {
                     val data = documentSnapshot.data
                     data?.let {
                         nickname = (it["nickname"] as? String).toString()
                         profileImageUrl = (it["profileImageUrl"] as? String).toString()
+                        println("Error getting user data: $nickname, $profileImageUrl")
+
                     }
                 } else {
                     println("No such document")
@@ -60,10 +66,14 @@ class RideBus : AppCompatActivity() {
             .addOnFailureListener { e ->
                 println("Error getting user data: $e")
             }
+        println("Error getting user data: $nickname, $profileImageUrl")
+
         ridingbtn.setOnClickListener{
-            if (nickname != null && profileImageUrl!= null) {
+            if (nickname != null && profileImageUrl != null) {
                 addBlindToBus(busNumber, nickname, profileImageUrl)
             }
+            val intent = Intent(this@RideBus, user_dropin_bus::class.java)
+            startActivity(intent)
         }
     }
 

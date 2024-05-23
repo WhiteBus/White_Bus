@@ -4,6 +4,7 @@ package com.google.mediapipe.examples.facelandmarker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,13 +24,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ImageView androidSplash;
 
   @NonNull
-  public final ImageView login;
+  public final ImageButton kakaoLoginButton;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView androidSplash,
-      @NonNull ImageView login) {
+      @NonNull ImageButton kakaoLoginButton) {
     this.rootView = rootView;
     this.androidSplash = androidSplash;
-    this.login = login;
+    this.kakaoLoginButton = kakaoLoginButton;
   }
 
   @Override
@@ -65,13 +66,13 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.login;
-      ImageView login = ViewBindings.findChildViewById(rootView, id);
-      if (login == null) {
+      id = R.id.kakao_login_button;
+      ImageButton kakaoLoginButton = ViewBindings.findChildViewById(rootView, id);
+      if (kakaoLoginButton == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, androidSplash, login);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, androidSplash, kakaoLoginButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

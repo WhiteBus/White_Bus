@@ -188,7 +188,7 @@ class FirestoreService {
             }
     }
     // Matching 컬렉션에 새로운 필드 추가
-    fun addBusOutFieldToMatching(driverUid: String, busOutValue: Boolean) {
+    fun addBusOutFieldToOnBus(driverUid: String, busOutValue: Boolean) {
         val matchingDocRef = db.collection("Matching").document(driverUid)
 
         // update() 메서드를 사용하여 새로운 필드 추가
