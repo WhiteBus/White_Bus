@@ -34,7 +34,7 @@ class AppUserDeterminantActivity : AppCompatActivity() {
             if (!isBlindTypeSelected) {
                 val a = updateUserBlindType(2)
                 transferUserData(a)
-                switchActivity(RideBus());
+                switchActivity(Main_NearestStation());
 
             }
         }

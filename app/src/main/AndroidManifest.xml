@@ -51,7 +51,7 @@
         <activity android:name=".Main_Bus_Arrival" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".DriverMainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -24,7 +24,9 @@ class OnStationUser : AppCompatActivity() {
         val staybtn = findViewById<Button>(R.id.btn)
         var nickname:String = ""
         var profileImageUrl:String = ""
-        val stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID //정류장 id가져오기
+        val stationid = "123"//정류장 id가져오기
+        var pickupnum:String = ""//탈 버스 넘버
+
 
 
         val userid = auth.currentUser?.uid ?: return
@@ -37,6 +39,8 @@ class OnStationUser : AppCompatActivity() {
                     data?.let {
                         nickname = (it["nickname"] as? String).toString()
                         profileImageUrl = (it["profileImageUrl"] as? String).toString()
+                        pickupnum = (it["pickupNum"] as? String).toString()
+
                     }
                 } else {
                     println("No such document")
@@ -46,21 +50,23 @@ class OnStationUser : AppCompatActivity() {
                 println("Error getting user data: $e")
             }
         staybtn.setOnClickListener{
-            if (nickname != null && profileImageUrl!= null) {
-                addBlindToStation(stationid.toString(), nickname, profileImageUrl)
+            if (nickname != null && profileImageUrl!= null && pickupnum != null) {
+                addBlindToStation(stationid, nickname, profileImageUrl, pickupnum)
             }
             val intent = Intent(this@OnStationUser, RideBus::class.java)
             startActivity(intent)
         }
     }
 
-    fun addBlindToStation(stationid: String?, nickname: String, profileImageUrl: String) {
+    fun addBlindToStation(stationid: String?, nickname: String, profileImageUrl: String, pickupNum:String) {
         val firebaseUser = auth.currentUser
         firebaseUser?.let {
             val uid = it.uid
             val blind: MutableMap<String, Any> = HashMap()
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
+            blind["pickupNum"] = pickupNum
+
 
             db.collection("OnStation").document(stationid.toString()).collection("stayUser").document(uid)
                 .set(blind)
@@ -72,4 +78,6 @@ class OnStationUser : AppCompatActivity() {
                 }
         }
     }
+
+
 }

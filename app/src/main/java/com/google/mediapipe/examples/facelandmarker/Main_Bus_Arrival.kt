@@ -1,10 +1,17 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.mediapipe.examples.facelandmarker.remote.adapter.TransitAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.BusArrival
 import com.google.mediapipe.examples.facelandmarker.remote.dto.PathInfoStation
@@ -19,6 +26,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
+    private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
 
     private var call: Call<RealtimeBusArrivalRes>? = null
     private lateinit var realtimeAdapter: TransitAdapter
@@ -31,12 +40,13 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
+        var globalTransitCnt: Int? = null
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_address)
-
+        auth = Firebase.auth
         transit_recyclerView = findViewById(R.id.transit_recyclerView)
         TotAdress = findViewById(R.id.user_address_dst_name)
         TotTime = findViewById(R.id.user_time)
@@ -119,6 +129,33 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
             globalRouteNm = it.routeNm
             println("The bus with the smallest arrivalSec is: ${it.arrival1?.busPlateNo} (Route: ${it.routeNm})")
         }
+        Log.d("hi", "1")
+
+        val firebaseUser = auth.currentUser
+        firebaseUser?.let {
+            Log.d("hi", "2")
+
+            val uid = it.uid
+            val blind: MutableMap<String, Any> = HashMap()
+            val num = globalBusPlateNo.toString().substring(globalBusPlateNo.toString().length-4,globalBusPlateNo.toString().length)
+            blind["pickupNum"] = num
+            val userRef = db.collection("BlindUser").document(uid)
+            Log.d("hi", "3")
+
+            userRef.update(blind)
+                .addOnSuccessListener {
+                    Log.d("hi", "Blind type updated successfully.")
+                }
+                .addOnFailureListener { e ->
+                    Log.e("hi", "Failed to update blind type. ${e.message}", e)
+                }
+        } ?: run {
+            Log.e("FirebaseAuth", "User is not authenticated.")
+            Toast.makeText(this, "사용자가 인증되지 않았습니다. 다시 로그인 해주세요.", Toast.LENGTH_SHORT).show()
+            // 인증이 안된 경우 로그인 화면으로 이동
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun selectAndPrintRoute(routeNm: String?, pathInfoList: List<PathInfoStation>) {
@@ -139,11 +176,20 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
             println("Total Time: ${selectedPathInfo.totalTime}")
             println("Total Distance ${selectedPathInfo.totalDistance}")
 
+            globalTransitCnt = selectedPathInfo.busTransitCount
+
             // TextView에 Total Time과 Total Distance 설정
             TotTime.text = "${selectedPathInfo.totalTime} min"
-            TotDistance.text = "${selectedPathInfo.totalDistance} km"
+            TotDistance.text = "${(selectedPathInfo.totalDistance)/1000} km"
 
-            val transitInfos = selectedPathInfo.subPaths.map { subPath ->
+            // 같은 subPathIndex를 가진 것 중 routeNm과 다른 버스들을 제거한 subPaths 리스트 생성
+            val filteredSubPaths = selectedPathInfo.subPaths.groupBy { it.index }
+                .flatMap { (index, subPaths) ->
+                    val filtered = subPaths.filter { subPath -> subPath.busNo == routeNm }
+                    if (filtered.isNotEmpty()) filtered else subPaths
+                }
+
+            val transitInfos = filteredSubPaths.map { subPath ->
                 TransitInfo(
                     startName = subPath.startName,
                     endName = subPath.endName,
@@ -152,10 +198,11 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
                     sectionTime = subPath.sectionTime
                 )
             }
+
             realtimeAdapter = TransitAdapter(transitInfos)
             transit_recyclerView.adapter = realtimeAdapter
 
-            for (subPath in selectedPathInfo.subPaths) {
+            for (subPath in filteredSubPaths) {
                 println("  SubPath Index: ${subPath.index}")
                 println("  ${subPath.startName} (${subPath.startID}) to ${subPath.endName} - Bus No: ${subPath.busNo}")
                 println("    Distance: ${subPath.distance}")

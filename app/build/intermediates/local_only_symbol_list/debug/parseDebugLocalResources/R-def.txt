@@ -110,6 +110,7 @@ font freesentation
 font pretendard_bold
 font pretendard_medium
 font pretendard_regular
+id ArrivalSec
 id BusNum
 id EditText_ex
 id action_camera_to_permissions
@@ -142,6 +143,7 @@ id button3_text2
 id button4_container
 id button4_text1
 id button4_text2
+id button_current_location
 id byehand
 id byetoast
 id byetoastLay
@@ -193,6 +195,7 @@ id riding_btn
 id rv_arrivalBus
 id sample_et
 id save_bus_number_btn
+id sectionContainer
 id section_distance
 id section_time
 id speech

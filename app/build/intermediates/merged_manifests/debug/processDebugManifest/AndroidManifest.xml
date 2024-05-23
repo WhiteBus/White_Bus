@@ -92,7 +92,7 @@
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
         <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity"
+            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
