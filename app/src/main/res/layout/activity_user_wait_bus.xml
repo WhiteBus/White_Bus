@@ -84,7 +84,7 @@
             tools:ignore="MissingConstraints"
             >
 
-            <Button
+            <EditText
                 android:id="@+id/busNum_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,6 +94,7 @@
                 android:fontFamily="@font/freesentation"
                 android:layout_marginHorizontal="15dp"/>
             <Button
+                android:id="@+id/riding_btn"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
                 android:layout_marginTop="15dp"

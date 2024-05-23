@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,10 +25,13 @@ public final class ActivityUserWaitBusBinding implements ViewBinding {
   public final ConstraintLayout addressBoard;
 
   @NonNull
-  public final Button busNumBtn;
+  public final EditText busNumBtn;
 
   @NonNull
   public final ConstraintLayout dstInfo;
+
+  @NonNull
+  public final Button ridingBtn;
 
   @NonNull
   public final TextView userAddress;
@@ -42,14 +46,15 @@ public final class ActivityUserWaitBusBinding implements ViewBinding {
   public final TextView userBusTime;
 
   private ActivityUserWaitBusBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout addressBoard, @NonNull Button busNumBtn,
-      @NonNull ConstraintLayout dstInfo, @NonNull TextView userAddress,
+      @NonNull ConstraintLayout addressBoard, @NonNull EditText busNumBtn,
+      @NonNull ConstraintLayout dstInfo, @NonNull Button ridingBtn, @NonNull TextView userAddress,
       @NonNull TextView userAddressDstName, @NonNull ConstraintLayout userBtnBoard,
       @NonNull TextView userBusTime) {
     this.rootView = rootView;
     this.addressBoard = addressBoard;
     this.busNumBtn = busNumBtn;
     this.dstInfo = dstInfo;
+    this.ridingBtn = ridingBtn;
     this.userAddress = userAddress;
     this.userAddressDstName = userAddressDstName;
     this.userBtnBoard = userBtnBoard;
@@ -90,7 +95,7 @@ public final class ActivityUserWaitBusBinding implements ViewBinding {
       }
 
       id = R.id.busNum_btn;
-      Button busNumBtn = ViewBindings.findChildViewById(rootView, id);
+      EditText busNumBtn = ViewBindings.findChildViewById(rootView, id);
       if (busNumBtn == null) {
         break missingId;
       }
@@ -98,6 +103,12 @@ public final class ActivityUserWaitBusBinding implements ViewBinding {
       id = R.id.dst_info;
       ConstraintLayout dstInfo = ViewBindings.findChildViewById(rootView, id);
       if (dstInfo == null) {
+        break missingId;
+      }
+
+      id = R.id.riding_btn;
+      Button ridingBtn = ViewBindings.findChildViewById(rootView, id);
+      if (ridingBtn == null) {
         break missingId;
       }
 
@@ -126,7 +137,7 @@ public final class ActivityUserWaitBusBinding implements ViewBinding {
       }
 
       return new ActivityUserWaitBusBinding((ConstraintLayout) rootView, addressBoard, busNumBtn,
-          dstInfo, userAddress, userAddressDstName, userBtnBoard, userBusTime);
+          dstInfo, ridingBtn, userAddress, userAddressDstName, userBtnBoard, userBusTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

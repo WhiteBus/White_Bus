@@ -65,6 +65,12 @@
     <string name="driveend"><b>주행 종료</b></string>
     <string name="facesettext"><b>얼굴을 감지 할수 있도록 카메라를 거치해주세요</b></string>
     <string name="facetitletext"><b>얼굴 위치 설정하기</b></string>
+    <string name="firebase_database_url" translatable="false">https://whitebus-a0fcc-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1001131406584</string>
+    <string name="google_api_key" translatable="false">AIzaSyAWq-7Pn7F8jy2m5vcctaI4qRYchy7FGUY</string>
+    <string name="google_app_id" translatable="false">1:1001131406584:android:d6167b3d713208bec6f70d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAWq-7Pn7F8jy2m5vcctaI4qRYchy7FGUY</string>
+    <string name="google_storage_bucket" translatable="false">whitebus-a0fcc.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_delegate">Delegate</string>
     <string name="label_face_detection_confidence_threshold">Detection
@@ -79,6 +85,7 @@
     <string name="media_pipe">MediaPipe</string>
     <string name="menu_camera">Camera</string>
     <string name="menu_gallery">Gallery</string>
+    <string name="project_id" translatable="false">whitebus-a0fcc</string>
     <string name="sleeptext"><b>졸음 감지!!! \n 경고 !!!!!</b></string>
     <string name="stoptext"><b>현재 탑승중인 시각장애인이 \n  이번 정류장에서 하차할 예정입니다.</b></string>
     <string name="tv_gallery_placeholder">Click + to add an image or a video

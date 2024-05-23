@@ -124,6 +124,7 @@ id camera_fragment
 id detailProject
 id determinant_logo
 id drawer_layout
+id dropbtn
 id dst_info
 id endButton
 id ending_board
@@ -156,6 +157,7 @@ id passenger_profile_iv
 id permissions_fragment
 id profile_number_of_passenger_rv
 id recyclerView
+id riding_btn
 id rv_arrivalBus
 id sample_et
 id save_bus_number_btn
@@ -242,6 +244,12 @@ string app_name
 string driveend
 string facesettext
 string facetitletext
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string label_delegate
 string label_face_detection_confidence_threshold
@@ -253,6 +261,7 @@ string label_num_faces
 string media_pipe
 string menu_camera
 string menu_gallery
+string project_id
 string sleeptext
 string stoptext
 string tv_gallery_placeholder
