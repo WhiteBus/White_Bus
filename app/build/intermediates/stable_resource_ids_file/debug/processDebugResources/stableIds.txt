@@ -1,3 +1,7 @@
+com.google.mediapipe.examples.facelandmarker:layout/fragment_waiting_vi = 0x7f0d00bc
+com.google.mediapipe.examples.facelandmarker:id/profile_number_of_waiting_vi_rv = 0x7f0a02d1
+com.google.mediapipe.examples.facelandmarker:id/number_of_waiting_vi_tv = 0x7f0a02d0
+com.google.mediapipe.examples.facelandmarker:drawable/circle_pushed_bell = 0x7f080177
 com.google.mediapipe.examples.facelandmarker:styleable/ViewTransition = 0x7f1600ae
 com.google.mediapipe.examples.facelandmarker:layout/mtrl_calendar_month_navigation = 0x7f0d0089
 com.google.mediapipe.examples.facelandmarker:style/Widget.MaterialComponents.CompoundButton.CheckBox = 0x7f150404
@@ -4398,6 +4402,7 @@ com.google.mediapipe.examples.facelandmarker:color/abc_hint_foreground_material_
 com.google.mediapipe.examples.facelandmarker:id/nav_controller_view_tag = 0x7f0a01a2
 com.google.mediapipe.examples.facelandmarker:color/m3_ref_palette_neutral80 = 0x7f06011c
 com.google.mediapipe.examples.facelandmarker:attr/textAppearanceBodySmall = 0x7f040460
+com.google.mediapipe.examples.facelandmarker:id/pushed_bell_iv = 0x7f0a02d2
 com.google.mediapipe.examples.facelandmarker:drawable/ic_keyboard_black_24dp = 0x7f0800db
 com.google.mediapipe.examples.facelandmarker:attr/buttonCompat = 0x7f040081
 com.google.mediapipe.examples.facelandmarker:attr/navigationViewStyle = 0x7f040371

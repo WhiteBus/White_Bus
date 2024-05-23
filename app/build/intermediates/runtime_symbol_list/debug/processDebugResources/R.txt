@@ -2800,6 +2800,7 @@ int drawable btn_radio_on_to_off_mtrl_animation 0x7f08009d
 int drawable bus_driver_button 0x7f08009e
 int drawable cam_permit 0x7f08009f
 int drawable chevron_left 0x7f0800a0
+int drawable circle_pushed_bell 0x7f080177
 int drawable common_full_open_on_phone 0x7f0800a1
 int drawable common_google_signin_btn_icon_dark 0x7f0800a2
 int drawable common_google_signin_btn_icon_dark_focused 0x7f0800a3
@@ -3489,6 +3490,7 @@ int id notification_background 0x7f0a01d0
 int id notification_main_column 0x7f0a01d1
 int id notification_main_column_container 0x7f0a01d2
 int id number_of_passenger_tv 0x7f0a01d3
+int id number_of_waiting_vi_tv 0x7f0a02d0
 int id off 0x7f0a01d4
 int id on 0x7f0a01d5
 int id onAttachStateChangeListener 0x7f0a01d6
@@ -3523,8 +3525,10 @@ int id position 0x7f0a01f2
 int id postLayout 0x7f0a01f3
 int id pressed 0x7f0a01f4
 int id profile_number_of_passenger_rv 0x7f0a01f5
+int id profile_number_of_waiting_vi_rv 0x7f0a02d1
 int id progress_circular 0x7f0a01f6
 int id progress_horizontal 0x7f0a01f7
+int id pushed_bell_iv 0x7f0a02d2
 int id radio 0x7f0a01f8
 int id ratio 0x7f0a01f9
 int id rectangles 0x7f0a01fa
@@ -3911,6 +3915,7 @@ int layout fragment_camera 0x7f0d0044
 int layout fragment_driver_exit 0x7f0d0045
 int layout fragment_driver_maps 0x7f0d0046
 int layout fragment_driver_profile 0x7f0d0047
+int layout fragment_waiting_vi 0x7f0d00bc
 int layout fui_activity_invisible 0x7f0d0048
 int layout fui_activity_register_email 0x7f0d0049
 int layout fui_activity_register_phone 0x7f0d004a

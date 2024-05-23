@@ -4,7 +4,7 @@
             "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-70:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kimtaegyu\\.gradle\\caches\\transforms-3\\803e34f9c089a34f1229e4c53933ca85\\transformed\\appcompat-1.6.0\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/803e34f9c089a34f1229e4c53933ca85/transformed/appcompat-1.6.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kimtaegyu\\.gradle\\caches\\transforms-3\\c170c7becc270e0da7f792b81d9c44f2\\transformed\\jetified-firebase-ui-auth-7.2.0\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/c170c7becc270e0da7f792b81d9c44f2/transformed/jetified-firebase-ui-auth-7.2.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6,10,14",
                         "startColumns": "4,4,4,4",

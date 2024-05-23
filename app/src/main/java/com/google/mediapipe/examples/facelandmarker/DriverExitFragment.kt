@@ -18,6 +18,11 @@ class DriverExitFragment : Fragment() {
     ): View? {
         binding = FragmentDriverExitBinding.inflate(layoutInflater)
 
+        // 이전에 table 변경 필요
+        // 주행 종료 버튼 클릭 시 종료
+        binding.endButton.setOnClickListener {
+            activity?.finish()
+        }
 
         return binding.root
     }

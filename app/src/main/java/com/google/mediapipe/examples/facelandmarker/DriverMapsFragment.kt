@@ -52,10 +52,22 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
         // Initialize fusedLocationClient
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
+        // 현재 위치 버튼 기능
+        naverMap.uiSettings.isLocationButtonEnabled = true
+        // 위치를 추적하면서 카메라도 따라 움직인다
+        naverMap.locationTrackingMode = LocationTrackingMode.Follow
+
+        // 로케이션 버튼 생성
+        val locationSource = FusedLocationSource(this@DriverMapsFragment, LOCATION_PERMISSION_REQUEST_CODE)
+        // 현재 위치
+        naverMap.locationSource = locationSource
+
         // Check if location permission is granted
         if (hasLocationPermission()) {
             // Request location updates
             requestLocationUpdates()
+            // 항상 Follow 모드로 설정
+            naverMap.locationTrackingMode = LocationTrackingMode.Follow
         } else {
             // Request location permission
             requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
