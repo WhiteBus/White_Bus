@@ -3070,9 +3070,6 @@ id btnCancel
 id busNum_btn
 id bus_driver_button
 id bus_number_error_tv
-id button1
-id button2
-id button3
 id buttonPanel
 id byehand
 id byetoast
@@ -3313,6 +3310,7 @@ id multiply
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
+id naverMap
 id navermap_bar
 id navermap_compass
 id navermap_compass_icon

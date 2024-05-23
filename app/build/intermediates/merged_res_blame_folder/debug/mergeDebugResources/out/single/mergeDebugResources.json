@@ -28,12 +28,12 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/icon_background.xml"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_endbtn.png.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/endbtn.png"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_endding.xml.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/endding.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_endbtn.png.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/endbtn.png"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_location.xml.flat",
@@ -72,12 +72,12 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/mipmap-hdpi_white_bus_logo2.png.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/mipmap-hdpi/white_bus_logo2.png"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_stop.png.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/stop.png"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/mipmap-hdpi_white_bus_logo2.png.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/mipmap-hdpi/white_bus_logo2.png"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_icn_chevron_up.png.flat",
@@ -96,12 +96,12 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/font/agro_medium.ttf"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_item_station.xml.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/item_station.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/font_pretendard_medium.ttf.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/font/pretendard_medium.ttf"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_item_station.xml.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/item_station.xml"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_activity_vi_bus_arrival.xml.flat",
@@ -124,12 +124,12 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/corner.xml"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/anim_fab_open.xml.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/fab_open.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/anim_fadeout2.xml.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/fadeout2.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/anim_fab_open.xml.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/fab_open.xml"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_item_bus_arrival.xml.flat",
@@ -148,12 +148,12 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/screen_start.xml"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_ic_baseline_add_24.xml.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/ic_baseline_add_24.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_activity_vi_search_des.xml.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/activity_vi_search_des.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/ic_baseline_add_24.xml"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_select_bd.xml.flat",
@@ -224,6 +224,10 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/start_kakao.xml"
     },
     {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_fragment_driver_maps.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/fragment_driver_maps.xml"
+    },
+    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_toast.xml.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/toast.xml"
     },
@@ -284,20 +288,16 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/vi_record.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_activity_driver_main.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/activity_driver_main.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_white_bus_logo2.png.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/drawable/white_bus_logo2.png"
     },
     {
-        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/anim_fadein.xml.flat",
-        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/fadein.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/layout_activity_driver_main.xml.flat",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/activity_driver_main.xml"
+    },
+    {
+        "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/anim_fadein.xml.flat",
+        "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/anim/fadein.xml"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-debug-63:/drawable_ic_baseline_photo_library_24.xml.flat",

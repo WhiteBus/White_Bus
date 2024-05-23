@@ -48,10 +48,6 @@
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/stopnot.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-62:/layout/activity_driver_main.xml",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/activity_driver_main.xml"
-    },
-    {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-62:/layout/item_station.xml",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/item_station.xml"
     },
@@ -118,6 +114,10 @@
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-62:/layout/activity_vi_read_des.xml",
         "source": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/activity_vi_read_des.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-62:/layout/fragment_driver_maps.xml",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-65:/layout/fragment_driver_maps.xml"
     },
     {
         "merged": "/Users/seohyeonpark/.gradle/daemon/8.4/com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-62:/layout/activity_vi_drawer.xml",
