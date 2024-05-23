@@ -1,4 +1,4 @@
-#Thu May 23 14:24:55 KST 2024
+#Thu May 23 16:07:06 KST 2024
 base.0=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Android\\WhiteBus_total\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex

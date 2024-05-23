@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/white_bus_logo2"
         android:label="Drowsiness Detection"
@@ -27,6 +28,10 @@
         android:taskAffinity=""
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="46d9f78dd50186c6c666f893e65a737b"/>
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
@@ -39,14 +44,15 @@
         <activity android:name=".AppUserDeterminantActivity" />
         <activity android:name=".FaceSettingActivity" />
         <activity android:name=".DriverMainActivity" />
-
+        <activity android:name=".Main_vi_Search_des"/>
+        <activity android:name=".searchPubPathT"/>
+        <activity android:name=".Main_NearestStation"/>
+        <activity android:name=".Main_Bus_Arrival"/>
 
         <activity android:name=".MainActivity" />
 
-        <activity android:name=".LoginActivity"/>
-
         <activity
-            android:name=".repository.activity_home"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,10 +60,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main_vi_Search_des"/>
-        <activity android:name=".searchPubPathT"/>
-        <activity android:name=".Main_NearestStation"/>
-        <activity android:name=".Main_Bus_Arrival"/>
+        <activity android:name=".RideBus"/>
+        <activity android:name=".OnStationUser"/>
+        <activity android:name=".user_dropin_bus"/>
+
+
+
+
+        <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="oauth"
+                    android:scheme="kakao46d9f78dd50186c6c666f893e65a737b" />
+            </intent-filter>
+        </activity>
 
 
 

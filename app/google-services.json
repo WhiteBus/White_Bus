@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1001131406584",
+    "firebase_url": "https://whitebus-a0fcc-default-rtdb.firebaseio.com",
+    "project_id": "whitebus-a0fcc",
+    "storage_bucket": "whitebus-a0fcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001131406584:android:e62fdd1a138a0d3ec6f70d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication_whitebus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWq-7Pn7F8jy2m5vcctaI4qRYchy7FGUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001131406584:android:d6167b3d713208bec6f70d",
+        "android_client_info": {
+          "package_name": "com.google.mediapipe.examples.facelandmarker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWq-7Pn7F8jy2m5vcctaI4qRYchy7FGUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001131406584:android:9a25e7c992eb2329c6f70d",
+        "android_client_info": {
+          "package_name": "com.mobile_programing.white_bus_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWq-7Pn7F8jy2m5vcctaI4qRYchy7FGUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
