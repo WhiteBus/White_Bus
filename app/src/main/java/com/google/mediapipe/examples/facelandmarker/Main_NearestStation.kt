@@ -7,13 +7,16 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.mediapipe.examples.facelandmarker.R
+import com.google.mediapipe.examples.facelandmarker.databinding.ActivityMainBinding
 import com.google.mediapipe.examples.facelandmarker.remote.Adapter.StationAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.FindNearestStationGetRes
 import com.google.mediapipe.examples.facelandmarker.remote.dto.Station
@@ -27,9 +30,16 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
     private lateinit var findNearestStationService: FindNearestStationService
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
+    private lateinit var activityMainBinding: ActivityMainBinding
+    private val viewModel : MainViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vi_nearest_station)
+
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+        val navController = navHostFragment.navController
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 

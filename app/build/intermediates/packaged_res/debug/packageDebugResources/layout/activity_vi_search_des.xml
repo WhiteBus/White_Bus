@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-
+    <!-- Header Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/vi_header_cl"
         android:layout_width="match_parent"
@@ -40,63 +41,23 @@
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+    <!-- Button Grid Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/vi_header_cl"
-        android:padding="16dp">
+        android:layout_marginTop="172dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/vi_header_cl">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Button 1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
-            app:layout_constraintWidth_percent="0.5" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Button 2"
-            app:layout_constraintStart_toEndOf="@+id/button1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.5" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Button 3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1"
-            app:layout_constraintEnd_toStartOf="@+id/button4"
-            app:layout_constraintWidth_percent="0.5" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Button 4"
-            app:layout_constraintStart_toEndOf="@+id/button3"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.5" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vi_drawer_rv"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/vi_drawer_rv"
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vi_header_cl"
-        app:layout_constraintHeight_max="400dp"
-        android:layout_marginTop="20dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

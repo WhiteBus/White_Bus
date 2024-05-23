@@ -11,12 +11,12 @@ class DestinationRepository(context: Context) {
     private val dbHelper = DestinationDbHelper(context)
     private val db = dbHelper.writableDatabase
 
-    fun insertDestination(name: String, xCoord: Double, yCoord: Double, busStopNumber: Int): Long {
+    fun insertDestination(name: String, xCoord: Double, yCoord: Double, address: String): Long {
         val values = ContentValues().apply {
             put(DestinationContract.DestinationEntry.COLUMN_NAME_NAME, name)
             put(DestinationContract.DestinationEntry.COLUMN_NAME_X_COORD, xCoord)
             put(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD, yCoord)
-            put(DestinationContract.DestinationEntry.COLUMN_NAME_BUS_STOP_NUMBER, busStopNumber)
+            put(DestinationContract.DestinationEntry.COLUMN_NAME_ADDRESS, address)
         }
         return db.insert(DestinationContract.DestinationEntry.TABLE_NAME, null, values)
     }

@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -25,16 +26,20 @@ public final class ActivityViNearestStationBinding implements ViewBinding {
   public final TextView detailProject;
 
   @NonNull
+  public final FragmentContainerView fragmentContainer;
+
+  @NonNull
   public final Button locationButton;
 
   @NonNull
   public final RecyclerView recyclerView;
 
   private ActivityViNearestStationBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView detailProject, @NonNull Button locationButton,
-      @NonNull RecyclerView recyclerView) {
+      @NonNull TextView detailProject, @NonNull FragmentContainerView fragmentContainer,
+      @NonNull Button locationButton, @NonNull RecyclerView recyclerView) {
     this.rootView = rootView;
     this.detailProject = detailProject;
+    this.fragmentContainer = fragmentContainer;
     this.locationButton = locationButton;
     this.recyclerView = recyclerView;
   }
@@ -72,6 +77,12 @@ public final class ActivityViNearestStationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragment_container;
+      FragmentContainerView fragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.locationButton;
       Button locationButton = ViewBindings.findChildViewById(rootView, id);
       if (locationButton == null) {
@@ -85,7 +96,7 @@ public final class ActivityViNearestStationBinding implements ViewBinding {
       }
 
       return new ActivityViNearestStationBinding((RelativeLayout) rootView, detailProject,
-          locationButton, recyclerView);
+          fragmentContainer, locationButton, recyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

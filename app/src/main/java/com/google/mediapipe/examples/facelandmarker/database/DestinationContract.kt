@@ -8,6 +8,6 @@ object DestinationContract {
         const val COLUMN_NAME_NAME = "name"
         const val COLUMN_NAME_X_COORD = "x_coord"
         const val COLUMN_NAME_Y_COORD = "y_coord"
-        const val COLUMN_NAME_BUS_STOP_NUMBER = "bus_stop_number"
+        const val COLUMN_NAME_ADDRESS = "address"
     }
 }

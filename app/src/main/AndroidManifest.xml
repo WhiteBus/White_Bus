@@ -23,14 +23,21 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".activity_vi_search_des"
-            android:exported="false" />
+            android:name=".repository.activity_home"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Bus_Number_input"
             android:exported="false" />
@@ -42,12 +49,14 @@
             android:exported="false" />
         <activity
             android:name=".Main_NearestStation"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".Main_vi_Search_des" />
         <activity android:name=".Main_searchPubPathT" />

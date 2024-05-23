@@ -14,6 +14,10 @@
     <color name="grapefruit">#EF8374</color>
     <color name="gray">#ECECEC</color>
     <color name="green">#83DEA2</color>
+    <color name="home_button1">#0099FF</color>
+    <color name="home_button2">#F582C6</color>
+    <color name="home_button3">#04CD80</color>
+    <color name="home_button4">#04CDCD</color>
     <color name="ivory">#EFEFFB</color>
     <color name="lemon">#FBE7A2</color>
     <color name="light_gray">#E5E5E5</color>

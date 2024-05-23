@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="home_button1">#0099FF</color>
+    <color name="home_button2">#F582C6</color>
+    <color name="home_button3">#04CD80</color>
+    <color name="home_button4">#04CDCD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="dark_gray">#393939</color>

@@ -1404,6 +1404,10 @@ color gray
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color home_button1
+color home_button2
+color home_button3
+color home_button4
 color ivory
 color lemon
 color light_gray
@@ -2696,6 +2700,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable hamburger
 drawable hand
+drawable home_icon
 drawable ic_baseline_add_24
 drawable ic_baseline_photo_camera_24
 drawable ic_baseline_photo_library_24
@@ -2926,9 +2931,20 @@ id btnCancel
 id busNum_btn
 id bus_driver_button
 id button1
+id button1_container
+id button1_text1
+id button1_text2
 id button2
+id button2_container
+id button2_text1
+id button2_text2
 id button3
-id button4
+id button3_container
+id button3_text1
+id button3_text2
+id button4_container
+id button4_text1
+id button4_text2
 id buttonPanel
 id byehand
 id byetoast
@@ -3081,6 +3097,8 @@ id invisible
 id inward
 id italic
 id item_drawer_title_tv
+id item_icon
+id item_text
 id item_touch_helper_previous_elevation
 id iv_main_hamburger_iv
 id iv_main_nickname_record_iv
@@ -3220,6 +3238,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id recyclerViewDestinations
 id report_drawn
 id reverseSawtooth
 id right
@@ -3319,7 +3338,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewAddress
 id textViewCenter
+id textViewName
 id textWatcher
 id text_end_guide
 id text_input_end_icon
@@ -3526,6 +3547,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_app_user_determinant
 layout activity_bus_number_input
+layout activity_home
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -3565,6 +3587,7 @@ layout fragment_exit
 layout fragment_maps
 layout fragment_profile
 layout item_bus_arrival
+layout item_destination
 layout item_drawer
 layout item_station
 layout item_vi_search_des
@@ -3622,6 +3645,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycler_view_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
