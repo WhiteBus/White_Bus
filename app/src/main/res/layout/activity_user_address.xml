@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFEFEF"
-    >
+    tools:context=".Main_Bus_Arrival">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/address_board"
@@ -18,29 +18,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            tools:ignore="MissingConstraints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            >
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/user_address_dst_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="목적지"
                 android:fontFamily="@font/pretendard_bold"
-                android:textSize="70dp"/>
+                android:text="최종목적지"
+                android:textSize="70dp" />
 
-            <TextView
-                android:id="@+id/user_address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="디테일한 주소"
-                android:fontFamily="@font/pretendard_regular"
-                android:textSize="25dp"
-                android:layout_marginTop="5dp"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -57,45 +48,45 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:ignore="MissingConstraints"
-            android:paddingRight="30dp">
+            android:paddingRight="30dp"
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/user_distance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="거리M"
                 android:gravity="right"
                 android:textSize="40dp"
-                android:fontFamily="@font/freesentation"/>
+                android:text="totalDistance"
+                android:fontFamily="@font/freesentation" />
+
             <TextView
                 android:id="@+id/user_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="남은시간"
                 android:gravity="right"
                 android:textSize="40dp"
-                android:fontFamily="@font/freesentation"/>
+                android:fontFamily="@font/freesentation" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/location_btn"
+        android:id="@+id/transit_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dst_info">
 
-        <ImageButton
-            android:padding="20dp"
-            tools:ignore="MissingConstraints"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transit_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/location"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:scaleType="fitCenter"
-            android:background="@android:color/transparent"/>
-
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="8dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

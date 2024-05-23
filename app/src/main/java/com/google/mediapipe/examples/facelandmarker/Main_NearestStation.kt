@@ -6,6 +6,7 @@ import android.location.Location
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -32,26 +33,22 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        val locationButton: Button = findViewById(R.id.locationButton)
+        val locationButton: ImageButton = findViewById(R.id.locationButton)
         locationButton.setOnClickListener {
-            // 위치 권한 확인
             if (ActivityCompat.checkSelfPermission(
                     this,
                     Manifest.permission.ACCESS_FINE_LOCATION
                 ) == PackageManager.PERMISSION_GRANTED
             ) {
-                // 위치 정보 요청
                 fusedLocationClient.lastLocation
                     .addOnSuccessListener { location: Location? ->
                         location?.let {
-                            // 위치 정보를 가져왔을 때
                             val latitude = it.latitude
                             val longitude = it.longitude
                             Log.e("Location", "Latitude: $latitude, Longitude: $longitude")
 
                             showRecyclerView(latitude, longitude)
                         } ?: run {
-                            // 위치 정보를 가져오지 못했을 때
                             Log.e("Location", "Failed to get location")
                             Toast.makeText(
                                 this,
@@ -61,7 +58,6 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
                         }
                     }
                     .addOnFailureListener { e ->
-                        // 위치 정보를 가져오지 못했을 때
                         Log.e("Location", "Failed to get location: ${e.message}")
                         Toast.makeText(
                             this,
@@ -70,7 +66,6 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
                         ).show()
                     }
             } else {
-                // 위치 권한이 없는 경우, 사용자에게 요청
                 ActivityCompat.requestPermissions(
                     this,
                     arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
@@ -90,40 +85,32 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
         findNearestStationService = FindNearestStationService()
         findNearestStationService.setNearestStationGetView(this)
 
-        val lang = "0" // 언어 코드
-        val radius = 700 // 검색 반경 (미터)
-        val stationClass = 1 // 역 종류 (1: 지하철역)
-        val apiKey = "rfSg7BEmSQsZFsPbMswlSOp5iiDu6smXQXY56n+aR4U"
+        val lang = "0"
+        val radius = 10000
+        val stationClass = 1
+        val apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
 
-        // FindNearestStationService를 사용하여 역 정보 가져오기
         findNearestStationService.getNearestStation(lang, longitude, latitude, radius, stationClass, apiKey)
 
-        // StationAdapter의 클릭 리스너 설정
         adapter.setOnItemClickListener(this)
     }
 
     override fun onFindNearestStationSuccess(response: FindNearestStationGetRes) {
-        // 서버에서 받은 역 정보를 RecyclerView에 표시
         adapter.setStationList(response.result.station)
     }
 
     override fun onFindNearestStationFailure(errorMessage: String, response: FindNearestStationGetRes?) {
-        // 실패 시 처리
         Toast.makeText(this, "Failed to fetch nearest stations: $errorMessage", Toast.LENGTH_SHORT).show()
     }
 
     override fun onItemClick(station: Station) {
-        // 클릭한 아이템의 stationID를 전역 변수에 저장
-        GlobalValue_start.stationID = station.stationID
-        // 전역 변수에 경도와 위도 저장
-        GlobalValue_start.station_longitude = station.x
-        GlobalValue_start.station_latitude = station.y
+        GlobalValue_first.stationID = station.stationID
+        GlobalValue_first.station_longitude = station.x
+        GlobalValue_first.station_latitude = station.y
 
-        // 출발지 정보 출력
         println("출발지 정보:")
-        println("위도: ${station.y}, 경도: ${station.x}, Station ID: ${GlobalValue_start.stationID}")
+        println("위도: ${station.y}, 경도: ${station.x}, Station ID: ${GlobalValue_first.stationID}")
 
-        // 다음 액티비티로 넘어가기
         val intent = Intent(this, Main_vi_Search_des::class.java).apply {
             putExtra("startStationX", station.x)
             putExtra("startStationY", station.y)
@@ -136,10 +123,9 @@ class Main_NearestStation : AppCompatActivity(), FindNearestStationView, Station
         private const val PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1
     }
 
-    // 전역 변수 선언
-    object GlobalValue_start {
-        var station_longitude: Double? = null // 경도
-        var station_latitude: Double? = null // 위도
-        var stationID: Int? = null // 역 ID
+    object GlobalValue_first {
+        var station_longitude: Double? = null
+        var station_latitude: Double? = null
+        var stationID: Int? = null
     }
 }

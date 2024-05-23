@@ -34,7 +34,7 @@
 
 
         <activity android:name=".SplashActivity" />
-        <activity android:name=".Main_NearestStation" />
+<!--        <activity android:name=".Main_NearestStation" />-->
         <activity android:name=".BusNumberInputActivity" />
         <activity android:name=".AppUserDeterminantActivity" />
         <activity android:name=".FaceSettingActivity" />
@@ -42,12 +42,11 @@
 
 
         <activity android:name=".MainActivity" />
-        <activity android:name=".Main_searchPubPathT" />
-        <activity android:name=".Main_Bus_Arrival"/>
 
+        <activity android:name=".LoginActivity"/>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".repository.activity_home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,6 +55,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main_vi_Search_des"/>
+        <activity android:name=".searchPubPathT"/>
+        <activity android:name=".Main_NearestStation"/>
+        <activity android:name=".Main_Bus_Arrival"/>
+
 
 
 

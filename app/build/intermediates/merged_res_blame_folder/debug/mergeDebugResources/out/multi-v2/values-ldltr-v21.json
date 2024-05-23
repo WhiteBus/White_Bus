@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-61:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-2:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/c6e3c5d229b73844ace5d1db03fe5836/transformed/appcompat-1.6.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "C:\\Users\\강지원\\.gradle\\caches\\transforms-3\\c6e3c5d229b73844ace5d1db03fe5836\\transformed\\appcompat-1.6.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

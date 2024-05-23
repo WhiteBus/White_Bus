@@ -1478,6 +1478,10 @@ color gray
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color home_button1
+color home_button2
+color home_button3
+color home_button4
 color ivory
 color lemon
 color light_gray
@@ -2782,6 +2786,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable hamburger
 drawable hand
+drawable home_icon
 drawable ic_baseline_add_24
 drawable ic_baseline_photo_camera_24
 drawable ic_baseline_photo_library_24
@@ -2804,6 +2809,7 @@ drawable ic_passkey
 drawable ic_password
 drawable ic_plus
 drawable ic_profile
+drawable ic_round_play_arrow
 drawable icn_chevron_up
 drawable icon_background
 drawable kakao_login_medium_narrow
@@ -2950,6 +2956,7 @@ font pretendard_regular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BusNum
 id CTRL
 id EditText_ex
 id FUNCTION
@@ -3053,6 +3060,7 @@ id beginning
 id bestChoice
 id blocking
 id board_ending
+id borderBox_des
 id bottom
 id bottom_navigation_view
 id bounce
@@ -3068,8 +3076,21 @@ id btn
 id btn1
 id btnCancel
 id busNum_btn
+id busTransitCount
 id bus_driver_button
 id bus_number_error_tv
+id button1_container
+id button1_text1
+id button1_text2
+id button2_container
+id button2_text1
+id button2_text2
+id button3_container
+id button3_text1
+id button3_text2
+id button4_container
+id button4_text1
+id button4_text2
 id buttonPanel
 id byehand
 id byetoast
@@ -3138,6 +3159,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id distance
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3222,6 +3244,8 @@ id invisible
 id inward
 id italic
 id item_drawer_title_tv
+id item_icon
+id item_text
 id item_touch_helper_previous_elevation
 id iv_main_hamburger_iv
 id iv_main_nickname_record_iv
@@ -3245,7 +3269,6 @@ id list_item
 id locale
 id locationButton
 id locationTextView
-id location_btn
 id login
 id ltr
 id main
@@ -3392,6 +3415,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id recyclerViewDestinations
 id report_drawn
 id reverseSawtooth
 id right
@@ -3424,6 +3448,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id section_distance
+id section_time
 id select_dialog_listview
 id selected
 id selection_type
@@ -3494,7 +3520,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewAddress
 id textViewCenter
+id textViewName
 id textWatcher
 id text_end_guide
 id text_input_end_icon
@@ -3514,7 +3542,12 @@ id title_template
 id toggle
 id top
 id topPanel
+id totalTime
 id touch_outside
+id transit_info
+id transit_info_endName
+id transit_info_startName
+id transit_recyclerView
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3703,6 +3736,7 @@ layout activity_app_user_determinant
 layout activity_bus_number_input
 layout activity_driver_main
 layout activity_face_setting
+layout activity_home
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -3742,9 +3776,12 @@ layout fragment_driver_exit
 layout fragment_driver_maps
 layout fragment_driver_profile
 layout item_bus_arrival
+layout item_bus_path
+layout item_destination
 layout item_drawer
 layout item_passenger_information
 layout item_station
+layout item_subpath
 layout item_vi_search_des
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3811,6 +3848,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycler_view_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
