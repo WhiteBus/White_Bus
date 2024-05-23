@@ -1,434 +1,438 @@
 [
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_bus_path.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_bus_path.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_location.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\location.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_screen_start.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\screen_start.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_splash.xml"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-72:/drawable_people.png.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-74:/drawable/people.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-mdpi_white_bus_logo2.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-mdpi\\white_bus_logo2.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_kakao_login_medium_narrow.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\kakao_login_medium_narrow.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_stopnot.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\stopnot.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_fadein.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\fadein.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_sleepnot.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\sleepnot.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_popup.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_popup.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_subpath.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_subpath.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_endding.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\endding.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_fadeout.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\fadeout.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_search_des.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_search_des.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_icn_chevron_up.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\icn_chevron_up.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_screen_start.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\screen_start.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_screen_none.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\screen_none.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_location.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\location.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_freesentation.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\freesentation.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_station.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_station.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_media_pipe_banner.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\media_pipe_banner.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_wait_bus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_wait_bus.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_hand.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\hand.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_agro_bold.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\agro_bold.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_wait_bus.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_wait_bus.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_select_bd.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\select_bd.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-5:/drawable_speech.png.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-7:/drawable/speech.png"
+        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-72:/layout_activity_driver_main.xml.flat",
+        "source": "com.google.mediapipe.examples.facelandmarker.app-main-74:/layout/activity_driver_main.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_destination.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_destination.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_white_bus_logo2.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\white_bus_logo2.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_fragment_driver_exit.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\fragment_driver_exit.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_cam_permit.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\cam_permit.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_baseline_photo_camera_24.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_baseline_photo_camera_24.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_media_pipe_banner.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\media_pipe_banner.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_drawer.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_drawer.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_start_kakao.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\start_kakao.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_dropin_bus.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_dropin_bus.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_pretendard_regular.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\pretendard_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\navigation\\nav_graph.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_drawer.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_drawer.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_drawer.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_address.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_address.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_ending.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_ending.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_search_des.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_search_des.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_visual_impaired_button.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\visual_impaired_button.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_hamburger.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\hamburger.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_agro_regular.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\agro_regular.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_main.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_main.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_bus_arrival.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_bus_arrival.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_destination.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_destination.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_freesentation.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\freesentation.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_bus_arrival.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_bus_arrival.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\color_bg_nav_item.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\color\\bg_nav_item.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_toast.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\toast.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_fragment_driver_maps.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\fragment_driver_maps.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_bus_driver_button.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\bus_driver_button.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_sleep.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\sleep.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_screen_none.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\screen_none.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_endbtn.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\endbtn.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_icn_chevron_up.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\icn_chevron_up.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-mdpi_white_bus_logo2.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-mdpi\\white_bus_logo2.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_bus_number_input.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_bus_number_input.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_station.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_station.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_map.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_map.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_rounded_corner.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\rounded_corner.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_endding.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\endding.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_screen_exit.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\screen_exit.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_white_bus_splash.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\white_bus_splash.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_stop.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\stop.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_recycler_view_item.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\recycler_view_item.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_fab_close.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\fab_close.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_exit.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_exit.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_drawer.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_hand.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\hand.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_searchbar.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\searchbar.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_speech.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\speech.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_baseline_photo_library_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_baseline_photo_library_24.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_plus.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_profile.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_pretendard_bold.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\pretendard_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\menu_menu_bottom_nav.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\menu\\menu_bottom_nav.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_nearest_station.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_nearest_station.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_screen_exit.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\screen_exit.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_minus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_minus.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_corner.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\corner.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_bus_arrival.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_bus_arrival.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_chevron_left.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\chevron_left.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_bus_path.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_bus_path.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_menu_selector_color.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\menu_selector_color.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_searchbar.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\searchbar.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_main.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_main.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_fadeout.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\fadeout.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_back_notstyle.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\back_notstyle.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_toast.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\toast.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_sleep.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\sleep.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_subpath.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_subpath.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_place_registration.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_place_registration.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_fragment_driver_maps.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\fragment_driver_maps.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_stop.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\stop.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_agro_bold.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\agro_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_pretendard_bold.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\pretendard_bold.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.google.mediapipe.examples.facelandmarker.app-debug-5:/layout_activity_home.xml.flat",
-        "source": "com.google.mediapipe.examples.facelandmarker.app-main-7:/layout/activity_home.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_face_setting.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_face_setting.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_corner.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\corner.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_address.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_address.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_kakao_login_medium_narrow.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\kakao_login_medium_narrow.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_ending.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_ending.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_face_setting.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_face_setting.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_passenger_information.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_passenger_information.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_place_registration.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_place_registration.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_home.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_sleepnot.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\sleepnot.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_vi_record.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\vi_record.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_bus_driver_button.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\bus_driver_button.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_baseline_add_24.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_baseline_add_24.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_vi_record.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\vi_record.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_round_play_arrow.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_round_play_arrow.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_dropin_bus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_dropin_bus.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_matching_bus.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_matching_bus.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-hdpi_white_bus_logo2.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-hdpi\\white_bus_logo2.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_fab_close.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\fab_close.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_round_play_arrow.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_round_play_arrow.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_pretendard_medium.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\pretendard_medium.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_vi_search_des.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_vi_search_des.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_passenger_information.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_passenger_information.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_baseline_add_24.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_fab_open.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\fab_open.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_pretendard_medium.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\pretendard_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_fragment_camera.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\fragment_camera.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_baseline_photo_camera_24.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_home_icon.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\home_icon.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_visual_impaired_button.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\visual_impaired_button.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_pretendard_regular.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\pretendard_regular.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_chevron_left.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\chevron_left.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_hamburger.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\hamburger.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_home_icon.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\home_icon.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_plus.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_plus.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_bus_number_input.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_bus_number_input.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_fragment_driver_profile.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\fragment_driver_profile.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_fragment_camera.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\fragment_camera.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_app_user_determinant.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_app_user_determinant.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_driver_main.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_driver_main.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\color_bg_nav_item.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\color\\bg_nav_item.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_fragment_driver_exit.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\fragment_driver_exit.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_cam_permit.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\cam_permit.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-hdpi_white_bus_logo2.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-hdpi\\white_bus_logo2.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\menu_menu_bottom_nav.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\menu\\menu_bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_user_popup.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_user_popup.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_icon_background.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_exit.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_exit.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_recycler_view_item.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\recycler_view_item.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_fadeout2.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\fadeout2.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_fadeout2.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\fadeout2.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\anim_fadein.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\anim\\fadein.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_white_bus_splash.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\white_bus_splash.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_start_kakao.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\start_kakao.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_endbtn.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\endbtn.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_agro_regular.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\agro_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\font_agro_medium.ttf.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\font\\agro_medium.ttf"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_bottom_notstyle.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\bottom_notstyle.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_user_matching_bus.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_user_matching_bus.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_select_bd.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\select_bd.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_menu_selector_color.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\menu_selector_color.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_icon_background.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\icon_background.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_stopnot.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\stopnot.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_rounded_corner.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\rounded_corner.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\font_agro_medium.ttf.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\font\\agro_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_read_des.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_read_des.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_vi_read_des.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_vi_read_des.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_vi_nearest_station.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_vi_nearest_station.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_back_notstyle.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\back_notstyle.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_minus.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_minus.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_select_iv.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\select_iv.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_select_iv.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\select_iv.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_bottom_notstyle.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\bottom_notstyle.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_white_bus_logo2.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\white_bus_logo2.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_fragment_driver_profile.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\fragment_driver_profile.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\anim_fab_open.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\anim\\fab_open.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_activity_driver_main.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\activity_driver_main.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_activity_app_user_determinant.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\activity_app_user_determinant.xml"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\layout_item_vi_search_des.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\layout\\item_vi_search_des.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-5:\\drawable_ic_baseline_photo_library_24.xml.flat",
-        "source": "C:\\Users\\강지원\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-7:\\drawable\\ic_baseline_photo_library_24.xml"
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\layout_item_bus_arrival.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\layout\\item_bus_arrival.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-debug-72:\\drawable_ic_map.xml.flat",
+        "source": "C:\\Users\\kimtaegyu\\.gradle\\daemon\\8.4\\com.google.mediapipe.examples.facelandmarker.app-main-74:\\drawable\\ic_map.xml"
     }
 ]

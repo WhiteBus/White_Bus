@@ -12,19 +12,13 @@
     <dist:module dist:instant="true" /> <!-- Declare features -->
     <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
-    <!-- Use Internet -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Use Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Use Naver Map -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Use Naver Map -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <!-- 오디오 사용 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 오디오 사용 권한 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <queries>
@@ -87,19 +81,18 @@
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="v4ud3zha1i" />
 
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" />
-        <!-- <activity android:name=".Main_NearestStation" /> -->
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity" /> <!-- <activity android:name=".Main_NearestStation" /> -->
         <activity android:name="com.google.mediapipe.examples.facelandmarker.BusNumberInputActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.AppUserDeterminantActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.FaceSettingActivity" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity" />
+        <!-- <activity android:name=".DriverMainActivity" /> -->
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.searchPubPathT" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_NearestStation" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
         <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
+            android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -109,9 +102,7 @@
         </activity>
         <activity android:name="com.google.mediapipe.examples.facelandmarker.RideBus" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.OnStationUser" />
-        <activity android:name="com.google.mediapipe.examples.facelandmarker.user_dropin_bus" />
-
-        <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.user_dropin_bus" /> <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true"

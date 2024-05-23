@@ -89,6 +89,7 @@ drawable kakao_login_medium_narrow
 drawable location
 drawable media_pipe_banner
 drawable menu_selector_color
+drawable people
 drawable rounded_corner
 drawable searchbar
 drawable select_bd
