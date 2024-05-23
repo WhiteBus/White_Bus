@@ -1,4 +1,4 @@
-#Thu May 23 12:27:37 KST 2024
+#Thu May 23 15:14:57 KST 2024
 base.0=/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/seohyeonpark/Desktop/WhiteBusProject/White_Bus/White_Bus/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex

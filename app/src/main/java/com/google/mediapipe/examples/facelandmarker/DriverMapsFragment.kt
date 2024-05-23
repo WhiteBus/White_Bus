@@ -33,6 +33,7 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var mapView: MapView
     private lateinit var naverMap: NaverMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private lateinit var locationSource: FusedLocationSource
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -49,6 +50,11 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
     override fun onMapReady(naverMap: NaverMap) {
         this.naverMap = naverMap
 
+        // 현재 위치 버튼 기능
+        naverMap.uiSettings.isLocationButtonEnabled = true
+        // 위치를 추적하면서 카메라도 따라 움직인다
+        naverMap.locationTrackingMode = LocationTrackingMode.Follow
+
         // Initialize fusedLocationClient
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
@@ -58,7 +64,11 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
             requestLocationUpdates()
         } else {
             // Request location permission
-            requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
         }
 
         // Set listener to the map fragment for refreshing current location when clicked
@@ -69,9 +79,36 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
                 requestLocationUpdates()
             } else {
                 // Request location permission
-                requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
+                ActivityCompat.requestPermissions(
+                    requireActivity(),
+                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                    LOCATION_PERMISSION_REQUEST_CODE
+                )
             }
         }
+
+        // Set up location source for location tracking mode
+        locationSource = FusedLocationSource(this@DriverMapsFragment, LOCATION_PERMISSION_REQUEST_CODE)
+        naverMap.locationSource = locationSource
+
+//        // Set button to show current location
+//        val locationButton = FusedLocationSource(this@DriverMapsFragment, LOCATION_PERMISSION_REQUEST_CODE)
+//
+//        locationButton.setOnClickListener {
+//            // Check if location permission is granted
+//            if (hasLocationPermission()) {
+//                // Request location updates
+//                requestLocationUpdates()
+//            } else {
+//                // Request location permission
+//                ActivityCompat.requestPermissions(
+//                    requireActivity(),
+//                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+//                    LOCATION_PERMISSION_REQUEST_CODE
+//                )
+//            }
+//        }
+
     }
 
     private fun hasLocationPermission(): Boolean {
@@ -98,7 +135,7 @@ class DriverMapsFragment : Fragment(), OnMapReadyCallback {
                 location?.let {
                     val latitude = it.latitude
                     val longitude = it.longitude
-                    showToast("Latitude: $latitude, Longitude: $longitude")
+                    // showToast("Latitude: $latitude, Longitude: $longitude")
                     Log.d("Location", "Latitude: $latitude, Longitude: $longitude")
                     // naverMap이 초기화된 후에 moveCameraToLocation 호출
                     if (::naverMap.isInitialized) {
