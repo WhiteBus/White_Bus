@@ -2801,6 +2801,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable bus_driver_button
 drawable cam_permit
 drawable chevron_left
+drawable circle_pushed_bell
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3490,6 +3491,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id number_of_passenger_tv
+id number_of_waiting_vi_tv
 id off
 id on
 id onAttachStateChangeListener
@@ -3524,8 +3526,10 @@ id position
 id postLayout
 id pressed
 id profile_number_of_passenger_rv
+id profile_number_of_waiting_vi_rv
 id progress_circular
 id progress_horizontal
+id pushed_bell_iv
 id radio
 id ratio
 id rectangles
@@ -3912,6 +3916,7 @@ layout fragment_camera
 layout fragment_driver_exit
 layout fragment_driver_maps
 layout fragment_driver_profile
+layout fragment_waiting_vi
 layout fui_activity_invisible
 layout fui_activity_register_email
 layout fui_activity_register_phone

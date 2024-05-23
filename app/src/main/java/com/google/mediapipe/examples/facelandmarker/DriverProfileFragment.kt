@@ -46,5 +46,7 @@ class DriverProfileFragment : Fragment(){
 //            adapter = PassengerAdapter(passengers)
 //            binding.profileNumberOfPassengerRv.adapter = adapter
 //        }
+
+        // 하차벨 눌렀을 때 눌렸다는 빨간색 원 표시 (visibility)
     }
 }

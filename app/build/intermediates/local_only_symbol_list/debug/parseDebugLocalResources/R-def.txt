@@ -66,6 +66,7 @@ drawable bottom_notstyle
 drawable bus_driver_button
 drawable cam_permit
 drawable chevron_left
+drawable circle_pushed_bell
 drawable corner
 drawable endbtn
 drawable endding
@@ -178,11 +179,14 @@ id menu
 id nav_graph
 id naverMap
 id number_of_passenger_tv
+id number_of_waiting_vi_tv
 id overlay
 id passenger_name_tv
 id passenger_profile_iv
 id permissions_fragment
 id profile_number_of_passenger_rv
+id profile_number_of_waiting_vi_rv
+id pushed_bell_iv
 id recyclerView
 id recyclerViewDestinations
 id riding_btn
@@ -261,6 +265,7 @@ layout fragment_camera
 layout fragment_driver_exit
 layout fragment_driver_maps
 layout fragment_driver_profile
+layout fragment_waiting_vi
 layout item_bus_arrival
 layout item_bus_path
 layout item_destination
