@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/tv_arrivalBusNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Number"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_busPlateNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Plate No"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_arrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrival Time"
+        android:textSize="14sp" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/busTransitCnt"-->
+<!--        android:textSize="14sp"-->
+<!--        android:text="busTransitcnt"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/trafficDistance"-->
+<!--        android:textSize="14sp"-->
+<!--        android:text="distance"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/totalTime"-->
+<!--        android:textSize="14sp"-->
+<!--        android:text="totalTime"/>-->
+</LinearLayout>

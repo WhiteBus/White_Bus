@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [androidx.databinding:databinding-adapters:8.3.2] C:\Users\kimtaegyu\.gradle\caches\transforms-3\d6ab06a3e52cba7a18171253a997fca7\transformed\databinding-adapters-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.3.2] C:\Users\kimtaegyu\.gradle\caches\transforms-3\00993259772d26aed3cc99dbb41f5b36\transformed\databinding-ktx-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.3.2] C:\Users\kimtaegyu\.gradle\caches\transforms-3\724982d3da4066bbae6b8efe9727c120\transformed\databinding-runtime-8.3.2\AndroidManifest.xml:2:1-7:12
@@ -132,8 +132,8 @@ ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:14:22-77
 application
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:5-63:19
-INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:5-63:19
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:5-64:19
+INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:16:5-64:19
 MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\587f8a7b9215b8058a952ab9f0c842f4\transformed\play-services-location-21.2.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\kimtaegyu\.gradle\caches\transforms-3\587f8a7b9215b8058a952ab9f0c842f4\transformed\play-services-location-21.2.0\AndroidManifest.xml:7:5-20
 MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\kimtaegyu\.gradle\caches\transforms-3\1c0bcb13a609a750354658f261738187\transformed\window-1.1.0-alpha03\AndroidManifest.xml:22:5-29:19
@@ -189,69 +189,69 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\
 	android:taskAffinity
 		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:22:9-32
 activity#com.google.mediapipe.examples.facelandmarker.repository.activity_home
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:25:9-28:20
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
 		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:26:13-53
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:28:13-32:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:29:17-69
-	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:29:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:31:17-77
-	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.google.mediapipe.examples.facelandmarker.SplashActivity
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:34:9-36:40
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:30:13-43
 activity#com.google.mediapipe.examples.facelandmarker.LoginActivity
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:37:9-39:40
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:38:13-42
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:33:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:38:27-74
 activity#com.google.mediapipe.examples.facelandmarker.Bus_Number_input
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:40:9-42:40
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:41:13-45
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:42:13-45
 activity#com.google.mediapipe.examples.facelandmarker.app_user_determinant
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:43:9-45:40
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:45:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:44:13-49
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:45:13-49
 activity#com.google.mediapipe.examples.facelandmarker.MainActivity
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:46:9-48:40
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:47:13-41
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:48:13-41
 activity#com.google.mediapipe.examples.facelandmarker.Main_NearestStation
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:49:9-59:20
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:50:9-60:20
 	android:exported
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:50:13-48
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:51:13-48
 activity#com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:60:9-56
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:61:9-56
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:60:19-53
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:61:19-53
 activity#com.google.mediapipe.examples.facelandmarker.Main_searchPubPathT
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:61:9-57
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:62:9-57
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:61:19-54
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:62:19-54
 activity#com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival
-ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:62:9-54
+ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:63:9-54
 	android:name
-		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:62:19-51
+		ADDED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml:63:19-51
 uses-sdk
 INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kimtaegyu\Documents\White_Bus\app\src\main\AndroidManifest.xml

@@ -41,6 +41,13 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.google.mediapipe.examples.facelandmarker.repository.activity_home"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,12 +55,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.LoginActivity"
-            android:exported="false" />
         <activity
             android:name="com.google.mediapipe.examples.facelandmarker.Bus_Number_input"
             android:exported="false" />
