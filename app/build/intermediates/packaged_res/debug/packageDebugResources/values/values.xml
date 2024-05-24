@@ -113,4 +113,18 @@
     <style name="BottomSheetSpinnerItemStyle" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
         <item name="android:textSize">@dimen/bottom_sheet_text_size</item>
     </style>
+    <style name="MainFillButton">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/fill_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="MainOutlineButton">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/outline_button_background</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

@@ -70,6 +70,7 @@ drawable circle_pushed_bell
 drawable corner
 drawable endbtn
 drawable endding
+drawable fill_button_background
 drawable hamburger
 drawable hand
 drawable home_icon
@@ -90,6 +91,7 @@ drawable kakao_login_medium_narrow
 drawable location
 drawable media_pipe_banner
 drawable menu_selector_color
+drawable outline_button_background
 drawable people
 drawable rounded_corner
 drawable searchbar
@@ -100,6 +102,7 @@ drawable speech
 drawable start_kakao
 drawable stop
 drawable vi_record
+drawable view_round_white_6
 drawable visual_impaired_button
 drawable white_bus_logo2
 drawable white_bus_splash
@@ -146,6 +149,7 @@ id byehand
 id byetoast
 id byetoastLay
 id camera_fragment
+id confirmTextView
 id detailProject
 id determinant_logo
 id distance
@@ -178,6 +182,7 @@ id main_container
 id menu
 id nav_graph
 id naverMap
+id noButton
 id number_of_passenger_tv
 id number_of_waiting_vi_tv
 id overlay
@@ -239,6 +244,7 @@ id vi_registration_tv
 id vi_search_des_cv
 id view_finder
 id visual_impaired_button
+id yesButton
 integer bottom_sheet_control_text_min_ems
 layout activity_app_user_determinant
 layout activity_bus_number_input
@@ -261,6 +267,7 @@ layout activity_vi_nearest_station
 layout activity_vi_place_registration
 layout activity_vi_read_des
 layout activity_vi_search_des
+layout dialog_confirmlist
 layout fragment_camera
 layout fragment_driver_exit
 layout fragment_driver_maps
@@ -316,3 +323,5 @@ string tv_gallery_placeholder
 style AppTheme
 style AppThemeProgressStyle
 style BottomSheetSpinnerItemStyle
+style MainFillButton
+style MainOutlineButton

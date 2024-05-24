@@ -4,7 +4,7 @@
             "outputFile": "com.google.mediapipe.examples.facelandmarker.app-mergeDebugResources-70:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/seohyeonpark/.gradle/caches/transforms-3/803e34f9c089a34f1229e4c53933ca85/transformed/appcompat-1.6.0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "C:\\Users\\kimtaegyu\\.gradle\\caches\\transforms-3\\803e34f9c089a34f1229e4c53933ca85\\transformed\\appcompat-1.6.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

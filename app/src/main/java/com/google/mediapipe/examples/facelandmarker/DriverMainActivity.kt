@@ -6,9 +6,11 @@ import android.location.Geocoder
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.NavHostFragment
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityDriverMainBinding
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.CameraUpdate
@@ -37,6 +39,10 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         binding = ActivityDriverMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+        val navController = navHostFragment.navController
 
         if (!hasPermission()) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, LOCATION_PERMISSION_REQUEST_CODE)
@@ -84,15 +90,30 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun addMarkerToMap(lat: Double, lng: Double) {
+        val marker = Marker()
         marker.position = LatLng(lat, lng)
         marker.icon = OverlayImage.fromResource(R.drawable.people) // 커스텀 아이콘 설정
         marker.map = naverMap
+
+        marker.setOnClickListener {
+            // 마커 클릭 시 다이얼로그 표시
+            showMarkerDialog()
+            true
+        }
 
         val cameraUpdate = CameraUpdate.scrollTo(LatLng(lat, lng))
         naverMap.moveCamera(cameraUpdate)
         naverMap.moveCamera(CameraUpdate.zoomTo(18.0))
 
         getAddress(lat, lng)
+    }
+
+    private fun showMarkerDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setView(R.layout.dialog_confirmlist)
+        val dialog = builder.create()
+        dialog.show()
+        // 여기에 버튼 클릭 리스너 추가해야함
     }
 
     private fun getAddress(latitude: Double, longitude: Double) {

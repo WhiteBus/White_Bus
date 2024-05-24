@@ -2829,6 +2829,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable endbtn
 drawable endding
+drawable fill_button_background
 drawable fui_ic_anonymous_white_24dp
 drawable fui_ic_apple_white_24dp
 drawable fui_ic_check_circle_black_128dp
@@ -3000,6 +3001,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable outline_button_background
 drawable people
 drawable rounded_corner
 drawable searchbar
@@ -3013,6 +3015,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vi_record
+drawable view_round_white_6
 drawable visual_impaired_button
 drawable white_bus_logo2
 drawable white_bus_splash
@@ -3203,6 +3206,7 @@ id closest
 id collapseActionView
 id compatible
 id compress
+id confirmTextView
 id confirm_button
 id confirmation_code
 id confirmation_code_layout
@@ -3482,6 +3486,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id noButton
 id noScroll
 id noState
 id none
@@ -3746,6 +3751,7 @@ id wrap_content_constrained
 id x_left
 id x_right
 id yahoo_signin_button
+id yesButton
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -3912,6 +3918,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_confirmlist
 layout fragment_camera
 layout fragment_driver_exit
 layout fragment_driver_maps
@@ -4679,6 +4686,8 @@ style FirebaseUI_TopProgressBar
 style FirebaseUI_Transparent
 style FirebaseUI_VerifyPhoneButton
 style FirebaseUI_WrapperStyle
+style MainFillButton
+style MainOutlineButton
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
 style MaterialAlertDialog_Material3_Body_Text_CenterStacked
