@@ -6,7 +6,11 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.mediapipe.examples.facelandmarker.remote.adapter.SearchStationAdapter
@@ -21,6 +25,7 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
     private lateinit var searchStationService: SearchStationService
     private lateinit var viDrawerRv: RecyclerView
     private lateinit var searchEditText: EditText
+    private lateinit var drawerLayout: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,7 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
 
         viDrawerRv = findViewById(R.id.vi_drawer_rv)
         searchEditText = findViewById(R.id.iv_main_search_place_et)
+        drawerLayout = findViewById(R.id.search_staition)
 
         searchStationAdapter = SearchStationAdapter { station -> onItemClick(station) }
         viDrawerRv.layoutManager = LinearLayoutManager(this)
@@ -43,12 +49,13 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
                 performSearch()
             }
         })
+
     }
 
     private fun performSearch() {
         val lang = "0"
         val stationName = searchEditText.text.toString()
-        val stationClass = 1
+        val stationClass = 1 //버스정류장
         val apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
     }
@@ -69,12 +76,12 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
         GlobalValues_last.lastPointStation = station
         // 클릭된 항목의 정보를 로그로 출력
         println("--Station Info--")
-        println("stationName: ${station.stationName}")
-        println("stationID: ${station.stationID}")
-        println("x: ${station.x}")
-        println("y: ${station.y}")
+        println("Des_stationName: ${station.stationName}")
+        println("Des_stationID: ${station.stationID}")
+        println("Des_station_x: ${station.x}")
+        println("Des_station_y: ${station.y}")
         val intent = Intent(this, searchPubPathT::class.java)
-        intent.putExtra("selectedStationName", station.stationName) // 선택된 역 이름을 전달
+        intent.putExtra("laststationname", station.stationName) // 선택된 역 이름을 전달
         startActivity(intent)
     }
 

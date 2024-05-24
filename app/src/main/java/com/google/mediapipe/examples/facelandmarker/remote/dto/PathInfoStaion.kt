@@ -15,6 +15,7 @@ data class PathInfoStation(
     val totalTime: Int,
     val totalDistance: Int,
     val subPaths: List<SubPathInfo>
+
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         index = parcel.readInt(),

@@ -14,6 +14,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.mediapipe.examples.facelandmarker.FindCurrentPosition
 import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
@@ -48,6 +49,13 @@ class activity_home : AppCompatActivity() {
         val button4Container: ConstraintLayout = findViewById(R.id.button4_container)
 
         searchBar = findViewById(R.id.iv_main_search_place_et)
+        //검색창 누르면 현위치 및 검색창으로 넘어가기
+        searchBar.isFocusable = false
+        searchBar.isClickable = true
+        searchBar.setOnClickListener {
+            val intent = Intent(this, FindCurrentPosition::class.java) // 이동할 액티비티로 변경
+            startActivity(intent)
+        }
 
         destinationRepository.insertDestination("DMC", 12324.213, 234234.3, "월드컵북로44길")
         destinationRepository.insertDestination("DM", 1232.213, 34234.3, "월드컵경기장")

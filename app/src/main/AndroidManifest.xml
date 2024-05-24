@@ -47,13 +47,12 @@
 <!--        <activity android:name=".DriverMainActivity" />-->
         <activity android:name=".Main_vi_Search_des" />
         <activity android:name=".searchPubPathT" />
-        <activity android:name=".Main_NearestStation" />
         <activity android:name=".Main_Bus_Arrival" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ViPlaceRegistrationActivity" />
-        <activity android:name=".repository.activity_home" />
+<!--        <activity android:name=".repository.activity_home" />-->
         <activity
-            android:name=".DriverMainActivity"
+            android:name=".repository.activity_home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,6 +60,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FindCurrentPosition"/>
         <activity android:name=".RideBus" />
         <activity android:name=".OnStationUser" />
         <activity android:name=".user_dropin_bus" /> <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
