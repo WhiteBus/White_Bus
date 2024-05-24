@@ -35,6 +35,11 @@ class ViPlaceRegistrationActivity : AppCompatActivity() {
         placeSpeechBtn.setOnClickListener {
             placeSpeechRecognition()
         }
+        // 이전 버튼이 눌렸을 때
+        val backButton: ImageView = findViewById(R.id.iv_registration_back_iv)
+        backButton.setOnClickListener {
+            finish() // activity_home 으로 돌아감
+        }
     }
 
     private fun nicknameSpeechRecognition() {

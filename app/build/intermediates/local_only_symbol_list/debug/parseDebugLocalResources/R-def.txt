@@ -166,6 +166,7 @@ id item_icon
 id item_text
 id iv_main_hamburger_iv
 id iv_main_nickname_record_iv
+id iv_main_place_iv
 id iv_main_search_place_et
 id iv_main_set_nickname_et
 id iv_main_set_place_et
@@ -184,6 +185,7 @@ id overlay
 id passenger_name_tv
 id passenger_profile_iv
 id permissions_fragment
+id place_registration_btn
 id profile_number_of_passenger_rv
 id profile_number_of_waiting_vi_rv
 id pushed_bell_iv
@@ -223,16 +225,11 @@ id user_btn_board
 id user_bus_time
 id user_distance
 id user_time
-id vi_des_text
-id vi_des_text_2
 id vi_destination_detail_tv
 id vi_destination_tv
 id vi_drawer_rv
 id vi_drawer_tv
 id vi_header_cl
-id vi_read_des_description
-id vi_read_des_speaker_iv
-id vi_read_des_touch_twice_tv
 id vi_registration_header_cl
 id vi_registration_header_line
 id vi_registration_tv
@@ -259,7 +256,6 @@ layout activity_vi_drawer
 layout activity_vi_main
 layout activity_vi_nearest_station
 layout activity_vi_place_registration
-layout activity_vi_read_des
 layout activity_vi_search_des
 layout fragment_camera
 layout fragment_driver_exit

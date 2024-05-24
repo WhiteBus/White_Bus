@@ -4,6 +4,7 @@ package com.google.mediapipe.examples.facelandmarker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +26,9 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
   public final ImageView ivMainNicknameRecordIv;
 
   @NonNull
+  public final ImageView ivMainPlaceIv;
+
+  @NonNull
   public final EditText ivMainSetNicknameEt;
 
   @NonNull
@@ -32,6 +36,9 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
 
   @NonNull
   public final ImageView ivRegistrationBackIv;
+
+  @NonNull
+  public final Button placeRegistrationBtn;
 
   @NonNull
   public final ConstraintLayout viRegistrationHeaderCl;
@@ -43,15 +50,18 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
   public final TextView viRegistrationTv;
 
   private ActivityViPlaceRegistrationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView ivMainNicknameRecordIv, @NonNull EditText ivMainSetNicknameEt,
-      @NonNull EditText ivMainSetPlaceEt, @NonNull ImageView ivRegistrationBackIv,
+      @NonNull ImageView ivMainNicknameRecordIv, @NonNull ImageView ivMainPlaceIv,
+      @NonNull EditText ivMainSetNicknameEt, @NonNull EditText ivMainSetPlaceEt,
+      @NonNull ImageView ivRegistrationBackIv, @NonNull Button placeRegistrationBtn,
       @NonNull ConstraintLayout viRegistrationHeaderCl, @NonNull View viRegistrationHeaderLine,
       @NonNull TextView viRegistrationTv) {
     this.rootView = rootView;
     this.ivMainNicknameRecordIv = ivMainNicknameRecordIv;
+    this.ivMainPlaceIv = ivMainPlaceIv;
     this.ivMainSetNicknameEt = ivMainSetNicknameEt;
     this.ivMainSetPlaceEt = ivMainSetPlaceEt;
     this.ivRegistrationBackIv = ivRegistrationBackIv;
+    this.placeRegistrationBtn = placeRegistrationBtn;
     this.viRegistrationHeaderCl = viRegistrationHeaderCl;
     this.viRegistrationHeaderLine = viRegistrationHeaderLine;
     this.viRegistrationTv = viRegistrationTv;
@@ -90,6 +100,12 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.iv_main_place_iv;
+      ImageView ivMainPlaceIv = ViewBindings.findChildViewById(rootView, id);
+      if (ivMainPlaceIv == null) {
+        break missingId;
+      }
+
       id = R.id.iv_main_set_nickname_et;
       EditText ivMainSetNicknameEt = ViewBindings.findChildViewById(rootView, id);
       if (ivMainSetNicknameEt == null) {
@@ -105,6 +121,12 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
       id = R.id.iv_registration_back_iv;
       ImageView ivRegistrationBackIv = ViewBindings.findChildViewById(rootView, id);
       if (ivRegistrationBackIv == null) {
+        break missingId;
+      }
+
+      id = R.id.place_registration_btn;
+      Button placeRegistrationBtn = ViewBindings.findChildViewById(rootView, id);
+      if (placeRegistrationBtn == null) {
         break missingId;
       }
 
@@ -127,8 +149,9 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
       }
 
       return new ActivityViPlaceRegistrationBinding((ConstraintLayout) rootView,
-          ivMainNicknameRecordIv, ivMainSetNicknameEt, ivMainSetPlaceEt, ivRegistrationBackIv,
-          viRegistrationHeaderCl, viRegistrationHeaderLine, viRegistrationTv);
+          ivMainNicknameRecordIv, ivMainPlaceIv, ivMainSetNicknameEt, ivMainSetPlaceEt,
+          ivRegistrationBackIv, placeRegistrationBtn, viRegistrationHeaderCl,
+          viRegistrationHeaderLine, viRegistrationTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

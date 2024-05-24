@@ -3352,6 +3352,7 @@ int id item_text 0x7f0a0146
 int id item_touch_helper_previous_elevation 0x7f0a0147
 int id iv_main_hamburger_iv 0x7f0a0148
 int id iv_main_nickname_record_iv 0x7f0a0149
+int id iv_main_place_iv 0x7f0a02d3
 int id iv_main_search_place_et 0x7f0a014a
 int id iv_main_set_nickname_et 0x7f0a014b
 int id iv_main_set_place_et 0x7f0a014c
@@ -3521,6 +3522,7 @@ int id phone_button 0x7f0a01ee
 int id phone_layout 0x7f0a01ef
 int id phone_number 0x7f0a01f0
 int id pin 0x7f0a01f1
+int id place_registration_btn 0x7f0a02d4
 int id position 0x7f0a01f2
 int id postLayout 0x7f0a01f3
 int id pressed 0x7f0a01f4
@@ -3706,16 +3708,11 @@ int id user_bus_time 0x7f0a02a5
 int id user_distance 0x7f0a02a6
 int id user_time 0x7f0a02a7
 int id vertical_only 0x7f0a02a8
-int id vi_des_text 0x7f0a02a9
-int id vi_des_text_2 0x7f0a02aa
 int id vi_destination_detail_tv 0x7f0a02ab
 int id vi_destination_tv 0x7f0a02ac
 int id vi_drawer_rv 0x7f0a02ad
 int id vi_drawer_tv 0x7f0a02ae
 int id vi_header_cl 0x7f0a02af
-int id vi_read_des_description 0x7f0a02b0
-int id vi_read_des_speaker_iv 0x7f0a02b1
-int id vi_read_des_touch_twice_tv 0x7f0a02b2
 int id vi_registration_header_cl 0x7f0a02b3
 int id vi_registration_header_line 0x7f0a02b4
 int id vi_registration_tv 0x7f0a02b5
@@ -3891,7 +3888,6 @@ int layout activity_vi_drawer 0x7f0d002c
 int layout activity_vi_main 0x7f0d002d
 int layout activity_vi_nearest_station 0x7f0d002e
 int layout activity_vi_place_registration 0x7f0d002f
-int layout activity_vi_read_des 0x7f0d0030
 int layout activity_vi_search_des 0x7f0d0031
 int layout browser_actions_context_menu_page 0x7f0d0032
 int layout browser_actions_context_menu_row 0x7f0d0033
