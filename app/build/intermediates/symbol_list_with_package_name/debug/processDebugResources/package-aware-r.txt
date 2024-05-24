@@ -3354,10 +3354,12 @@ id item_touch_helper_previous_elevation
 id iv_main_hamburger_iv
 id iv_main_nickname_record_iv
 id iv_main_place_iv
+id iv_main_search_iv
 id iv_main_search_place_et
 id iv_main_set_nickname_et
 id iv_main_set_place_et
 id iv_registration_back_iv
+id iv_registration_register_iv
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3523,7 +3525,6 @@ id phone_button
 id phone_layout
 id phone_number
 id pin
-id place_registration_btn
 id position
 id postLayout
 id pressed

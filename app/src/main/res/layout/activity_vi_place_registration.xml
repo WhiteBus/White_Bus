@@ -94,17 +94,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_main_set_place_et" />
 
-    <android.widget.Button
-        android:id="@+id/place_registration_btn"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
+    <LinearLayout
         android:layout_marginTop="20dp"
-        android:background="@drawable/searchbar"
-        android:textSize="30sp"
-        android:text="등록하기"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_main_place_iv"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_place_iv"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/iv_main_search_iv"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/searchbar"
+            android:textSize="30sp"
+            android:text="검색하기"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <android.widget.Button
+            android:id="@+id/iv_registration_register_iv"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/searchbar"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="등록하기"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

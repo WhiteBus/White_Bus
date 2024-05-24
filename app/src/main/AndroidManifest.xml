@@ -51,6 +51,7 @@
         <activity android:name=".Main_Bus_Arrival" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ViPlaceRegistrationActivity" />
+        <activity android:name=".repository.activity_home" />
         <activity
             android:name=".DriverMainActivity"
             android:exported="true">

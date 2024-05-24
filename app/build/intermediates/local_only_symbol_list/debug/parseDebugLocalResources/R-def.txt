@@ -167,10 +167,12 @@ id item_text
 id iv_main_hamburger_iv
 id iv_main_nickname_record_iv
 id iv_main_place_iv
+id iv_main_search_iv
 id iv_main_search_place_et
 id iv_main_set_nickname_et
 id iv_main_set_place_et
 id iv_registration_back_iv
+id iv_registration_register_iv
 id locationButton
 id locationTextView
 id login
@@ -185,7 +187,6 @@ id overlay
 id passenger_name_tv
 id passenger_profile_iv
 id permissions_fragment
-id place_registration_btn
 id profile_number_of_passenger_rv
 id profile_number_of_waiting_vi_rv
 id pushed_bell_iv

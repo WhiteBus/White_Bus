@@ -9,11 +9,13 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.mediapipe.examples.facelandmarker.R
+import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityMainBinding
 import com.google.mediapipe.examples.facelandmarker.favorite.DestinationAdapter
@@ -42,6 +44,8 @@ class activity_home : AppCompatActivity() {
         val button1_1: TextView = findViewById(R.id.button1_text2)
         val button2_1: TextView = findViewById(R.id.button2_text2)
         val button3_1: TextView = findViewById(R.id.button3_text2)
+
+        val button4Container: ConstraintLayout = findViewById(R.id.button4_container)
 
         searchBar = findViewById(R.id.iv_main_search_place_et)
 
@@ -92,6 +96,12 @@ class activity_home : AppCompatActivity() {
         val speechButton: ImageView = findViewById(R.id.btnSpeech)
         speechButton.setOnClickListener {
             startSpeechRecognition()
+        }
+
+        // button4_container 클릭 시 ViPlaceRegistrationActivity로 이동
+        button4Container.setOnClickListener {
+            val intent = Intent(this, ViPlaceRegistrationActivity::class.java)
+            startActivity(intent)
         }
     }
 

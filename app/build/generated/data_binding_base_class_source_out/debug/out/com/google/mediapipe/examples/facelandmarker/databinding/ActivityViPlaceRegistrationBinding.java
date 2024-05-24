@@ -29,6 +29,9 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
   public final ImageView ivMainPlaceIv;
 
   @NonNull
+  public final Button ivMainSearchIv;
+
+  @NonNull
   public final EditText ivMainSetNicknameEt;
 
   @NonNull
@@ -38,7 +41,7 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
   public final ImageView ivRegistrationBackIv;
 
   @NonNull
-  public final Button placeRegistrationBtn;
+  public final Button ivRegistrationRegisterIv;
 
   @NonNull
   public final ConstraintLayout viRegistrationHeaderCl;
@@ -51,17 +54,18 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
 
   private ActivityViPlaceRegistrationBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView ivMainNicknameRecordIv, @NonNull ImageView ivMainPlaceIv,
-      @NonNull EditText ivMainSetNicknameEt, @NonNull EditText ivMainSetPlaceEt,
-      @NonNull ImageView ivRegistrationBackIv, @NonNull Button placeRegistrationBtn,
-      @NonNull ConstraintLayout viRegistrationHeaderCl, @NonNull View viRegistrationHeaderLine,
-      @NonNull TextView viRegistrationTv) {
+      @NonNull Button ivMainSearchIv, @NonNull EditText ivMainSetNicknameEt,
+      @NonNull EditText ivMainSetPlaceEt, @NonNull ImageView ivRegistrationBackIv,
+      @NonNull Button ivRegistrationRegisterIv, @NonNull ConstraintLayout viRegistrationHeaderCl,
+      @NonNull View viRegistrationHeaderLine, @NonNull TextView viRegistrationTv) {
     this.rootView = rootView;
     this.ivMainNicknameRecordIv = ivMainNicknameRecordIv;
     this.ivMainPlaceIv = ivMainPlaceIv;
+    this.ivMainSearchIv = ivMainSearchIv;
     this.ivMainSetNicknameEt = ivMainSetNicknameEt;
     this.ivMainSetPlaceEt = ivMainSetPlaceEt;
     this.ivRegistrationBackIv = ivRegistrationBackIv;
-    this.placeRegistrationBtn = placeRegistrationBtn;
+    this.ivRegistrationRegisterIv = ivRegistrationRegisterIv;
     this.viRegistrationHeaderCl = viRegistrationHeaderCl;
     this.viRegistrationHeaderLine = viRegistrationHeaderLine;
     this.viRegistrationTv = viRegistrationTv;
@@ -106,6 +110,12 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.iv_main_search_iv;
+      Button ivMainSearchIv = ViewBindings.findChildViewById(rootView, id);
+      if (ivMainSearchIv == null) {
+        break missingId;
+      }
+
       id = R.id.iv_main_set_nickname_et;
       EditText ivMainSetNicknameEt = ViewBindings.findChildViewById(rootView, id);
       if (ivMainSetNicknameEt == null) {
@@ -124,9 +134,9 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.place_registration_btn;
-      Button placeRegistrationBtn = ViewBindings.findChildViewById(rootView, id);
-      if (placeRegistrationBtn == null) {
+      id = R.id.iv_registration_register_iv;
+      Button ivRegistrationRegisterIv = ViewBindings.findChildViewById(rootView, id);
+      if (ivRegistrationRegisterIv == null) {
         break missingId;
       }
 
@@ -149,8 +159,8 @@ public final class ActivityViPlaceRegistrationBinding implements ViewBinding {
       }
 
       return new ActivityViPlaceRegistrationBinding((ConstraintLayout) rootView,
-          ivMainNicknameRecordIv, ivMainPlaceIv, ivMainSetNicknameEt, ivMainSetPlaceEt,
-          ivRegistrationBackIv, placeRegistrationBtn, viRegistrationHeaderCl,
+          ivMainNicknameRecordIv, ivMainPlaceIv, ivMainSearchIv, ivMainSetNicknameEt,
+          ivMainSetPlaceEt, ivRegistrationBackIv, ivRegistrationRegisterIv, viRegistrationHeaderCl,
           viRegistrationHeaderLine, viRegistrationTv);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -3353,10 +3353,12 @@ int id item_touch_helper_previous_elevation 0x7f0a0147
 int id iv_main_hamburger_iv 0x7f0a0148
 int id iv_main_nickname_record_iv 0x7f0a0149
 int id iv_main_place_iv 0x7f0a02d3
+int id iv_main_search_iv 0x7f0a02d5
 int id iv_main_search_place_et 0x7f0a014a
 int id iv_main_set_nickname_et 0x7f0a014b
 int id iv_main_set_place_et 0x7f0a014c
 int id iv_registration_back_iv 0x7f0a014d
+int id iv_registration_register_iv 0x7f0a02d6
 int id jumpToEnd 0x7f0a014e
 int id jumpToStart 0x7f0a014f
 int id labeled 0x7f0a0150
@@ -3522,7 +3524,6 @@ int id phone_button 0x7f0a01ee
 int id phone_layout 0x7f0a01ef
 int id phone_number 0x7f0a01f0
 int id pin 0x7f0a01f1
-int id place_registration_btn 0x7f0a02d4
 int id position 0x7f0a01f2
 int id postLayout 0x7f0a01f3
 int id pressed 0x7f0a01f4

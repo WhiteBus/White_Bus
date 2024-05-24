@@ -92,8 +92,9 @@
         <activity android:name="com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.MainActivity" />
         <activity android:name="com.google.mediapipe.examples.facelandmarker.DriverMainActivity" />
+        <activity android:name="com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity" />
         <activity
-            android:name="com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity"
+            android:name="com.google.mediapipe.examples.facelandmarker.repository.activity_home"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
