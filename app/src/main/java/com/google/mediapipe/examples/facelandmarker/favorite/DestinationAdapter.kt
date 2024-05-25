@@ -7,13 +7,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
 
-class DestinationAdapter(private val destinations: Cursor) :
-    RecyclerView.Adapter<DestinationViewHolder>() {
+class DestinationAdapter(
+    private val destinations: Cursor,
+    private val itemClickListener: (String) -> Unit
+) : RecyclerView.Adapter<DestinationViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DestinationViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_destination, parent, false)
-        return DestinationViewHolder(itemView)
+        return DestinationViewHolder(itemView, itemClickListener)
     }
 
     override fun onBindViewHolder(holder: DestinationViewHolder, position: Int) {

@@ -14,12 +14,10 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.mediapipe.examples.facelandmarker.DriverMainActivity
 import com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des
 import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
-import com.google.mediapipe.examples.facelandmarker.databinding.ActivityMainBinding
 import com.google.mediapipe.examples.facelandmarker.favorite.DestinationAdapter
 
 class activity_home : AppCompatActivity() {
@@ -32,6 +30,14 @@ class activity_home : AppCompatActivity() {
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var searchBar: EditText
 
+    val button1: TextView by lazy { findViewById(R.id.button1_text1) }
+    val button2: TextView by lazy { findViewById(R.id.button2_text1) }
+    val button3: TextView by lazy { findViewById(R.id.button3_text1) }
+
+    val button1_1: TextView by lazy { findViewById(R.id.button1_text2) }
+    val button2_1: TextView by lazy { findViewById(R.id.button2_text2) }
+    val button3_1: TextView by lazy { findViewById(R.id.button3_text2) }
+
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,25 +45,16 @@ class activity_home : AppCompatActivity() {
 
         destinationRepository = DestinationRepository(this)
 
-        val button1: TextView = findViewById(R.id.button1_text1)
-        val button2: TextView = findViewById(R.id.button2_text1)
-        val button3: TextView = findViewById(R.id.button3_text1)
-
-        val button1_1: TextView = findViewById(R.id.button1_text2)
-        val button2_1: TextView = findViewById(R.id.button2_text2)
-        val button3_1: TextView = findViewById(R.id.button3_text2)
-
         val button4Container: ConstraintLayout = findViewById(R.id.button4_container)
 
         searchBar = findViewById(R.id.iv_main_search_place_et)
 
-//        destinationRepository.insertDestination("DMC", 12324.213, 234234.3, "월드컵북로44길")
-//        destinationRepository.insertDestination("DM", 1232.213, 34234.3, "월드컵경기장")
-
         destinationRepository = DestinationRepository(this)
         recyclerView = findViewById(R.id.recyclerViewDestinations)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = DestinationAdapter(destinationRepository.getAllDestinations())
+        adapter = DestinationAdapter(destinationRepository.getAllDestinations()) { name ->
+            onDestinationItemClick(name)
+        }
         recyclerView.adapter = adapter
 
         val cursor = destinationRepository.getAllDestinations()
@@ -109,6 +106,39 @@ class activity_home : AppCompatActivity() {
         clickListener()
     }
 
+    private fun onDestinationItemClick(name: String) {
+        val coordinates = destinationRepository.getDestinationCoordinatesByName(name)
+        // 좌표를 활용한 처리
+        coordinates?.let {
+            // 예: 지도 화면으로 이동 또는 다른 액티비티로 이동
+            val intent = Intent(this, Main_vi_Search_des::class.java)
+            intent.putExtra("xCoord", it.first)
+            intent.putExtra("yCoord", it.second)
+            startActivity(intent)
+        }
+    }
+//  즐겨찾기 검색기능 여기다 추가!
+    private fun clickLitener1(){
+        searchBar.setOnClickListener {
+            val coor = destinationRepository.getDestinationCoordinatesByName(button1.text.toString())
+            switchActivity(Main_vi_Search_des::class.java)
+        }
+    }
+
+    private fun clickLitener2(){
+        searchBar.setOnClickListener {
+            val coor = destinationRepository.getDestinationCoordinatesByName(button2.text.toString())
+            switchActivity(Main_vi_Search_des::class.java)
+        }
+    }
+
+    private fun clickLitener3(){
+        searchBar.setOnClickListener {
+            val coor = destinationRepository.getDestinationCoordinatesByName(button3.text.toString())
+            switchActivity(Main_vi_Search_des::class.java)
+        }
+    }
+
     private fun clickListener() {
         searchBar.setOnClickListener {
             switchActivity(Main_vi_Search_des::class.java)
@@ -120,7 +150,6 @@ class activity_home : AppCompatActivity() {
         startActivity(intent)
         overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
     }
-
 
     private fun startSpeechRecognition() {
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
