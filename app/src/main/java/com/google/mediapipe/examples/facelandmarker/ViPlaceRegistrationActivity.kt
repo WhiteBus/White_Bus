@@ -17,6 +17,7 @@ import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationResp
 import com.google.mediapipe.examples.facelandmarker.remote.service.SearchStationService
 import com.google.mediapipe.examples.facelandmarker.remote.view.SearchStationView
 import com.google.mediapipe.examples.facelandmarker.repository.DestinationRepository
+import com.google.mediapipe.examples.facelandmarker.repository.activity_home
 import java.util.*
 
 class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitListener, SearchStationView {
@@ -62,9 +63,13 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
             placeSpeechRecognition()
         }
         // 이전 버튼이 눌렸을 때
+        // 이전 버튼이 눌렸을 때
         val backButton: ImageView = findViewById(R.id.iv_registration_back_iv)
         backButton.setOnClickListener {
-            finish() // activity_home 으로 돌아감
+            val intent = Intent(this, activity_home::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
         }
         // 검색 버튼
         val searchButton: Button = findViewById(R.id.iv_main_search_iv)
