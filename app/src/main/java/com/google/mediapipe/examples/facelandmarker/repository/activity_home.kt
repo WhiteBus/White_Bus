@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
@@ -19,6 +20,7 @@ import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
 import com.google.mediapipe.examples.facelandmarker.favorite.DestinationAdapter
+import com.google.mediapipe.examples.facelandmarker.searchPubPathT
 
 class activity_home : AppCompatActivity() {
 
@@ -103,53 +105,77 @@ class activity_home : AppCompatActivity() {
             startActivity(intent)
         }
         // 목적지 검색창으로 이동
-        clickListener()
+        //clickListener()
+        searchBar.setOnClickListener {
+            // 키보드를 숨깁니다
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(searchBar.windowToken, 0)
+
+            // 다음 Activity로 이동합니다
+            val intent = Intent(this, Main_vi_Search_des::class.java)
+            startActivity(intent)
+        }
+        // 즐겨찾기 버튼 클릭 리스너 추가
+        button1.setOnClickListener { onFavoriteButtonClick(button1.text.toString()) }
+        button2.setOnClickListener { onFavoriteButtonClick(button2.text.toString()) }
+        button3.setOnClickListener { onFavoriteButtonClick(button3.text.toString()) }
     }
 
+    //  즐겨찾기 검색기능 여기다 추가!
+    private fun onFavoriteButtonClick(favoriteName: String) {
+        val coordinates = destinationRepository.getDestinationCoordinatesByName(favoriteName)
+        coordinates?.let {
+            val intent = Intent(this, searchPubPathT::class.java)
+            intent.putExtra("endStationX", it.first)
+            intent.putExtra("endStationY", it.second)
+            intent.putExtra("endStationName", favoriteName)
+            startActivity(intent)
+        }
+    }
     private fun onDestinationItemClick(name: String) {
         val coordinates = destinationRepository.getDestinationCoordinatesByName(name)
-        // 좌표를 활용한 처리
         coordinates?.let {
-            // 예: 지도 화면으로 이동 또는 다른 액티비티로 이동
             val intent = Intent(this, Main_vi_Search_des::class.java)
             intent.putExtra("xCoord", it.first)
             intent.putExtra("yCoord", it.second)
             startActivity(intent)
         }
     }
-//  즐겨찾기 검색기능 여기다 추가!
-    private fun clickLitener1(){
-        searchBar.setOnClickListener {
-            val coor = destinationRepository.getDestinationCoordinatesByName(button1.text.toString())
-            switchActivity(Main_vi_Search_des::class.java)
-        }
-    }
 
-    private fun clickLitener2(){
-        searchBar.setOnClickListener {
-            val coor = destinationRepository.getDestinationCoordinatesByName(button2.text.toString())
-            switchActivity(Main_vi_Search_des::class.java)
-        }
-    }
 
-    private fun clickLitener3(){
-        searchBar.setOnClickListener {
-            val coor = destinationRepository.getDestinationCoordinatesByName(button3.text.toString())
-            switchActivity(Main_vi_Search_des::class.java)
-        }
-    }
 
-    private fun clickListener() {
-        searchBar.setOnClickListener {
-            switchActivity(Main_vi_Search_des::class.java)
-        }
-    }
+//    private fun clickLitener1(){
+//        searchBar.setOnClickListener {
+//            val coor = destinationRepository.getDestinationCoordinatesByName(button1.text.toString())
+//            switchActivity(Main_vi_Search_des::class.java)
+//        }
+//    }
+//
+//    private fun clickLitener2(){
+//        searchBar.setOnClickListener {
+//            val coor = destinationRepository.getDestinationCoordinatesByName(button2.text.toString())
+//            switchActivity(Main_vi_Search_des::class.java)
+//        }
+//    }
+//
+//    private fun clickLitener3(){
+//        searchBar.setOnClickListener {
+//            val coor = destinationRepository.getDestinationCoordinatesByName(button3.text.toString())
+//            switchActivity(Main_vi_Search_des::class.java)
+//        }
+//    }
 
-    private fun switchActivity(activityClass: Class<*>) {
-        val intent = Intent(this, activityClass)
-        startActivity(intent)
-        overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
-    }
+//    private fun clickListener() {
+//        searchBar.setOnClickListener {
+//            switchActivity(Main_vi_Search_des::class.java)
+//        }
+//    }
+
+//    private fun switchActivity(activityClass: Class<*>) {
+//        val intent = Intent(this, activityClass)
+//        startActivity(intent)
+//        overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
+//    }
 
     private fun startSpeechRecognition() {
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)

@@ -5,7 +5,7 @@ import android.os.Parcelable
 
 data class SubPathInfo(
     val index: Int,
-    val distance: Int,
+    val distance: Double,
     val sectionTime: Int,
     val startName: String,
     val startX: Double?,
@@ -18,7 +18,7 @@ data class SubPathInfo(
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         index = parcel.readInt(),
-        distance = parcel.readInt(),
+        distance = parcel.readDouble(),
         sectionTime = parcel.readInt(),
         startName = parcel.readString() ?: "Unknown",
         startX = parcel.readDouble(),
@@ -32,7 +32,7 @@ data class SubPathInfo(
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(index)
-        parcel.writeInt(distance)
+        parcel.writeDouble(distance)
         parcel.writeInt(sectionTime)
         parcel.writeString(startName)
         if (startX != null) {

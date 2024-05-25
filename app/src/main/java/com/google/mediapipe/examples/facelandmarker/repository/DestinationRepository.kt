@@ -1,5 +1,4 @@
 package com.google.mediapipe.examples.facelandmarker.repository
-
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
@@ -45,8 +44,10 @@ class DestinationRepository(context: Context) {
 
         with(cursor) {
             if (moveToFirst()) {
-                val xCoord = getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_X_COORD))
-                val yCoord = getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD))
+                val xCoord =
+                    getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_X_COORD))
+                val yCoord =
+                    getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD))
                 coordinates = Pair(xCoord, yCoord)
             }
             close()

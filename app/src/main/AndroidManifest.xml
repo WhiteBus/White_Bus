@@ -41,18 +41,17 @@
             android:value="v4ud3zha1i" />
 
         <activity android:name=".DriverMainActivity"/>
-        <activity android:name=".SplashActivity" /> <!-- <activity android:name=".Main_NearestStation" /> -->
+        <activity android:name=".SplashActivity" />
         <activity android:name=".BusNumberInputActivity" />
         <activity android:name=".AppUserDeterminantActivity" />
         <activity android:name=".FaceSettingActivity" />
 <!--        <activity android:name=".DriverMainActivity" />-->
-        <activity android:name=".Main_vi_Search_des" />
-        <activity android:name=".searchPubPathT" />
-        <activity android:name=".Main_NearestStation" />
-        <activity android:name=".Main_Bus_Arrival" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ViPlaceRegistrationActivity" />
         <activity android:name=".repository.activity_home" />
+
+        <activity android:name=".OnStationUser" />
+        
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -62,8 +61,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FindCurrentPosition"/>
+        <activity android:name=".Main_vi_Search_des"/>
+        <activity android:name=".searchPubPathT"/>
+        <activity android:name=".Main_Bus_Arrival"/>
         <activity android:name=".RideBus" />
-        <activity android:name=".OnStationUser" />
+
         <activity android:name=".user_dropin_bus" /> <!-- 카카오 로그인, 인가코드를 받기 위한 액티비티 -->
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
