@@ -40,6 +40,7 @@
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="v4ud3zha1i" />
 
+        <activity android:name=".DriverMainActivity"/>
         <activity android:name=".SplashActivity" /> <!-- <activity android:name=".Main_NearestStation" /> -->
         <activity android:name=".BusNumberInputActivity" />
         <activity android:name=".AppUserDeterminantActivity" />
@@ -53,7 +54,7 @@
         <activity android:name=".ViPlaceRegistrationActivity" />
         <activity android:name=".repository.activity_home" />
         <activity
-            android:name=".DriverMainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
