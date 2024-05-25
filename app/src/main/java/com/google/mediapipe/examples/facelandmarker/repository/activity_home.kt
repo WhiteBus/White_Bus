@@ -14,6 +14,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.mediapipe.examples.facelandmarker.DriverMainActivity
+import com.google.mediapipe.examples.facelandmarker.Main_vi_Search_des
 import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
@@ -49,8 +51,8 @@ class activity_home : AppCompatActivity() {
 
         searchBar = findViewById(R.id.iv_main_search_place_et)
 
-        destinationRepository.insertDestination("DMC", 12324.213, 234234.3, "월드컵북로44길")
-        destinationRepository.insertDestination("DM", 1232.213, 34234.3, "월드컵경기장")
+//        destinationRepository.insertDestination("DMC", 12324.213, 234234.3, "월드컵북로44길")
+//        destinationRepository.insertDestination("DM", 1232.213, 34234.3, "월드컵경기장")
 
         destinationRepository = DestinationRepository(this)
         recyclerView = findViewById(R.id.recyclerViewDestinations)
@@ -103,7 +105,22 @@ class activity_home : AppCompatActivity() {
             val intent = Intent(this, ViPlaceRegistrationActivity::class.java)
             startActivity(intent)
         }
+        // 목적지 검색창으로 이동
+        clickListener()
     }
+
+    private fun clickListener() {
+        searchBar.setOnClickListener {
+            switchActivity(Main_vi_Search_des::class.java)
+        }
+    }
+
+    private fun switchActivity(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
+        overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
+    }
+
 
     private fun startSpeechRecognition() {
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
