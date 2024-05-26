@@ -73,6 +73,7 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
             intent.putExtra("stationID", stationid)
             intent.putExtra("stationX", stationX)
             intent.putExtra("stationY", stationY)
+            // intent.putExtra("selectedStationName", selectedStationName)
             // Start the activity using the context from the view
             it.context.startActivity(intent)
         }

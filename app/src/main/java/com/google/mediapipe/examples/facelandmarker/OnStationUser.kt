@@ -25,7 +25,7 @@ class OnStationUser : AppCompatActivity() {
         var nickname:String = ""
         var profileImageUrl:String = ""
         val stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID //정류장 id가져오기
-
+        val busNo = intent.getStringExtra("busNo") ?: ""
 
         val userid = auth.currentUser?.uid ?: return
         val userDocRef = db.collection("BlindUser").document(userid)
@@ -50,6 +50,10 @@ class OnStationUser : AppCompatActivity() {
                 addBlindToStation(stationid.toString(), nickname, profileImageUrl)
             }
             val intent = Intent(this@OnStationUser, RideBus::class.java)
+            intent.putExtra("busNo", busNo)
+            intent.putExtra("stationID", stationid)
+            intent.putExtra("nickname", nickname)
+            intent.putExtra("profileImageUrl", profileImageUrl)
             startActivity(intent)
         }
     }
