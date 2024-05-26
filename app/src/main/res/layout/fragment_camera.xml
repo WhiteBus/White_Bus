@@ -33,8 +33,10 @@
             android:layout_alignParentTop="true"
             android:textSize="18sp"
             android:padding="16dp"
+            android:text="awake"
             android:textColor="#FFFFFF"
             android:background="#80000000" />
 
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

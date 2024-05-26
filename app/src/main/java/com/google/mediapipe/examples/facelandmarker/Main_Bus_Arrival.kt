@@ -1,5 +1,6 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
@@ -30,11 +31,14 @@ import kotlin.math.sin
 import kotlin.math.sqrt
 
 class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
-
+    //firbase에서 쓸 변수들!!
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
         private var busTransitCount: Int = 0
+        var globalstartID: Int = 0
+        var globalstartX: Double = 0.0
+        var globalstartY: Double = 0.0
         private const val SPEECH_REQUEST_CODE = 123
     }
 
@@ -73,19 +77,13 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // RecyclerView 초기화
         transitRecyclerView.layoutManager = LinearLayoutManager(this)
 
-//        // 도착지 설정된 것 방법1
-//        val selectedStationName = intent.getStringExtra("selectedStationName")
-//        totAddress.text = selectedStationName
 
         // 도착지 설정된 것 방법1) 검색한 결과 + 햄버거바에 설정한 도착지
         val lastStationName = intent.getStringExtra("selectedStationName")
         Log.d("Main_Bus_Arrival",lastStationName.toString())
-        // 도착지 설정된 것 방법2 (햄버거바)
+        // 도착지 설정된 것 방법2 (즐겨찾기 버튼)
         val realName = intent.getStringExtra("realName")
         Log.d("Main_Bus_Arrival",realName.toString())
-
-        //도착지 설정된 것 방법3 (즐겨찾기 버튼)
-
 
         // 선택된 도착지 이름 결정
         val selectedStationName = when {
@@ -136,7 +134,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
                 )
             }
         }
-
         return 0
     }
 
@@ -191,7 +188,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
+                apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(
@@ -321,8 +318,15 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
                 for (i in 0 until Main_Bus_Arrival.busTransitCount + 1) {
                     if (i < filteredSubPaths.size) {
                         val subPath = filteredSubPaths[i]
+
+                        // firebase에서 쓸 변수들!!
+
+                        globalstartID = subPath.startID!!
+                        globalstartX = subPath.startX!!
+                        globalstartY = subPath.startY!!
                         println("Global Transit Count Index: $i")
-                        println("  Start Coordinates: (${subPath.startX}, ${subPath.startY}) - Number: ${i + 1}")
+                        println("  Start Coordinates: (${globalstartX}, ${globalstartY}) - Number: ${i + 1}")
+                        println("  StartID ffffffirt ${globalstartID}")
                     }
                 }
             }
