@@ -45,7 +45,7 @@
         <activity android:name=".BusNumberInputActivity" />
         <activity android:name=".AppUserDeterminantActivity" />
         <activity android:name=".FaceSettingActivity" />
-<!--        <activity android:name=".DriverMainActivity" />-->
+        <!--        <activity android:name=".DriverMainActivity" />-->
         <activity android:name=".Main_vi_Search_des" />
         <activity android:name=".searchPubPathT" />
         <activity android:name=".Main_NearestStation" />
