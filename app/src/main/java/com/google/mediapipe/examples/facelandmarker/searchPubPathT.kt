@@ -48,7 +48,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
         println("endStation name id ${endStationFavorite}")
 
         if (startX != null && startY != null && endX != null && endY != null) {
-            pathService.searchPath("0", startX, startY, endX, endY, 2, "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I", this)
+            pathService.searchPath("0", startX, startY, endX, endY, 2, "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s", this)
         } else {
             println("Please select both start and end stations.")
         }

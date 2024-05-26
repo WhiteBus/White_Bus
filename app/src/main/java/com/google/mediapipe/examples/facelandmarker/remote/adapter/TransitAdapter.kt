@@ -69,6 +69,7 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
             // Create an Intent to start the OnStationUser activity
             val intent = Intent(it.context, OnStationUser::class.java)
             // Add station data to the intent
+            intent.putExtra("busNo", transitInfo.busNo)
             intent.putExtra("stationID", stationid)
             intent.putExtra("stationX", stationX)
             intent.putExtra("stationY", stationY)

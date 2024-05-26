@@ -22,10 +22,10 @@ class RideBus : AppCompatActivity() {
         val uid = auth.uid
 
         val ridingbtn = findViewById<Button>(R.id.riding_btn)
-        var busNumber = 303 //버스 번호판 네자리 가져오기
+        var busNumber = Main_Bus_Arrival.globalRouteNm
         var nickname:String = ""
         var profileImageUrl:String = ""
-        var stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID.toString()
+        var stationid = Main_Bus_Arrival.globalstartID.toString()
 
 
 //커렌트 유저블라인드해서 밑에 함수 적용
