@@ -24,22 +24,41 @@ class user_dropin_bus : AppCompatActivity() {
 
 
         val removebtn = findViewById<Button>(R.id.dropbtn)
-        var busNumber = 303 //버스 번호판 네자리 가져오기
+        var busNumber: String = "" //버스 번호판 네자리 가져오기
         var nickname:String = ""
         var profileImageUrl:String = ""
-        var stationid = 123.toString() //Main_NearestStation.GlobalValue_first.stationID.toString()
+        var stationid: String = intent.getStringExtra("stationid") ?: ""  // 인텐트에서 stationid 값을 가져옵니다.
+
+
+        val muserid = auth.currentUser?.uid ?: return
+        val muserDocRef = db.collection("BlindUser").document(muserid)
+        muserDocRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                if (documentSnapshot.exists()) {
+                    val data = documentSnapshot.data
+                    data?.let {
+                        nickname = (it["nickname"] as? String).toString()
+                        profileImageUrl = (it["profileImageUrl"] as? String).toString()
+                        busNumber = (it["pickupNUm"] as? String).toString()
+                        //stationid = (it["stationId"] as? String).toString()
+
+                    }
+                } else {
+                    println("No such document")
+                }
+            }
+            .addOnFailureListener { e ->
+                println("Error getting user data: $e")
+            }
 
 
 
-        val userid = auth.currentUser?.uid ?: return
-        val userDocRef = db.collection("OnBus").document(busNumber.toString()).collection("blindUser").document(
-            uid.toString()
-        )
+
 
         removebtn.setOnClickListener{
             if (nickname != null && profileImageUrl != null) {
                 if (uid != null) {
-                    removeBlindToBus(busNumber, uid)
+                    removeBlindToBus(busNumber)
                 }
             }
             val intent = Intent(this@user_dropin_bus, MainActivity::class.java)
@@ -47,12 +66,12 @@ class user_dropin_bus : AppCompatActivity() {
         }
     }
 
-    fun removeBlindToBus(busnumber: Int?, uid: String) {
+    fun removeBlindToBus(busnumber: String) {
         val firebaseUser = auth.currentUser
         firebaseUser?.let {
             val uid = it.uid
 
-            db.collection("OnBus").document(busnumber.toString()).collection("blindUser").document(uid)
+            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
                 .delete()
                 .addOnSuccessListener { documentReference ->
                     Log.d(TAG, "DocumentSnapshot added with ID: ")

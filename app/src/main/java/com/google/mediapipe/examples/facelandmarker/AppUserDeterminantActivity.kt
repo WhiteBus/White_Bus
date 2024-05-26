@@ -138,6 +138,9 @@ class AppUserDeterminantActivity : AppCompatActivity() {
             val blind: MutableMap<String, Any> = HashMap()
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
+            blind["longitude"] = ""
+            blind["latitude"] = ""
+            blind["stationId"] = ""
 
             db.collection("BlindUser").document(uid)
                 .set(blind)
