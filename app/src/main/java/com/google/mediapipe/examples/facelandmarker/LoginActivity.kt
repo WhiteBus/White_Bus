@@ -16,6 +16,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.initialize
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityAppUserDeterminantBinding
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityLoginBinding
+import com.google.mediapipe.examples.facelandmarker.repository.activity_home
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.user.UserApiClient
 
@@ -78,7 +79,9 @@ class LoginActivity : AppCompatActivity() {
                                     }else if(blindtype?.toInt() == 2){
                                         Log.d(TAG, "Firebase sign in succeeded: blindtype 2")
 
-                                        val intent = Intent(this@LoginActivity, OnStationUser::class.java)
+                                        //val intent = Intent(this@LoginActivity, OnStationUser::class.java)
+                                        //장애인(2) -> 즐겨찾기 view
+                                        val intent = Intent(this@LoginActivity, FindCurrentPosition::class.java)
                                         startActivity(intent)
                                     }
                                     else {

@@ -1,112 +1,213 @@
 package com.google.mediapipe.examples.facelandmarker
 
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
+import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.mediapipe.examples.facelandmarker.FindCurrentPosition.GlobalValue_current.current_x
+import com.google.mediapipe.examples.facelandmarker.FindCurrentPosition.GlobalValue_current.current_y
 import com.google.mediapipe.examples.facelandmarker.remote.adapter.TransitAdapter
 import com.google.mediapipe.examples.facelandmarker.remote.dto.BusArrival
 import com.google.mediapipe.examples.facelandmarker.remote.dto.PathInfoStation
 import com.google.mediapipe.examples.facelandmarker.remote.dto.RealtimeBusArrivalRes
 import com.google.mediapipe.examples.facelandmarker.remote.dto.TransitInfo
 import com.google.mediapipe.examples.facelandmarker.remote.retrofit.BusArrivalInterface
-import com.google.mediapipe.examples.facelandmarker.remote.service.RealTimeService
-import com.google.mediapipe.examples.facelandmarker.remote.view.RealTimeView
 
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.Locale
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.pow
+import kotlin.math.roundToInt
+import kotlin.math.sin
+import kotlin.math.sqrt
 
-class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
-
-    private var call: Call<RealtimeBusArrivalRes>? = null
-    private lateinit var realtimeAdapter: TransitAdapter
-    private lateinit var realTimeService: RealTimeService
-    private lateinit var transit_recyclerView: RecyclerView
-    private lateinit var TotAdress: TextView
-    private lateinit var TotTime: TextView
-    private lateinit var TotDistance: TextView
+class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
+        private var busTransitCount: Int = 0
+        private const val SPEECH_REQUEST_CODE = 123
     }
+
+    private lateinit var busArrivalService: BusArrivalInterface
+    private var call: Call<RealtimeBusArrivalRes>? = null
+    private lateinit var realtimeAdapter: TransitAdapter
+
+    private lateinit var totAddress: TextView
+    private lateinit var totTime: TextView
+    private lateinit var totDistance: TextView
+    private lateinit var transitRecyclerView: RecyclerView
+
+    //누르면 얼마나 남았는 지 말하기  "몇 미터 남았습니다"
+    private lateinit var voiceoutput: ImageButton
+    private lateinit var tts: TextToSpeech
+
+    private val stationIDList by lazy {
+        intent.getIntegerArrayListExtra("stationIDList") ?: arrayListOf()
+    }
+    private val pathInfoList by lazy {
+        intent.getParcelableArrayListExtra<PathInfoStation>("pathInfoList")
+            ?: arrayListOf<PathInfoStation>()
+    }
+    private val busNumbersMap by lazy { loadBusNumbersMap() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_address)
+        setContentView(R.layout.activity_user_address) // 사용하려는 레이아웃 파일 설정
 
-        transit_recyclerView = findViewById(R.id.transit_recyclerView)
-        TotAdress = findViewById(R.id.user_address_dst_name)
-        TotTime = findViewById(R.id.user_time)
-        TotDistance = findViewById(R.id.user_distance)
+        // View 초기화
+        totAddress = findViewById(R.id.user_address_dst_name)
+        totTime = findViewById(R.id.user_time)
+        totDistance = findViewById(R.id.user_distance)
+        transitRecyclerView = findViewById(R.id.transit_recyclerView)
 
-        transit_recyclerView.layoutManager = LinearLayoutManager(this)
+        // RecyclerView 초기화
+        transitRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        realtimeAdapter = TransitAdapter(emptyList()) // 어댑터를 빈 리스트로 초기화
-        transit_recyclerView.adapter = realtimeAdapter
+        // 도착지 설정된 것 방법1
+        val selectedStationName = intent.getStringExtra("selectedStationName")
+        totAddress.text = selectedStationName
 
-        val retrofit = RetrofitModule.getRetrofit()
-        realTimeService = RealTimeService(retrofit)
-        realTimeService.setRealtimeBusArrival(this)
 
-        // Main_vi_Search_des의 GlobalValues_last에서 lastPointStation의 stationName을 가져와 TotAdress에 설정
-        val lastPointStation = Main_vi_Search_des.GlobalValues_last.lastPointStation
-        TotAdress.text = lastPointStation?.stationName ?: "Station name not available"
-
-        // 각각의 TextView 지정
-        val busNumbers = intent.getStringArrayListExtra("busNumbers") ?: arrayListOf()
-        val stationID = intent.getIntExtra("startID", -1)
-        val pathInfoList = intent.getParcelableArrayListExtra<PathInfoStation>("pathInfoList") ?: arrayListOf()
-
-        println("stationID : $stationID")
-        if (stationID != -1) {
-            fetchBusArrivalData(stationID, busNumbers) {
+        println("stationIDList : $stationIDList")
+        if (stationIDList.isNotEmpty()) {
+            fetchBusArrivalDataForAllStations(stationIDList) {
                 // 필요한 모든 데이터를 처리한 후 필요한 작업을 완료합니다.
                 selectAndPrintRoute(globalRouteNm, pathInfoList)
             }
         } else {
-            println("Station ID is not available.")
+            println("Station ID list is not available.")
+        }
+
+        // 음성출력
+        voiceoutput = findViewById(R.id.locationButton)
+        tts = TextToSpeech(this, this)
+        voiceoutput.setOnClickListener {
+            val distanceToFirstStop = calculateDistanceToFirstStop(pathInfoList)
+            val textToSpeak = "정류장까지 남은 거리는 ${distanceToFirstStop} 미터 입니다."
+            speakOut(textToSpeak)
+        }
+    }
+
+    private fun calculateDistanceToFirstStop(pathInfoList: List<PathInfoStation>): Int {
+        if (pathInfoList.isEmpty()) return 0
+
+        val selectedPathIndex = pathInfoList.indexOfFirst { pathInfo ->
+            pathInfo.subPaths.any { subPath -> subPath.busNo == globalRouteNm }
+        }
+
+        if (selectedPathIndex != -1) {
+            val firstSubPath = pathInfoList[selectedPathIndex].subPaths.firstOrNull()
+            if (firstSubPath != null) {
+                return calculateDistance(
+                    current_y ?: 0.0,
+                    current_x ?: 0.0,
+                    firstSubPath.startY ?: 0.0,
+                    firstSubPath.startX ?: 0.0
+                )
+            }
+        }
+
+        return 0
+    }
+
+    // speaking 초기화
+    private fun speakOut(text: String) {
+        if (tts.isSpeaking) {
+            tts.stop()
+        }
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+    }
+
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS) {
+            val result = tts.setLanguage(Locale.KOREA)
+            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                Toast.makeText(this, "Language not supported", Toast.LENGTH_SHORT).show()
+            }
+        } else {
+            Toast.makeText(this, "Initialization failed", Toast.LENGTH_SHORT).show()
         }
     }
 
     override fun onDestroy() {
+        if (tts != null) {
+            tts.stop()
+            tts.shutdown()
+        }
         super.onDestroy()
-        call?.cancel()
     }
 
-    private fun fetchBusArrivalData(stationID: Int, busNumbers: List<String>, onFetchComplete: () -> Unit) {
-        val retrofit = RetrofitModule.getRetrofit()
-        val busArrivalService = retrofit.create(BusArrivalInterface::class.java)
-        call = busArrivalService.getRealtimeBusArrival(lang = 0, stationID = stationID, apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I")
+    private fun loadBusNumbersMap(): Map<Int, List<String>> {
+        val map = mutableMapOf<Int, List<String>>()
+        for (pathIndex in pathInfoList.indices) {
+            val busNumbers =
+                intent.getStringArrayListExtra("busNumbers_$pathIndex") ?: arrayListOf()
+            map[pathIndex] = busNumbers
+        }
+        return map
+    }
 
-        call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
-            override fun onResponse(call: Call<RealtimeBusArrivalRes>, response: Response<RealtimeBusArrivalRes>) {
-                if (response.isSuccessful) {
-                    val busArrivalResponse = response.body()
-                    if (busArrivalResponse != null && busArrivalResponse.result != null) {
-                        val busArrivalList = busArrivalResponse.result.real.filter { busNumbers.contains(it.routeNm) }
-                        if (busArrivalList.isNotEmpty()) {
-                            findBusWithSmallestArrivalSec(busArrivalList)
-                            onFetchComplete()
-                        } else {
-                            println("No bus arrivals found.")
+    private fun fetchBusArrivalDataForAllStations(
+        stationIDList: List<Int>,
+        onFetchComplete: () -> Unit
+    ) {
+        val retrofit = RetrofitModule.getRetrofit()
+        busArrivalService = retrofit.create(BusArrivalInterface::class.java)
+
+        val busArrivalList = mutableListOf<BusArrival>()
+        var completedRequests = 0
+
+        stationIDList.forEach { stationID ->
+            call = busArrivalService.getRealtimeBusArrival(
+                lang = 0,
+                stationID = stationID,
+                apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
+            )
+            call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
+                override fun onResponse(
+                    call: Call<RealtimeBusArrivalRes>,
+                    response: Response<RealtimeBusArrivalRes>
+                ) {
+                    if (response.isSuccessful) {
+                        val busArrivalResponse = response.body()
+                        if (busArrivalResponse != null && busArrivalResponse.result != null) {
+                            val arrivals = busArrivalResponse.result.real?.filter {
+                                busNumbersMap.values.flatten().contains(it.routeNm)
+                            } ?: emptyList()
+                            busArrivalList.addAll(arrivals)
                         }
                     } else {
-                        println("Response is null or result is null.")
+                        println("Error: ${response.code()}")
                     }
-                } else {
-                    println("Error: ${response.code()}")
+                    // 주변에 탈 수 있는 버스 정류장이 많은 경우 (List)로 받아오기
+                    completedRequests++
+                    if (completedRequests == stationIDList.size) {
+                        findBusWithSmallestArrivalSec(busArrivalList)
+                        onFetchComplete()
+                    }
                 }
-            }
 
-            override fun onFailure(call: Call<RealtimeBusArrivalRes>, t: Throwable) {
-                if (!call.isCanceled) {
-                    t.printStackTrace()
+                override fun onFailure(call: Call<RealtimeBusArrivalRes>, t: Throwable) {
+                    if (!call.isCanceled) {
+                        t.printStackTrace()
+                    }
+                    completedRequests++
+                    if (completedRequests == stationIDList.size) {
+                        findBusWithSmallestArrivalSec(busArrivalList)
+                        onFetchComplete()
+                    }
                 }
-            }
-        })
+            })
+        }
     }
 
     private fun findBusWithSmallestArrivalSec(busArrivalList: List<BusArrival>) {
@@ -117,8 +218,25 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
         busWithSmallestArrivalSec?.let {
             globalBusPlateNo = it.arrival1?.busPlateNo
             globalRouteNm = it.routeNm
+            updateArrivalSecInRecyclerView(it.arrival1?.arrivalSec)
             println("The bus with the smallest arrivalSec is: ${it.arrival1?.busPlateNo} (Route: ${it.routeNm})")
         }
+    }
+
+    private fun updateArrivalSecInRecyclerView(arrivalSec: Int?) {
+        val transitInfos = pathInfoList.flatMap { pathInfo ->
+            pathInfo.subPaths.map { subPath ->
+                TransitInfo(
+                    startName = subPath.startName,
+                    endName = subPath.endName,
+                    busNo = subPath.busNo,
+                    distance = subPath.distance,
+                    sectionTime = subPath.sectionTime,
+                )
+            }
+        }
+        realtimeAdapter = TransitAdapter(transitInfos)
+        transitRecyclerView.adapter = realtimeAdapter
     }
 
     private fun selectAndPrintRoute(routeNm: String?, pathInfoList: List<PathInfoStation>) {
@@ -139,11 +257,20 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
             println("Total Time: ${selectedPathInfo.totalTime}")
             println("Total Distance ${selectedPathInfo.totalDistance}")
 
-            // TextView에 Total Time과 Total Distance 설정
-            TotTime.text = "${selectedPathInfo.totalTime} min"
-            TotDistance.text = "${selectedPathInfo.totalDistance} km"
+            busTransitCount = selectedPathInfo.busTransitCount
 
-            val transitInfos = selectedPathInfo.subPaths.map { subPath ->
+            // TextView에 Total Time과 Total Distance 설정
+            totTime.text = "${selectedPathInfo.totalTime} min"
+            totDistance.text = "${(selectedPathInfo.totalDistance) / 1000} km"
+
+            // 같은 subPathIndex를 가진 것 중 routeNm과 다른 버스들을 제거한 subPaths 리스트 생성
+            val filteredSubPaths = selectedPathInfo.subPaths.groupBy { it.index }
+                .flatMap { (index, subPaths) ->
+                    val filtered = subPaths.filter { subPath -> subPath.busNo == routeNm }
+                    if (filtered.isNotEmpty()) filtered else subPaths
+                }
+
+            val transitInfos = filteredSubPaths.map { subPath ->
                 TransitInfo(
                     startName = subPath.startName,
                     endName = subPath.endName,
@@ -152,41 +279,53 @@ class Main_Bus_Arrival : AppCompatActivity(), RealTimeView {
                     sectionTime = subPath.sectionTime
                 )
             }
-            realtimeAdapter = TransitAdapter(transitInfos)
-            transit_recyclerView.adapter = realtimeAdapter
 
-            for (subPath in selectedPathInfo.subPaths) {
+            realtimeAdapter = TransitAdapter(transitInfos)
+            transitRecyclerView.adapter = realtimeAdapter
+
+            var counter = 1
+            for (subPath in filteredSubPaths) {
                 println("  SubPath Index: ${subPath.index}")
                 println("  ${subPath.startName} (${subPath.startID}) to ${subPath.endName} - Bus No: ${subPath.busNo}")
                 println("    Distance: ${subPath.distance}")
                 println("    Section Time: ${subPath.sectionTime} minutes")
-                println("    Start Coordinates: (${subPath.startX}, ${subPath.startY})")
+                println("    Start Coordinates: (${subPath.startX}, ${subPath.startY}) - Number: $counter")
                 println("    End Coordinates: (${subPath.endX}, ${subPath.endY})")
+
+                counter++
+            }
+
+            // 추가적으로, globalTransitCnt 값을 사용하여 각 startX에 번호를 매깁니다.
+            if (busTransitCount > 0) {
+                for (i in 0 until Main_Bus_Arrival.busTransitCount + 1) {
+                    if (i < filteredSubPaths.size) {
+                        val subPath = filteredSubPaths[i]
+                        println("Global Transit Count Index: $i")
+                        println("  Start Coordinates: (${subPath.startX}, ${subPath.startY}) - Number: ${i + 1}")
+                    }
+                }
             }
         } else {
             println("No matching route found.")
         }
     }
 
-    override fun onRealTimeSuccess(response: RealtimeBusArrivalRes, stationID: Int) {
-        // 성공 시 처리
-        val busArrivalList = response.result?.real ?: emptyList()
-        val busInfo = busArrivalList.joinToString(separator = "\n") { bus ->
-            "Bus No: ${bus.routeNm}, Arrival: ${bus.arrival1?.arrivalSec} sec"
-        }
-        runOnUiThread {
-            TotAdress.text = "Bus Arrivals:\n$busInfo"
-            TotTime.text = "Update successful" // 예시 텍스트
-            TotDistance.text = "Distance info updated" // 예시 텍스트
-        }
-    }
+    fun calculateDistance(
+        lat1: Double,
+        lon1: Double,
+        lat2: Double,
+        lon2: Double
+    ): Int {
+        val R = 6371.0 // 지구의 반지름 (킬로미터)
 
-    override fun onRealTimeFailure(errorMessage: String) {
-        // 실패 시 처리
-        runOnUiThread {
-            TotAdress.text = "Error: $errorMessage"
-            TotTime.text = "Update failed"
-            TotDistance.text = "Distance info failed"
-        }
+        val phi1 = Math.toRadians(lat1)
+        val phi2 = Math.toRadians(lat2)
+        val deltaPhi = Math.toRadians(lat2 - lat1)
+        val deltaLambda = Math.toRadians(lon2 - lon1)
+
+        val a = sin(deltaPhi / 2).pow(2) + cos(phi1) * cos(phi2) * sin(deltaLambda / 2).pow(2)
+        val c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+        return (R * c * 1000).roundToInt() // 미터 단위로 반환
     }
 }

@@ -48,7 +48,7 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
     private fun performSearch() {
         val lang = "0"
         val stationName = searchEditText.text.toString()
-        val stationClass = 1
+        val stationClass = 1 //버스정류장
         val apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
     }
@@ -69,12 +69,12 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
         GlobalValues_last.lastPointStation = station
         // 클릭된 항목의 정보를 로그로 출력
         println("--Station Info--")
-        println("stationName: ${station.stationName}")
-        println("stationID: ${station.stationID}")
-        println("x: ${station.x}")
-        println("y: ${station.y}")
+        println("Des_stationName: ${station.stationName}")
+        println("Des_stationID: ${station.stationID}")
+        println("Des_station_x: ${station.x}")
+        println("Des_station_y: ${station.y}")
         val intent = Intent(this, searchPubPathT::class.java)
-        intent.putExtra("selectedStationName", station.stationName) // 선택된 역 이름을 전달
+        intent.putExtra("laststationname", station.stationName) // 선택된 역 이름을 전달
         startActivity(intent)
     }
 

@@ -62,7 +62,7 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
         placeSpeechBtn.setOnClickListener {
             placeSpeechRecognition()
         }
-        // 이전 버튼이 눌렸을 때
+
         // 이전 버튼이 눌렸을 때
         val backButton: ImageView = findViewById(R.id.iv_registration_back_iv)
         backButton.setOnClickListener {
@@ -90,6 +90,7 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
         val apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
         Log.d("searchStationService", searchStationService.toString())
+        speak("검색이 완료되었습니다.")
     }
 
     override fun onSearchStationSuccess(response: SearchStationResponse) {

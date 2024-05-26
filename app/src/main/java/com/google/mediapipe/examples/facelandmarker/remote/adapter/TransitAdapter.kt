@@ -20,7 +20,7 @@ class TransitAdapter(private val transitList: List<TransitInfo>) : RecyclerView.
         holder.transitInfo.text = transitInfo.busNo
         holder.transitStationStartName.text = transitInfo.startName
         holder.transitStationEndName.text = transitInfo.endName
-        holder.sectionDistance.text = "${transitInfo.distance} m"
+        holder.sectionDistance.text = "${(transitInfo.distance)/1000} m"
         holder.sectionTime.text = "${transitInfo.sectionTime} min"
     }
 

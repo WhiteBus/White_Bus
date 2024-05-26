@@ -17,16 +17,4 @@ data class SearchStationInfo(
     @SerializedName("stationID") val stationID: Int,
     @SerializedName("x") val x: Double,
     @SerializedName("y") val y: Double,
-    @SerializedName("arsID") val arsID: String,
-    @SerializedName("busOnlyCentralLane") val busOnlyCentralLane: Int,
-    @SerializedName("localStationID") val localStationID: String,
-    @SerializedName("ebid") val ebid: String,
-    @SerializedName("stationDirectionName") val stationDirectionName: String,
-    @SerializedName("businfo") val busInfo: List<BusInfo>
-)
-
-data class BusInfo(
-    @SerializedName("busClass") val busClass: String,
-    @SerializedName("busLocalBlID") val busLocalBlID: String,
-    @SerializedName("busNo") val busNo: String
 )

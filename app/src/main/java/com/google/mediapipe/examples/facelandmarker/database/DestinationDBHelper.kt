@@ -29,5 +29,6 @@ class DestinationDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL(SQL_DELETE_ENTRIES)
         onCreate(db)
+
     }
 }

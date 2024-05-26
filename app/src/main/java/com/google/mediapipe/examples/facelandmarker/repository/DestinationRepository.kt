@@ -1,11 +1,13 @@
 package com.google.mediapipe.examples.facelandmarker.repository
-
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
 import com.google.mediapipe.examples.facelandmarker.database.DestinationDbHelper
+import com.google.mediapipe.examples.facelandmarker.searchPubPathT
+
 
 class DestinationRepository(context: Context) {
 
@@ -19,7 +21,9 @@ class DestinationRepository(context: Context) {
             put(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD, yCoord)
             put(DestinationContract.DestinationEntry.COLUMN_NAME_ADDRESS, address)
         }
+
         return db.insert(DestinationContract.DestinationEntry.TABLE_NAME, null, values)
+
     }
 
     fun getAllDestinations(): Cursor {
@@ -45,9 +49,12 @@ class DestinationRepository(context: Context) {
 
         with(cursor) {
             if (moveToFirst()) {
-                val xCoord = getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_X_COORD))
-                val yCoord = getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD))
+                val xCoord =
+                    getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_X_COORD))
+                val yCoord =
+                    getDouble(getColumnIndexOrThrow(DestinationContract.DestinationEntry.COLUMN_NAME_Y_COORD))
                 coordinates = Pair(xCoord, yCoord)
+
             }
             close()
         }
