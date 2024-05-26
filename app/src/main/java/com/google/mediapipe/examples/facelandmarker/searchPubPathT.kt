@@ -34,7 +34,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
         // 끝점 = 즐겨찾기로 선택된 지점 (방법 2)
         val endXFromFavorite = intent.getDoubleExtra("endStationX", -1.0)
         val endYFromFavorite = intent.getDoubleExtra("endStationY", -1.0)
-        val realName = intent.getStringExtra("realName")
+        val endStationFavorite: String? = intent.getStringExtra("laststationname")
 
         // 실제 사용되는 끝점
         val (endX, endY) = if (endXFromFavorite != -1.0 && endYFromFavorite != -1.0) {
@@ -45,6 +45,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
             null to null
         }
         println("Destination is ${endX},${endY}")
+        println("endStation name id ${endStationFavorite}")
 
         if (startX != null && startY != null && endX != null && endY != null) {
             pathService.searchPath("0", startX, startY, endX, endY, 2, "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I", this)
@@ -143,6 +144,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
             val intent = Intent(this, Main_Bus_Arrival::class.java)
             intent.putIntegerArrayListExtra("stationIDList", ArrayList(stationIDList)) // 중복 제거된 stationID 리스트 전달
             intent.putParcelableArrayListExtra("pathInfoList", ArrayList(pathInfoList))
+
             //intent.putExtra("endStationName", endStationName)
             Log.d("searchPubPathT",ArrayList(stationIDList).toString())
             Log.d("searchPubPathT",ArrayList(pathInfoList).toString())

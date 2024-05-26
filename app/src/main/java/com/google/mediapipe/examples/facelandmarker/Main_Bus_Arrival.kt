@@ -2,6 +2,7 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -72,9 +73,29 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // RecyclerView 초기화
         transitRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        // 도착지 설정된 것 방법1
-        val selectedStationName = intent.getStringExtra("selectedStationName")
+//        // 도착지 설정된 것 방법1
+//        val selectedStationName = intent.getStringExtra("selectedStationName")
+//        totAddress.text = selectedStationName
+
+        // 도착지 설정된 것 방법1) 검색한 결과 + 햄버거바에 설정한 도착지
+        val lastStationName = intent.getStringExtra("selectedStationName")
+        Log.d("Main_Bus_Arrival",lastStationName.toString())
+        // 도착지 설정된 것 방법2 (햄버거바)
+        val realName = intent.getStringExtra("realName")
+        Log.d("Main_Bus_Arrival",realName.toString())
+
+        //도착지 설정된 것 방법3 (즐겨찾기 버튼)
+
+
+        // 선택된 도착지 이름 결정
+        val selectedStationName = when {
+            !lastStationName.isNullOrEmpty() -> lastStationName
+            !realName.isNullOrEmpty() -> realName
+            else -> "Unknown Destination"
+        }
+        // 도착지 이름을 텍스트에 설정
         totAddress.text = selectedStationName
+
 
 
         println("stationIDList : $stationIDList")
