@@ -3,8 +3,13 @@ package com.google.mediapipe.examples.facelandmarker
 import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Geocoder
+import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -34,15 +39,30 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var naverMap: NaverMap
     private lateinit var locationSource: FusedLocationSource
     private val marker = Marker()
+    private lateinit var mediaPlayer: MediaPlayer
+    private val handler = Handler(Looper.getMainLooper())
+    private var isWarningShowing = false
+    private var overlayLayout: ViewGroup? = null
+
+    private val statusChecker = object : Runnable {
+        override fun run() {
+            checkStatusTextView()
+            handler.postDelayed(this, 1000) // 1초마다 실행
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDriverMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setBottomNavigationView()
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
+
+        // MediaPlayer 초기화
+        mediaPlayer = MediaPlayer.create(this, R.raw.wistle_long)
 
         if (!hasPermission()) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, LOCATION_PERMISSION_REQUEST_CODE)
@@ -50,7 +70,55 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
             initMapView()
         }
 
-        setBottomNavigationView()
+        handler.post(statusChecker) // Runnable 시작
+    }
+
+    private fun checkStatusTextView() {
+        val fragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
+        if (fragment != null && fragment.view != null) {
+            val statusTextView = fragment.view?.findViewById<TextView>(R.id.statusTextView)
+            if (statusTextView != null && statusTextView.text != null) {
+                val statusText = statusTextView.text.toString()
+                if (statusText != "awake" && !isWarningShowing) {
+                    showWarningOverlay()
+                }
+            }
+        } else {
+            Toast.makeText(this, "statusTextView를 찾을 수 없습니다.", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun showWarningOverlay() {
+        isWarningShowing = true
+        mediaPlayer.start() // 경고음 재생
+
+        overlayLayout = layoutInflater.inflate(R.layout.sleepnot, null) as ViewGroup
+        val params = ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
+        addContentView(overlayLayout, params)
+
+        overlayLayout?.setOnClickListener {
+            removeWarningOverlay()
+        }
+
+        // 3초 후에 오버레이 제거
+        handler.postDelayed({
+            removeWarningOverlay()
+        }, 3000)
+    }
+
+    private fun removeWarningOverlay() {
+        overlayLayout?.let {
+            (it.parent as? ViewGroup)?.removeView(it)
+        }
+        if (mediaPlayer.isPlaying) {
+            mediaPlayer.stop()
+            mediaPlayer.prepare()
+        }
+        isWarningShowing = false
+        overlayLayout = null
     }
 
     private fun initMapView() {
