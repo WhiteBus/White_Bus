@@ -1,5 +1,6 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
@@ -30,11 +31,14 @@ import kotlin.math.sin
 import kotlin.math.sqrt
 
 class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
-
+    //firbase에서 쓸 변수들!!
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
         private var busTransitCount: Int = 0
+        var globalstartID: Int = 0
+        var globalstartX: Double = 0.0
+        var globalstartY: Double = 0.0
         private const val SPEECH_REQUEST_CODE = 123
     }
 
@@ -122,8 +126,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         if (selectedPathIndex != -1) {
             val firstSubPath = pathInfoList[selectedPathIndex].subPaths.firstOrNull()
             if (firstSubPath != null) {
-                val startID = firstSubPath.startID
-                println("startID: $startID")
                 return calculateDistance(
                     current_y ?: 0.0,
                     current_x ?: 0.0,
@@ -186,7 +188,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I"
+                apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(
@@ -316,8 +318,15 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
                 for (i in 0 until Main_Bus_Arrival.busTransitCount + 1) {
                     if (i < filteredSubPaths.size) {
                         val subPath = filteredSubPaths[i]
+
+                        // firebase에서 쓸 변수들!!
+
+                        globalstartID = subPath.startID!!
+                        globalstartX = subPath.startX!!
+                        globalstartY = subPath.startY!!
                         println("Global Transit Count Index: $i")
-                        println("  Start Coordinates: (${subPath.startX}, ${subPath.startY}) - Number: ${i + 1}")
+                        println("  Start Coordinates: (${globalstartX}, ${globalstartY}) - Number: ${i + 1}")
+                        println("  StartID ffffffirt ${globalstartID}")
                     }
                 }
             }
