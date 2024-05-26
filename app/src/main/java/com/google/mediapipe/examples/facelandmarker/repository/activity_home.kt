@@ -54,8 +54,8 @@ class activity_home : AppCompatActivity() {
         destinationRepository = DestinationRepository(this)
         recyclerView = findViewById(R.id.recyclerViewDestinations)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = DestinationAdapter(destinationRepository.getAllDestinations()) { name ->
-            onDestinationItemClick(name)
+        adapter = DestinationAdapter(destinationRepository.getAllDestinations()) { name, address ->
+            onDestinationItemClick(name, address)
         }
         recyclerView.adapter = adapter
 
@@ -113,50 +113,30 @@ class activity_home : AppCompatActivity() {
         button3.setOnClickListener { onFavoriteButtonClick(button3.text.toString()) }
     }
 
-    //  즐겨찾기 검색기능 여기다 추가!
+    // 즐겨찾기 검색 기능 추가
     private fun onFavoriteButtonClick(favoriteName: String) {
         val coordinates = destinationRepository.getDestinationCoordinatesByName(favoriteName)
         coordinates?.let {
             val intent = Intent(this, searchPubPathT::class.java)
             intent.putExtra("endStationX", it.first)
             intent.putExtra("endStationY", it.second)
+            // address 값을 laststationname에 전달
+                intent.putExtra("laststationname", favoriteName)
             startActivity(intent)
         }
-        println("Destination's x,y : ${coordinates}")
-//        println("endStationName : ${favoriteName}")
+        println("Destination's x,y : $coordinates")
     }
-    private fun onDestinationItemClick(name: String) {
+
+    private fun onDestinationItemClick(name: String, address: String) {
         val coordinates = destinationRepository.getDestinationCoordinatesByName(name)
         coordinates?.let {
             val intent = Intent(this, Main_vi_Search_des::class.java)
             intent.putExtra("xCoord", it.first)
             intent.putExtra("yCoord", it.second)
+            intent.putExtra("laststationname", address) // address 값을 전달
             startActivity(intent)
         }
     }
-
-
-
-//    private fun clickLitener1(){
-//        searchBar.setOnClickListener {
-//            val coor = destinationRepository.getDestinationCoordinatesByName(button1.text.toString())
-//            switchActivity(Main_vi_Search_des::class.java)
-//        }
-//    }
-//
-//    private fun clickLitener2(){
-//        searchBar.setOnClickListener {
-//            val coor = destinationRepository.getDestinationCoordinatesByName(button2.text.toString())
-//            switchActivity(Main_vi_Search_des::class.java)
-//        }
-//    }
-//
-//    private fun clickLitener3(){
-//        searchBar.setOnClickListener {
-//            val coor = destinationRepository.getDestinationCoordinatesByName(button3.text.toString())
-//            switchActivity(Main_vi_Search_des::class.java)
-//        }
-//    }
 
     private fun clickListener() {
         searchBar.setOnClickListener {
@@ -169,12 +149,6 @@ class activity_home : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-//    private fun switchActivity(activityClass: Class<*>) {
-//        val intent = Intent(this, activityClass)
-//        startActivity(intent)
-//        overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
-//    }
 
     private fun startSpeechRecognition() {
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
