@@ -16,7 +16,7 @@ class OnStationUser : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_popup)
+        setContentView(R.layout.dialog_user_popup)
         auth = FirebaseAuth.getInstance()
 
         val uid = auth.uid
