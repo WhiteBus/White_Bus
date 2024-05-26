@@ -151,6 +151,7 @@ class LoginActivity : AppCompatActivity() {
             val userData: MutableMap<String, Any> = HashMap()
             userData["profileImageUrl"] = profileImageUrl
             userData["nickname"] = nickname
+
             db.collection("users").document(uid)
                 .set(userData)
                 .addOnSuccessListener { documentReference ->

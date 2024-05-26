@@ -10,6 +10,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.mediapipe.examples.facelandmarker.FindCurrentPosition.GlobalValue_current.current_x
 import com.google.mediapipe.examples.facelandmarker.FindCurrentPosition.GlobalValue_current.current_y
 import com.google.mediapipe.examples.facelandmarker.remote.adapter.TransitAdapter
@@ -32,13 +34,20 @@ import kotlin.math.sqrt
 
 class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     //firbase에서 쓸 변수들!!
+    private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
+    var stationid: String = ""
+    var stationx: String=""
+    var stationy: String=""
+    var pick : String = ""
+
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
         private var busTransitCount: Int = 0
-        var globalstartID: Int = 0
-        var globalstartX: Double = 0.0
-        var globalstartY: Double = 0.0
+//        var globalstartID: Int = 0
+//        var globalstartX: Double = 0.0
+//        var globalstartY: Double = 0.0
         private const val SPEECH_REQUEST_CODE = 123
     }
 
@@ -67,6 +76,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_address) // 사용하려는 레이아웃 파일 설정
+        auth = FirebaseAuth.getInstance()
 
         // View 초기화
         totAddress = findViewById(R.id.user_address_dst_name)
@@ -101,6 +111,8 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             fetchBusArrivalDataForAllStations(stationIDList) {
                 // 필요한 모든 데이터를 처리한 후 필요한 작업을 완료합니다.
                 selectAndPrintRoute(globalRouteNm, pathInfoList)
+                saveStationInfo(stationx, stationy, stationid)
+
             }
         } else {
             println("Station ID list is not available.")
@@ -309,6 +321,8 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
                 println("    Section Time: ${subPath.sectionTime} minutes")
                 println("    Start Coordinates: (${subPath.startX}, ${subPath.startY}) - Number: $counter")
                 println("    End Coordinates: (${subPath.endX}, ${subPath.endY})")
+                stationx = subPath.startX.toString()
+                stationy = subPath.startY.toString()
 
                 counter++
             }
@@ -321,12 +335,14 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
 
                         // firebase에서 쓸 변수들!!
 
-                        globalstartID = subPath.startID!!
-                        globalstartX = subPath.startX!!
-                        globalstartY = subPath.startY!!
+                        println("ffffffffirt${subPath.startID}")
+                        stationid = subPath.startID.toString()
+//                        globalstartID = subPath.startID!!
+//                        globalstartX = subPath.startX!!
+//                        globalstartY = subPath.startY!!
                         println("Global Transit Count Index: $i")
-                        println("  Start Coordinates: (${globalstartX}, ${globalstartY}) - Number: ${i + 1}")
-                        println("  StartID ffffffirt ${globalstartID}")
+//                        println("  Start Coordinates: (${globalstartX}, ${globalstartY}) - Number: ${i + 1}")
+//                        println("  StartID ffffffirt ${globalstartID}")
                     }
                 }
             }
@@ -353,4 +369,53 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         return (R * c * 1000).roundToInt() // 미터 단위로 반환
     }
+    fun saveStationInfo(startX: String, startY: String, stationId: String) {
+        val firebaseUser = auth.currentUser
+        if (firebaseUser == null) {
+            Log.w("TAG", "No authenticated user found.")
+            return
+        }
+        pick = Main_Bus_Arrival.globalBusPlateNo.toString().substring(Main_Bus_Arrival.globalBusPlateNo.toString().length-4,Main_Bus_Arrival.globalBusPlateNo.toString().length)
+        val uid = firebaseUser.uid
+        val blind: MutableMap<String, Any> = HashMap()
+        blind["longitude"] = startX
+        blind["latitude"] = startY
+        blind["stationId"] = stationId
+        blind["pickupNUm"] = pick
+        Log.w("TAG", "abcd: ${blind["pickupNUm"]}")
+
+        db.collection("BlindUser").document(uid)
+            .update("longitude", startX)
+            .addOnSuccessListener {
+                Log.d("Tag", "DocumentSnapshot successfully written!")
+            }
+            .addOnFailureListener { e ->
+                Log.w("TAG", "Error writing document", e)
+            }
+        db.collection("BlindUser").document(uid)
+            .update("latitude", startY)
+            .addOnSuccessListener {
+                Log.d("Tag", "DocumentSnapshot successfully written!")
+            }
+            .addOnFailureListener { e ->
+                Log.w("TAG", "Error writing document", e)
+            }
+        db.collection("BlindUser").document(uid)
+            .update("stationId", stationId)
+            .addOnSuccessListener {
+                Log.d("Tag", "DocumentSnapshot successfully written!")
+            }
+            .addOnFailureListener { e ->
+                Log.w("TAG", "Error writing document", e)
+            }
+        db.collection("BlindUser").document(uid)
+            .update("pickupNum", pick)
+            .addOnSuccessListener {
+                Log.d("Tag", "DocumentSnapshot successfully written!")
+            }
+            .addOnFailureListener { e ->
+                Log.w("TAG", "Error writing document", e)
+            }
+    }
+
 }
