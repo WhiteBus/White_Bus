@@ -105,16 +105,8 @@ class activity_home : AppCompatActivity() {
             startActivity(intent)
         }
         // 목적지 검색창으로 이동
-        //clickListener()
-        searchBar.setOnClickListener {
-            // 키보드를 숨깁니다
-            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(searchBar.windowToken, 0)
+        clickListener()
 
-            // 다음 Activity로 이동합니다
-            val intent = Intent(this, Main_vi_Search_des::class.java)
-            startActivity(intent)
-        }
         // 즐겨찾기 버튼 클릭 리스너 추가
         button1.setOnClickListener { onFavoriteButtonClick(button1.text.toString()) }
         button2.setOnClickListener { onFavoriteButtonClick(button2.text.toString()) }
@@ -128,9 +120,10 @@ class activity_home : AppCompatActivity() {
             val intent = Intent(this, searchPubPathT::class.java)
             intent.putExtra("endStationX", it.first)
             intent.putExtra("endStationY", it.second)
-            intent.putExtra("endStationName", favoriteName)
             startActivity(intent)
         }
+        println("Destination's x,y : ${coordinates}")
+//        println("endStationName : ${favoriteName}")
     }
     private fun onDestinationItemClick(name: String) {
         val coordinates = destinationRepository.getDestinationCoordinatesByName(name)
@@ -165,11 +158,17 @@ class activity_home : AppCompatActivity() {
 //        }
 //    }
 
-//    private fun clickListener() {
-//        searchBar.setOnClickListener {
-//            switchActivity(Main_vi_Search_des::class.java)
-//        }
-//    }
+    private fun clickListener() {
+        searchBar.setOnClickListener {
+            // 키보드를 숨깁니다
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(searchBar.windowToken, 0)
+
+            // 다음 Activity로 이동합니다
+            val intent = Intent(this, Main_vi_Search_des::class.java)
+            startActivity(intent)
+        }
+    }
 
 //    private fun switchActivity(activityClass: Class<*>) {
 //        val intent = Intent(this, activityClass)

@@ -2,6 +2,7 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.mediapipe.examples.facelandmarker.remote.dto.PathInfoStation
 import com.google.mediapipe.examples.facelandmarker.remote.dto.PathResult
@@ -25,7 +26,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
         val startX = FindCurrentPosition.GlobalValue_current.current_x
         val startY = FindCurrentPosition.GlobalValue_current.current_y
 
-        println("${startX},${startY}")
+        println("current position : ${startX},${startY}")
 
         // 끝점 = 검색한 정류장 x,y 가져오기 (방법 1)
         val endStationFromSearch = Main_vi_Search_des.GlobalValues_last.lastPointStation
@@ -33,7 +34,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
         // 끝점 = 즐겨찾기로 선택된 지점 (방법 2)
         val endXFromFavorite = intent.getDoubleExtra("endStationX", -1.0)
         val endYFromFavorite = intent.getDoubleExtra("endStationY", -1.0)
-        //val endStationNameFromFavorite = intent.getStringExtra("endStationName")
+        val realName = intent.getStringExtra("realName")
 
         // 실제 사용되는 끝점
         val (endX, endY) = if (endXFromFavorite != -1.0 && endYFromFavorite != -1.0) {
@@ -43,6 +44,7 @@ class searchPubPathT : AppCompatActivity(), PathView {
         } else {
             null to null
         }
+        println("Destination is ${endX},${endY}")
 
         if (startX != null && startY != null && endX != null && endY != null) {
             pathService.searchPath("0", startX, startY, endX, endY, 2, "9pGlz1x7Ic6zBCmZBccmM/QF2qYHiLksHbxjUBdiv3I", this)
@@ -136,16 +138,23 @@ class searchPubPathT : AppCompatActivity(), PathView {
 
             // 끝점 = 검색한 정류장 이름 가져오기 (xml에 보여줄려고)
             val lastStationName = intent.getStringExtra("laststationname")
+
             // Main_Bus_Arrival로 이동
             val intent = Intent(this, Main_Bus_Arrival::class.java)
             intent.putIntegerArrayListExtra("stationIDList", ArrayList(stationIDList)) // 중복 제거된 stationID 리스트 전달
             intent.putParcelableArrayListExtra("pathInfoList", ArrayList(pathInfoList))
+            //intent.putExtra("endStationName", endStationName)
+            Log.d("searchPubPathT",ArrayList(stationIDList).toString())
+            Log.d("searchPubPathT",ArrayList(pathInfoList).toString())
+            Log.d("searchPubPathT",lastStationName.toString())
+
             // 각 pathIndex별로 busNumbers를 전달
             busNumbersMap.forEach { (pathIndex, busNumbers) ->
                 intent.putStringArrayListExtra("busNumbers_$pathIndex", ArrayList(busNumbers))
             }
             //목적지 station이름
             intent.putExtra("selectedStationName", lastStationName) // 선택된 역 이름을 전달
+            Log.d("searchPubPathT",lastStationName.toString())
 
             startActivity(intent)
         } else {
@@ -157,7 +166,6 @@ class searchPubPathT : AppCompatActivity(), PathView {
         println("Error occurred: $errorMessage")
     }
 
-    // class selectPath에서 subPathInfo.startID를 기준으로 가장 빨리 오는 allBusNos 버스 구해서 경로 선택하기
 }
 
 

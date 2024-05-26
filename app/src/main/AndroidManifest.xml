@@ -10,10 +10,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Use Naver Map -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 오디오 사용 권한 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 현위치 불러오기 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
 
     <queries>
@@ -48,10 +49,10 @@
 <!--        <activity android:name=".DriverMainActivity" />-->
         <activity android:name=".MainActivity" />
         <activity android:name=".ViPlaceRegistrationActivity" />
-        <activity android:name=".repository.activity_home" />
 
         <activity android:name=".OnStationUser" />
-        
+
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -62,6 +63,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FindCurrentPosition"/>
+        <activity android:name=".repository.activity_home"/>
         <activity android:name=".Main_vi_Search_des"/>
         <activity android:name=".searchPubPathT"/>
         <activity android:name=".Main_Bus_Arrival"/>

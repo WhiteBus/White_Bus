@@ -68,6 +68,8 @@ class FindCurrentPosition : AppCompatActivity() {
         }
 
     }
+
+
     companion object {
         private const val PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1
     }

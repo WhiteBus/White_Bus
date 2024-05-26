@@ -72,9 +72,10 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // RecyclerView 초기화
         transitRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        // 도착지 설정된 것
+        // 도착지 설정된 것 방법1
         val selectedStationName = intent.getStringExtra("selectedStationName")
         totAddress.text = selectedStationName
+
 
         println("stationIDList : $stationIDList")
         if (stationIDList.isNotEmpty()) {
