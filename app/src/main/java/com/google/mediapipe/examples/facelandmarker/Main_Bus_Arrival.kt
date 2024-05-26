@@ -73,19 +73,13 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // RecyclerView 초기화
         transitRecyclerView.layoutManager = LinearLayoutManager(this)
 
-//        // 도착지 설정된 것 방법1
-//        val selectedStationName = intent.getStringExtra("selectedStationName")
-//        totAddress.text = selectedStationName
 
         // 도착지 설정된 것 방법1) 검색한 결과 + 햄버거바에 설정한 도착지
         val lastStationName = intent.getStringExtra("selectedStationName")
         Log.d("Main_Bus_Arrival",lastStationName.toString())
-        // 도착지 설정된 것 방법2 (햄버거바)
+        // 도착지 설정된 것 방법2 (즐겨찾기 버튼)
         val realName = intent.getStringExtra("realName")
         Log.d("Main_Bus_Arrival",realName.toString())
-
-        //도착지 설정된 것 방법3 (즐겨찾기 버튼)
-
 
         // 선택된 도착지 이름 결정
         val selectedStationName = when {
@@ -128,6 +122,8 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         if (selectedPathIndex != -1) {
             val firstSubPath = pathInfoList[selectedPathIndex].subPaths.firstOrNull()
             if (firstSubPath != null) {
+                val startID = firstSubPath.startID
+                println("startID: $startID")
                 return calculateDistance(
                     current_y ?: 0.0,
                     current_x ?: 0.0,
@@ -136,7 +132,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
                 )
             }
         }
-
         return 0
     }
 
