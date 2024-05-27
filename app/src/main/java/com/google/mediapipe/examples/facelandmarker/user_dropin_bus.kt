@@ -2,11 +2,14 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 private const val TAG = "RIdeBus"
@@ -28,6 +31,7 @@ class user_dropin_bus : AppCompatActivity() {
         var nickname:String = ""
         var profileImageUrl:String = ""
         var stationid: String = intent.getStringExtra("stationid") ?: ""  // 인텐트에서 stationid 값을 가져옵니다.
+        var dropin: String = ""
 
 
         val muserid = auth.currentUser?.uid ?: return
@@ -39,7 +43,7 @@ class user_dropin_bus : AppCompatActivity() {
                     data?.let {
                         nickname = (it["nickname"] as? String).toString()
                         profileImageUrl = (it["profileImageUrl"] as? String).toString()
-                        busNumber = (it["pickupNUm"] as? String).toString()
+                        busNumber = (it["pickupNum"] as? String).toString()
                         //stationid = (it["stationId"] as? String).toString()
 
                     }
@@ -56,14 +60,43 @@ class user_dropin_bus : AppCompatActivity() {
 
 
         removebtn.setOnClickListener{
-            if (nickname != null && profileImageUrl != null) {
-                if (uid != null) {
-                    removeBlindToBus(busNumber)
-                }
-            }
+            updateDropInStatus(busNumber, uid.toString())
+            //removeBlindToBus(busNumber)
             val intent = Intent(this@user_dropin_bus, MainActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun updateDropInStatus(busnumber: String, uid: String) {
+        // dropin? 컬럼을 0으로 설정
+        val dropinUpdate = mapOf("dropin?" to 1)
+        db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
+            .update(dropinUpdate)
+            .addOnSuccessListener {
+                Log.d(TAG, "Drop-in status updated to 0")
+
+                // 1분 후 dropin? 컬럼을 제거하는 핸들러 설정
+                Handler(Looper.getMainLooper()).postDelayed({
+                    removeDropInStatus(busnumber, uid)
+                }, 60000) // 60000ms = 1 minute
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error updating drop-in status", e)
+            }
+    }
+
+    private fun removeDropInStatus(busnumber: String, uid: String) {
+        val dropinRemove = mapOf("dropin?" to FieldValue.delete())
+        db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
+            .update(dropinRemove)
+            .addOnSuccessListener {
+                Log.d(TAG, "Drop-in status removed")
+                removeBlindToBus(busnumber)
+
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error removing drop-in status", e)
+            }
     }
 
     fun removeBlindToBus(busnumber: String) {
