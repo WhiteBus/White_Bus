@@ -13,8 +13,6 @@ private const val TAG = "RideBus"
 class RideBus : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
-    var dropIN: Int = 1
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_wait_bus)
@@ -39,7 +37,8 @@ class RideBus : AppCompatActivity() {
                         busNumber = (it["pickupNum"] as? String).toString()
                         nickname = (it["nickname"] as? String).toString()
                         profileImageUrl = (it["profileImageUrl"] as? String).toString()
-                        stationid = (it["stationID"] as? String).toString()
+                        stationid = (it["stationId"] as? String).toString()
+
 
                         // 여기서 DriverUser를 가져오는 호출을 합니다.
                         db.collection("DriverUser")
@@ -83,16 +82,15 @@ class RideBus : AppCompatActivity() {
             val blind: MutableMap<String, Any> = HashMap()
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
-            blind["dropin?"] = dropIN
-
-            // removeBlindToStation 함수를 호출하여 스테이션에서 사용자 제거
-            removeBlindFromStation(uid, stationid)
 
             // OnBus 컬렉션에 사용자 추가
             db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
                 .set(blind)
                 .addOnSuccessListener { documentReference ->
                     Log.d(TAG, "DocumentSnapshot added with ID: $uid")
+                    Log.d("TAG", "abcd1")
+                    removeBlindFromStation(stationid)
+
                 }
                 .addOnFailureListener { e ->
                     Log.w(TAG, "Error adding document", e)
@@ -100,15 +98,25 @@ class RideBus : AppCompatActivity() {
         }
     }
 
-    private fun removeBlindFromStation(uid: String, stationid: String) {
-        // OnStation 컬렉션에서 사용자 제거
-        db.collection("OnStation").document(stationid).collection("stayUser").document(uid)
-            .delete()
-            .addOnSuccessListener {
-                Log.d(TAG, "DocumentSnapshot successfully deleted! :$uid")
-            }
-            .addOnFailureListener { e ->
-                Log.w(TAG, "Error deleting document", e)
-            }
+    private fun removeBlindFromStation(stationid: String) {
+        val firebaseUser = auth.currentUser
+        firebaseUser?.let {
+            val uid = it.uid
+            Log.d("TAG", "abcd2")
+
+
+            db.collection("OnStation").document(stationid).collection("stayUser").document(uid)
+                .delete()
+                .addOnSuccessListener { documentReference ->
+                    Log.d(TAG, "Reomove station info ")
+                    Log.d("TAG", "abcd3")
+
+                }
+                .addOnFailureListener { e ->
+                    Log.w(TAG, "Error adding document", e)
+                    Log.d("TAG", "abcd4")
+
+                }
+        }
     }
 }
