@@ -87,7 +87,7 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
         val lang = "0"
         val stationName = placeSearchBar.text.toString()
         val stationClass = 1
-        val apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
+        val apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
         Log.d("searchStationService", searchStationService.toString())
         speak("검색이 완료되었습니다.")

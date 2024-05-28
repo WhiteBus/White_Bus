@@ -49,7 +49,7 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
         val lang = "0"
         val stationName = searchEditText.text.toString()
         val stationClass = 1 //버스정류장
-        val apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
+        val apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
     }
 

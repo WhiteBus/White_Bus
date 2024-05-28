@@ -200,7 +200,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
+                apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(
