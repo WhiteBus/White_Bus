@@ -62,8 +62,9 @@ class user_dropin_bus : AppCompatActivity() {
         removebtn.setOnClickListener{
             updateDropInStatus(busNumber, uid.toString())
             //removeBlindToBus(busNumber)
-            val intent = Intent(this@user_dropin_bus, MainActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this@user_dropin_bus, Main_Bus_Arrival::class.java)
+//            startActivity(intent)
+            finish()
         }
     }
 

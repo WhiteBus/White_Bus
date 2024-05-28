@@ -90,5 +90,6 @@ class OnStationUser : AppCompatActivity() {
         val intent = Intent(this, activityClass)
         startActivity(intent)
         overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
+        finish()
     }
 }

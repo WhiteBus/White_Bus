@@ -57,6 +57,7 @@ class RideBus : AppCompatActivity() {
                                         val intent = Intent(this@RideBus, user_dropin_bus::class.java)
                                         intent.putExtra("stationid", stationid)  // stationid 값을 인텐트로 전달
                                         startActivity(intent)
+                                        finish()
                                     } else {
                                         Log.e(TAG, "Required data is missing: nickname=$nickname, profileImageUrl=$profileImageUrl, stationid=$stationid")
                                     }

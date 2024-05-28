@@ -1,9 +1,11 @@
 package com.google.mediapipe.examples.facelandmarker
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -31,6 +33,7 @@ import kotlin.math.pow
 import kotlin.math.roundToInt
 import kotlin.math.sin
 import kotlin.math.sqrt
+import kotlin.system.exitProcess
 
 class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     //firbase에서 쓸 변수들!!
@@ -63,6 +66,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     //누르면 얼마나 남았는 지 말하기  "몇 미터 남았습니다"
     private lateinit var voiceoutput: ImageButton
     private lateinit var tts: TextToSpeech
+    private lateinit var exitbtn: Button
 
     private val stationIDList by lazy {
         intent.getIntegerArrayListExtra("stationIDList") ?: arrayListOf()
@@ -83,6 +87,8 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         totTime = findViewById(R.id.user_time)
         totDistance = findViewById(R.id.user_distance)
         transitRecyclerView = findViewById(R.id.transit_recyclerView)
+
+        exitbtn = findViewById(R.id.exitButton)
 
         // RecyclerView 초기화
         transitRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -125,6 +131,13 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             val distanceToFirstStop = calculateDistanceToFirstStop(pathInfoList)
             val textToSpeak = "정류장까지 남은 거리는 ${distanceToFirstStop} 미터 입니다."
             speakOut(textToSpeak)
+        }
+
+        // 종료버튼 구현
+        exitbtn.setOnClickListener {
+            moveTaskToBack(true);						// 태스크를 백그라운드로 이동
+            finishAndRemoveTask();						// 액티비티 종료 + 태스크 리스트에서 지우기
+            android.os.Process.killProcess(android.os.Process.myPid());
         }
     }
 
@@ -200,7 +213,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
+                apiKey = "Quw9eSdgW+WlIHjDbEr8TsYC2p/vb49ruUnyIMB0YZM"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(
