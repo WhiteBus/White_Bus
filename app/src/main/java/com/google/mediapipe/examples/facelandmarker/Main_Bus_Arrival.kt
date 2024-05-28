@@ -38,6 +38,7 @@ import kotlin.system.exitProcess
 class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     //firbase에서 쓸 변수들!!
     private lateinit var auth: FirebaseAuth
+    private lateinit var tts: TextToSpeech
     private val db = FirebaseFirestore.getInstance()
     var stationid: String = ""
     var stationx: String=""
@@ -66,7 +67,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     //누르면 얼마나 남았는 지 말하기  "몇 미터 남았습니다"
     private lateinit var voiceoutput: ImageButton
-    private lateinit var tts: TextToSpeech
     private lateinit var exitbtn: Button
 
     private val stationIDList by lazy {
