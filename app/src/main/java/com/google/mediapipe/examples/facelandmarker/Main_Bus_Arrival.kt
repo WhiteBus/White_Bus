@@ -51,6 +51,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
 //        var globalstartID: Int = 0
 //        var globalstartX: Double = 0.0
 //        var globalstartY: Double = 0.0
+        var globaltotadress: String? = null
         private const val SPEECH_REQUEST_CODE = 123
     }
 
@@ -110,7 +111,8 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // 도착지 이름을 텍스트에 설정
         totAddress.text = selectedStationName
 
-
+        // selctedStationName을 전역변수로 저장
+        globaltotadress = selectedStationName
 
         println("stationIDList : $stationIDList")
         if (stationIDList.isNotEmpty()) {

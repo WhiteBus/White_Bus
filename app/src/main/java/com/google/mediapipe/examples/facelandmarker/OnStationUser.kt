@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -14,6 +15,7 @@ private const val TAG = "Wait_bus"
 class OnStationUser : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
+    private var currentBusNo: String = "" // 전역 변수 추가
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,9 @@ class OnStationUser : AppCompatActivity() {
         var pickupnum: String =""
         var longitude: String= ""
         var latitude: String = ""
+
+        // Intent로부터 데이터 가져오기
+        currentBusNo = intent.getStringExtra("busNo") ?: ""
 
 
         val userid = auth.currentUser?.uid ?: return
@@ -58,6 +63,9 @@ class OnStationUser : AppCompatActivity() {
         staybtn.setOnClickListener{
             Log.w("HI", "abcdefg: ${nickname}, ${profileImageUrl}" )
             addBlindToStation(stationid, nickname, profileImageUrl, pickupnum, longitude, latitude)
+            val intent = Intent(it.context, RideBus::class.java) // RideBus로 변경
+            // Add station data to the intent
+            intent.putExtra("busNo", currentBusNo) // 전역 변수 사용
         }
 
     }
@@ -88,6 +96,7 @@ class OnStationUser : AppCompatActivity() {
 
     private fun switchActivity(activityClass: Class<*>) {
         val intent = Intent(this, activityClass)
+        intent.putExtra("busNo", currentBusNo) // 전역 변수 사용
         startActivity(intent)
         overridePendingTransition(R.anim.screen_none, R.anim.screen_exit)
         finish()

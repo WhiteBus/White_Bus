@@ -4,15 +4,20 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival.Companion.globaltotadress
 
 private const val TAG = "RideBus"
 
 class RideBus : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
+
+    private lateinit var busNoTextView: TextView
+    private lateinit var selectedStationNameTextView: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_wait_bus)
@@ -20,12 +25,22 @@ class RideBus : AppCompatActivity() {
 
         val uid = auth.uid
 
+        busNoTextView = findViewById(R.id.busNum_btn_wait)
+        selectedStationNameTextView = findViewById(R.id.user_address_dst_name)
+
         val ridingbtn = findViewById<Button>(R.id.riding_btn)
         var busNumber: String = ""
         var nickname: String = ""
         var profileImageUrl: String = ""
         var stationid: String = ""  // 이 부분이 어디에서 설정되는지 확인 필요
         var busdrivernumonbus: String = ""
+
+        // Intent로부터 데이터 가져오기
+        val busNo = intent.getStringExtra("busNo")
+        val selectedStationName = globaltotadress// TextView에 데이터 설정
+
+        busNoTextView.text = busNo
+        selectedStationNameTextView.text = selectedStationName
 
         // 커렌트 유저 블라인드에서 밑에 함수 적용
         db.collection("BlindUser").document(uid.toString())
