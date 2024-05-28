@@ -21,6 +21,7 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
     private var stationid: String = ""
     private var stationX: String = ""
     private var stationY: String = ""
+    private var currentBusNo: String = ""
 
     class TransitViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val borderBoxDes: MaterialButton = view.findViewById(R.id.borderBox_des)
@@ -41,8 +42,10 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
         holder.transitInfo.text = transitInfo.busNo
         holder.transitInfoStartName.text = transitInfo.startName
         holder.transitInfoEndName.text = transitInfo.endName
-        holder.sectionDistance.text = "${transitInfo.distance} km"
+        holder.sectionDistance.text = "${(transitInfo.distance)/1000} km"
         holder.sectionTime.text = "${transitInfo.sectionTime} min"
+
+        currentBusNo = transitInfo.busNo // 전역 변수에 busNo 저장
 
         auth = FirebaseAuth.getInstance()
 
@@ -69,7 +72,7 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
             // Create an Intent to start the OnStationUser activity
             val intent = Intent(it.context, OnStationUser::class.java)
             // Add station data to the intent
-            intent.putExtra("busNo", transitInfo.busNo)
+            intent.putExtra("busNo", currentBusNo)
             intent.putExtra("stationID", stationid)
             intent.putExtra("stationX", stationX)
             intent.putExtra("stationY", stationY)
