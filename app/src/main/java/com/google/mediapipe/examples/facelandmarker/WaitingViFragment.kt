@@ -6,42 +6,41 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.mediapipe.examples.facelandmarker.databinding.FragmentWaitingViBinding
 import com.google.mediapipe.examples.facelandmarker.remote.adapter.PassengerAdapter
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.User
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.UserAdapter
 
-class WaitingViFragment : Fragment(){
-    private lateinit var binding : FragmentWaitingViBinding
-    private lateinit var adapter: PassengerAdapter
-    // private val repository = PassengerRepository()
+class WaitingViFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentWaitingViBinding.inflate(inflater, container, false)
+    companion object {
+        private const val ARG_USERS = "users"
 
-        // recyclerView()
-        // observePassengers()
-
-        return binding.root
+        fun newInstance(users: ArrayList<User>): WaitingViFragment {
+            val fragment = WaitingViFragment()
+            val args = Bundle()
+            args.putParcelableArrayList(ARG_USERS, users)
+            fragment.arguments = args
+            return fragment
+        }
     }
 
-    private fun recyclerView() {
-        binding.profileNumberOfWaitingViRv.layoutManager = LinearLayoutManager(requireContext())
-        // adapter 에 List를 넣어줌
-        adapter = PassengerAdapter(emptyList())
-        binding.profileNumberOfWaitingViRv.adapter = adapter
-    }
+    private lateinit var userAdapter: UserAdapter
 
-    private fun observePassengers() {
-        // 파이어베이스 작동 이후 적용
-//        lifecycleScope.launch {
-//            val passengers = repository.getPassengers()
-//            adapter = PassengerAdapter(passengers)
-//            binding.profileNumberOfPassengerRv.adapter = adapter
-//        }
-//
-//        repository.listenToPassengers { passengers ->
-//            adapter = PassengerAdapter(passengers)
-//            binding.profileNumberOfPassengerRv.adapter = adapter
-//        }
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_user_list, container, false)
 
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        val users: List<User> = arguments?.getParcelableArrayList(ARG_USERS) ?: emptyList()
+        userAdapter = UserAdapter(users)
+        recyclerView.adapter = userAdapter
+
+        return view
     }
 }
