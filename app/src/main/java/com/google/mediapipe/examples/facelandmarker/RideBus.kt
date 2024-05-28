@@ -2,17 +2,20 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Intent
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.Locale
 
 private const val TAG = "RideBus"
 
 class RideBus : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
+    private lateinit var tts: TextToSpeech
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_wait_bus)
@@ -26,6 +29,13 @@ class RideBus : AppCompatActivity() {
         var profileImageUrl: String = ""
         var stationid: String = ""  // 이 부분이 어디에서 설정되는지 확인 필요
         var busdrivernumonbus: String = ""
+
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
 
         // 커렌트 유저 블라인드에서 밑에 함수 적용
         db.collection("BlindUser").document(uid.toString())
@@ -96,6 +106,10 @@ class RideBus : AppCompatActivity() {
                     Log.w(TAG, "Error adding document", e)
                 }
         }
+    }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     private fun removeBlindFromStation(stationid: String) {

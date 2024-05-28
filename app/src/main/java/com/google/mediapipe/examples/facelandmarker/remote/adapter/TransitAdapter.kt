@@ -1,6 +1,7 @@
 package com.google.mediapipe.examples.facelandmarker.remote.adapter
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -75,6 +76,8 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
             intent.putExtra("stationY", stationY)
             // Start the activity using the context from the view
             it.context.startActivity(intent)
+
+            println("버튼 눌렸니")
         }
     }
 

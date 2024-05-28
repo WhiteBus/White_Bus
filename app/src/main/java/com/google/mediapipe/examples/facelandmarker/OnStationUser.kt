@@ -2,23 +2,33 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Intent
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.Locale
 
 private const val TAG = "Wait_bus"
 
 class OnStationUser : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
+    private lateinit var tts: TextToSpeech
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dialog_user_popup)
         auth = FirebaseAuth.getInstance()
+
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
 
         val uid = auth.uid
 
@@ -57,9 +67,23 @@ class OnStationUser : AppCompatActivity() {
             }
         staybtn.setOnClickListener{
             Log.w("HI", "abcdefg: ${nickname}, ${profileImageUrl}" )
+            speak("확인 버튼")
+            true
             addBlindToStation(stationid, nickname, profileImageUrl, pickupnum, longitude, latitude)
         }
+        staybtn.setOnLongClickListener{
+            speak("확인 버튼")
+            true
+        }
 
+        btnCancel.setOnClickListener{
+            speak("취소 버튼")
+            true
+        }
+    }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     fun addBlindToStation(stationid: String, nickname: String, profileImageUrl: String, pickupnum: String, longitude: String, latitude: String) {

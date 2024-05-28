@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -11,12 +12,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.Locale
 
 private const val TAG = "RIdeBus"
 
 class user_dropin_bus : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
+    private lateinit var tts: TextToSpeech
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,6 @@ class user_dropin_bus : AppCompatActivity() {
 
         val uid = auth.uid
 
-
         val removebtn = findViewById<Button>(R.id.dropbtn)
         var busNumber: String = "" //버스 번호판 네자리 가져오기
         var nickname:String = ""
@@ -33,9 +35,9 @@ class user_dropin_bus : AppCompatActivity() {
         var stationid: String = intent.getStringExtra("stationid") ?: ""  // 인텐트에서 stationid 값을 가져옵니다.
         var dropin: String = ""
 
-
         val muserid = auth.currentUser?.uid ?: return
         val muserDocRef = db.collection("BlindUser").document(muserid)
+
         muserDocRef.get()
             .addOnSuccessListener { documentSnapshot ->
                 if (documentSnapshot.exists()) {
@@ -55,16 +57,30 @@ class user_dropin_bus : AppCompatActivity() {
                 println("Error getting user data: $e")
             }
 
-
-
-
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
 
         removebtn.setOnClickListener{
             updateDropInStatus(busNumber, uid.toString())
             //removeBlindToBus(busNumber)
             val intent = Intent(this@user_dropin_bus, MainActivity::class.java)
+            speak("하차")
+            true
             startActivity(intent)
         }
+
+        removebtn.setOnLongClickListener{
+            speak("하차 버튼")
+            true
+        }
+    }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     private fun updateDropInStatus(busnumber: String, uid: String) {

@@ -37,10 +37,18 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
         binding = ActivityViPlaceRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // TextToSpeech 초기화
+        textToSpeech = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                textToSpeech.language = Locale.KOREAN
+            }
+        }
+
         nicknameSearchBar = findViewById(R.id.iv_main_set_nickname_et)
         placeSearchBar = findViewById(R.id.iv_main_set_place_et)
         destinationRepository = DestinationRepository(this)
         textToSpeech = TextToSpeech(this, this)
+
 
         searchStationAdapter = SearchStationAdapter { station ->
             onItemClick(station)
@@ -52,6 +60,7 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
 
         // 음성 인식
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
+
         // 닉네임 음성 버튼이 눌렸을 때
         val nicknameSpeechBtn: ImageView = findViewById(R.id.iv_main_nickname_record_iv)
         nicknameSpeechBtn.setOnClickListener {
@@ -87,7 +96,7 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
         val lang = "0"
         val stationName = placeSearchBar.text.toString()
         val stationClass = 1
-        val apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
+        val apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
         Log.d("searchStationService", searchStationService.toString())
         speak("검색이 완료되었습니다.")
@@ -168,9 +177,6 @@ class ViPlaceRegistrationActivity : AppCompatActivity(), TextToSpeech.OnInitList
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
             val result = textToSpeech.setLanguage(Locale.KOREAN)
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TextToSpeech", "Language is not supported")
-            }
         } else {
             Log.e("TextToSpeech", "Initialization failed")
         }

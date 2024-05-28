@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.speech.tts.TextToSpeech
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
@@ -21,6 +22,7 @@ import com.google.mediapipe.examples.facelandmarker.ViPlaceRegistrationActivity
 import com.google.mediapipe.examples.facelandmarker.database.DestinationContract
 import com.google.mediapipe.examples.facelandmarker.favorite.DestinationAdapter
 import com.google.mediapipe.examples.facelandmarker.searchPubPathT
+import java.util.Locale
 
 class activity_home : AppCompatActivity() {
 
@@ -31,6 +33,7 @@ class activity_home : AppCompatActivity() {
     private lateinit var hamburgerIcon: ImageView
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var searchBar: EditText
+    private lateinit var tts: TextToSpeech
 
     val button1: TextView by lazy { findViewById(R.id.button1_text1) }
     val button2: TextView by lazy { findViewById(R.id.button2_text1) }
@@ -99,9 +102,18 @@ class activity_home : AppCompatActivity() {
             startSpeechRecognition()
         }
 
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
+
         // button4_container 클릭 시 ViPlaceRegistrationActivity로 이동
         button4Container.setOnClickListener {
             val intent = Intent(this, ViPlaceRegistrationActivity::class.java)
+            speak("장소 등록 화면으로 이동")
+            true
             startActivity(intent)
         }
         // 목적지 검색창으로 이동
@@ -111,6 +123,10 @@ class activity_home : AppCompatActivity() {
         button1.setOnClickListener { onFavoriteButtonClick(button1.text.toString()) }
         button2.setOnClickListener { onFavoriteButtonClick(button2.text.toString()) }
         button3.setOnClickListener { onFavoriteButtonClick(button3.text.toString()) }
+    }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     // 즐겨찾기 검색 기능 추가
@@ -146,6 +162,7 @@ class activity_home : AppCompatActivity() {
 
             // 다음 Activity로 이동합니다
             val intent = Intent(this, Main_vi_Search_des::class.java)
+            speak("이동할 장소를 검색해 주세요")
             startActivity(intent)
         }
     }
@@ -172,6 +189,10 @@ class activity_home : AppCompatActivity() {
                 val recognizedText = results[0]
                 // 여기에 인식된 텍스트를 원하는 EditText에 설정하는 코드 추가
                 searchBar.setText(recognizedText)
+                // 인식된 텍스트를 Main_vi_Search_des로 전달
+                val intent = Intent(this, Main_vi_Search_des::class.java)
+                intent.putExtra("recognizedText", recognizedText)
+                startActivity(intent)
             }
         }
     }

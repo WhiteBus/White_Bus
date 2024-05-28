@@ -37,7 +37,9 @@ class SearchStationAdapter(
 
         fun bind(station: SearchStationInfo, clickListener: (SearchStationInfo) -> Unit) {
             stationName.text = station.stationName
-            itemView.setOnClickListener { clickListener(station) }
+            itemView.setOnClickListener {
+                clickListener(station)
+            }
         }
     }
 }

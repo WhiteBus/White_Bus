@@ -43,7 +43,7 @@
                 android:textColor="#000000"
                 android:textSize="50sp" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/btn"
                 android:layout_width="0dp"
                 android:layout_height="432px"

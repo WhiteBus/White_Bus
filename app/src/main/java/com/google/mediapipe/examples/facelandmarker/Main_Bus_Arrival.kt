@@ -1,6 +1,5 @@
 package com.google.mediapipe.examples.facelandmarker
 
-import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
@@ -78,6 +77,13 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         setContentView(R.layout.activity_user_address) // 사용하려는 레이아웃 파일 설정
         auth = FirebaseAuth.getInstance()
 
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
+
         // View 초기화
         totAddress = findViewById(R.id.user_address_dst_name)
         totTime = findViewById(R.id.user_time)
@@ -104,8 +110,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
         // 도착지 이름을 텍스트에 설정
         totAddress.text = selectedStationName
 
-
-
         println("stationIDList : $stationIDList")
         if (stationIDList.isNotEmpty()) {
             fetchBusArrivalDataForAllStations(stationIDList) {
@@ -118,7 +122,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             println("Station ID list is not available.")
         }
 
-        // 음성출력
+        // 음성 출력
         voiceoutput = findViewById(R.id.locationButton)
         tts = TextToSpeech(this, this)
         voiceoutput.setOnClickListener {
@@ -126,6 +130,10 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             val textToSpeak = "정류장까지 남은 거리는 ${distanceToFirstStop} 미터 입니다."
             speakOut(textToSpeak)
         }
+    }
+
+    private fun speak(text: String, toString: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     private fun calculateDistanceToFirstStop(pathInfoList: List<PathInfoStation>): Int {
@@ -160,9 +168,6 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
             val result = tts.setLanguage(Locale.KOREA)
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Toast.makeText(this, "Language not supported", Toast.LENGTH_SHORT).show()
-            }
         } else {
             Toast.makeText(this, "Initialization failed", Toast.LENGTH_SHORT).show()
         }
@@ -200,7 +205,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "okelebDYDmSn45nkq8Ojn0rFN3Kv8F+sv0Yyr5oSr1s"
+                apiKey = "t3zmnsSHmjzeGx9ruZeKGAcT0uLFJn7tlTyjZVc0Y/g"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(

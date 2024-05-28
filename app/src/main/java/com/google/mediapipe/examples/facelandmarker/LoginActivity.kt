@@ -3,8 +3,8 @@ package com.google.mediapipe.examples.facelandmarker
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.util.Log
-import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
@@ -14,11 +14,10 @@ import com.google.firebase.auth.auth
 import com.google.firebase.auth.oAuthCredential
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.initialize
-import com.google.mediapipe.examples.facelandmarker.databinding.ActivityAppUserDeterminantBinding
 import com.google.mediapipe.examples.facelandmarker.databinding.ActivityLoginBinding
-import com.google.mediapipe.examples.facelandmarker.repository.activity_home
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.user.UserApiClient
+import java.util.Locale
 
 private const val TAG = "LoginActivity"
 
@@ -27,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var tts: TextToSpeech
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -44,7 +45,21 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         }
+
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
+        speak("아래의 로그인 버튼을 눌러 주세요.")
+        true
     }
+
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+    }
+
     private val kakaoLoginCallback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
         if (error != null) {
             Log.w(TAG, "Kakao sign in failed", error)
