@@ -69,6 +69,14 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     var imagelist: List<String> = emptyList<String>()
     var latblindlist: List<String> = emptyList<String>()
     var lonblindlist: List<String> = emptyList<String>()
+    var nicbuslist: List<String> = emptyList<String>()
+    var imagebuslist: List<String> = emptyList<String>()
+    var busnumset = HashSet<String>()
+    var busnumlist: List<String> = emptyList<String>()
+    val nameList = ArrayList<String>()
+    val imageList = ArrayList<String>()
+    var onBusUidList = ArrayList<String>()
+
 
 
 
@@ -93,6 +101,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // MediaPlayer 초기화
         mediaPlayer = MediaPlayer.create(this, R.raw.wistle_long)
+        startMediaPlayerWithDelay(mediaPlayer, 10000)
 
         if (!hasPermission()) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, LOCATION_PERMISSION_REQUEST_CODE)
@@ -102,8 +111,14 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         handler.post(statusChecker) // Runnable 시작
         fetchStationsAndAddMarkers()
+        getBusUInfo()
     }
-
+    fun startMediaPlayerWithDelay(mediaPlayer: MediaPlayer, timeLate: Int) {
+        val handler = Handler(Looper.getMainLooper())
+        handler.postDelayed({
+            mediaPlayer.start()
+        }, timeLate.toLong())
+    }
     private fun checkStatusTextView() {
         val fragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
         if (fragment != null && fragment.view != null) {
@@ -222,7 +237,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
 
                                     }
                                     sidlis = stationidset.toList() // Set을 다시 List로 변환
-                                    fire(sidlis)
+                                    firestation(sidlis)
                                     Log.w("Tag", "abcd idlist: ${sidlis}")
                                 } else {
                                     Log.w("Tag", "abcd: No matching documents found.")
@@ -242,7 +257,97 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
             }
     }
 
-    fun fire(sidlis: List<String>) {
+    private fun getBusUInfo() {
+        auth = FirebaseAuth.getInstance()
+        val uid = auth?.uid
+
+        uid?.let {
+            db.collection("DriverUser").document(uid)
+                .get()
+                .addOnSuccessListener { documentSnapshot ->
+                    if (documentSnapshot.exists()) {
+                        val data = documentSnapshot.data
+                        data?.let {
+                            val busNumb = (it["busNumb"] as? String).orEmpty()
+                            Log.d("Tag", "Driver's Bus Number: $busNumb")
+
+                            // OnBus 컬렉션에서 busNumb과 일치하는 문서의 blindUser 서브컬렉션 가져오기
+                            db.collection("OnBus").document(busNumb).collection("blindUser")
+                                .get()
+                                .addOnSuccessListener { querySnapshot ->
+                                    onBusUidList = ArrayList<String>()
+                                    for (document in querySnapshot) {
+                                        val uid = document.id
+                                        onBusUidList.add(uid)
+                                        Log.d("Tag", "abcde Driver's Bus Number: $uid, $onBusUidList")
+
+                                    }
+
+                                    for(i in onBusUidList){
+                                        db.collection("BlindUser").document(i)
+                                            .get()
+                                            .addOnSuccessListener { documentSnapshot ->
+                                                if (documentSnapshot.exists()) {
+                                                    val data = documentSnapshot.data
+                                                    data?.let {
+                                                        val nickname = it["nickname"] as? String
+                                                        val profileImageUrl = it["profileImageUrl"] as? String
+                                                        nicbuslist += nickname.toString()
+                                                        imagebuslist += profileImageUrl.toString()
+
+
+                                                    }
+                                                } else {
+                                                    println("No such document")
+                                                }
+                                            }
+                                            .addOnFailureListener { e ->
+                                                println("Error getting user data: $e")
+                                            }
+                                    }
+
+                                    // blindUser 컬렉션에서 동일한 uid를 가진 사용자 정보 가져오기
+                                    db.collection("BlindUser")
+                                        .whereIn("uid", onBusUidList)
+                                        .get()
+                                        .addOnSuccessListener { querySnapshot ->
+
+                                            for (document in querySnapshot) {
+                                                val name = document.getString("nickname").orEmpty()
+                                                val imageUrl = document.getString("profileImageUrl").orEmpty()
+                                                nameList += name
+                                                imageList+= imageUrl
+                                            }
+                                            Log.d("Tag", "User Names: $nameList")
+                                            Log.d("Tag", "Profile Images: $imageList")
+                                        }
+                                        .addOnFailureListener { exception ->
+                                            Log.e("Tag", "Error getting blind user documents: $exception")
+                                            Toast.makeText(this, "Error getting blind user documents: $exception", Toast.LENGTH_SHORT).show()
+                                        }
+                                }
+                                .addOnFailureListener { exception ->
+                                    Log.e("Tag", "Error getting blindUser documents from OnBus: $exception")
+                                    Toast.makeText(this, "Error getting blindUser documents from OnBus: $exception", Toast.LENGTH_SHORT).show()
+                                }
+                        }
+                    } else {
+                        Log.d("Tag", "No matching document found in DriverUser collection")
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Log.e("Tag", "Error getting driver document: $exception")
+                    Toast.makeText(this, "Error getting driver document: $exception", Toast.LENGTH_SHORT).show()
+                }
+        } ?: run {
+            Log.d("Tag", "User is not authenticated")
+        }
+    }
+
+
+
+
+    fun firestation(sidlis: List<String>) {
         for (i in sidlis) {
             Log.w("Tag", "abcd sid: ${i}i")
 
@@ -399,9 +504,10 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
 
                 R.id.fragment_profile -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_container, DriverProfileFragment()).commit()
+                        .replace(R.id.main_container, DriverProfileFragment.newInstance(ArrayList(nicbuslist), ArrayList(imagebuslist))).commit()
                     true
                 }
+
 
                 R.id.fragment_exit -> {
                     supportFragmentManager.beginTransaction()

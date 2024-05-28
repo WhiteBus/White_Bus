@@ -63,12 +63,12 @@ class WaitingViFragment : Fragment() {
 
 
 
-    private fun recyclerView() {
-        binding.profileNumberOfWaitingViRv.layoutManager = LinearLayoutManager(requireContext())
-        // adapter 에 List를 넣어줌
-        adapter = PassengerAdapter(emptyList())
-        binding.profileNumberOfWaitingViRv.adapter = adapter
-    }
+//    private fun recyclerView() {
+//        binding.profileNumberOfWaitingViRv.layoutManager = LinearLayoutManager(requireContext())
+//        // adapter 에 List를 넣어줌
+//        adapter = PassengerAdapter(emptyList())
+//        binding.profileNumberOfWaitingViRv.adapter = adapter
+//    }
 
     private fun observePassengers() {
 //         //파이어베이스 작동 이후 적용
