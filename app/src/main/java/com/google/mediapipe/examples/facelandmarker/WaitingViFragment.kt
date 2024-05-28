@@ -1,6 +1,7 @@
 package com.google.mediapipe.examples.facelandmarker
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -53,6 +54,8 @@ class WaitingViFragment : Fragment() {
         // Initialize RecyclerView here
         val recyclerView: RecyclerView = view.findViewById(R.id.profile_number_of_waiting_vi_rv)
         recyclerView.layoutManager = LinearLayoutManager(context)
+        Log.w("HI", "abcde: ${niclist}, ${imagelist}")
+
         recyclerView.adapter = UserAdapter(niclist, imagelist)
 
         return view

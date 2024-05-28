@@ -1,6 +1,7 @@
 package com.google.mediapipe.examples.facelandmarker.remote.adapter
 
 import android.graphics.BitmapFactory
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,6 +26,7 @@ class UserAdapter(private val niclist: List<String>, private val imagelist: List
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         holder.nicknameTextView.text = niclist[position]
         loadImageFromUrl(holder.profileImageView, imagelist[position])
+        Log.w("HI", "abcde add recycler: ${position}, ${niclist[position]}, ${imagelist[position]}")
     }
 
     override fun getItemCount(): Int {

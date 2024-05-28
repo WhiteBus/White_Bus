@@ -82,19 +82,22 @@ class RideBus : AppCompatActivity() {
             val blind: MutableMap<String, Any> = HashMap()
             blind["nickname"] = nickname
             blind["profileImageUrl"] = profileImageUrl
+            Log.d("TAG", "abcd1, ${uid}, ${busnumber}")
 
-            // OnBus 컬렉션에 사용자 추가
-            db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
-                .set(blind)
-                .addOnSuccessListener { documentReference ->
-                    Log.d(TAG, "DocumentSnapshot added with ID: $uid")
-                    Log.d("TAG", "abcd1")
-                    removeBlindFromStation(stationid)
+            if(uid != null && busnumber != null) {
+                // OnBus 컬렉션에 사용자 추가
+                db.collection("OnBus").document(busnumber).collection("blindUser").document(uid)
+                    .set(blind)
+                    .addOnSuccessListener { documentReference ->
+                        Log.d(TAG, "DocumentSnapshot added with ID: $uid")
+                        Log.d("TAG", "abcd1")
+                        removeBlindFromStation(stationid)
 
-                }
-                .addOnFailureListener { e ->
-                    Log.w(TAG, "Error adding document", e)
-                }
+                    }
+                    .addOnFailureListener { e ->
+                        Log.w(TAG, "Error adding document", e)
+                    }
+            }
         }
     }
 

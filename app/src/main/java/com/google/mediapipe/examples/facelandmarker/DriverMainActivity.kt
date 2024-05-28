@@ -67,6 +67,8 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     var imageset = HashSet<String>()
     var niclist: List<String> = emptyList<String>()
     var imagelist: List<String> = emptyList<String>()
+    var latblindlist: List<String> = emptyList<String>()
+    var lonblindlist: List<String> = emptyList<String>()
 
 
 
@@ -210,8 +212,14 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                                 if (!documents.isEmpty) {
                                     for (document in documents) {
                                         val stationid = document.data["stationId"].toString()
+                                        val latitude = document.data["latitude"].toString()
+                                        val longitude = document.data["longitude"].toString()
+
                                         Log.w("Tag", "abcd stationid: ${stationid}")
                                         stationidset.add(stationid)
+                                        latblindlist += latitude
+                                        lonblindlist += longitude
+
                                     }
                                     sidlis = stationidset.toList() // Set을 다시 List로 변환
                                     fire(sidlis)
@@ -248,6 +256,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                             val longitude = document.get("longitude")
                             val nick = document.get("nickname").toString()
                             val imageurl = document.get("profileImageUrl").toString()
+                            Log.w("Tag", "abcd userinfo: ${nick}, ${imageurl}")
 
                             // Check if latitude and longitude are of type Number
                             val latDouble = when (latitude) {
@@ -266,29 +275,38 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                                 Log.w("Tag", "abcd coord: ${latDouble}, ${lonDouble}")
                                 latset.add(latDouble)
                                 lonset.add(lonDouble)
-                                nicset.add(nick)
-                                imageset.add(imageurl)
+
                             } else {
                                 Log.w("Tag", "abcd: Invalid coordinates found")
                             }
 
                             latlist = latset.toList()
                             lonlist = lonset.toList()
-                            niclist = nicset.toList()
-                            imagelist = imageset.toList()
-                            Log.w("Tag", "abcd coord: ${latlist}, ${lonlist}")
+                            niclist += nick
+                            imagelist += imageurl
+                            for(i in 0 until niclist.size) {
+                                Log.w("Tag", "abcd coord: ${niclist}, ${imagelist}")
+                            }
+                            if (latitude != null && longitude != null) {
+                                Log.w("Tag", "abcd: Call addMarkerToMap2")
+                                if (latDouble != null) {
+                                    if (lonDouble != null) {
+                                        addMarkerToMap(latDouble, lonDouble, mybusnum, niclist, imagelist)
+                                    }
+                                }
+                            }
                         } catch (e: Exception) {
                             Log.e("Tag", "abcd: Error parsing document fields", e)
                         }
                     }
 
-                    for (i in 0 until latlist.size) {
-                        Log.w("Tag", "abcd: Call addMarkerToMap: ${latlist[i]}, ${lonlist[i]}")
-                        if (latlist[i] != null && lonlist[i] != null) {
-                            Log.w("Tag", "abcd: Call addMarkerToMap2")
-                            addMarkerToMap(latlist[i], lonlist[i], mybusnum, niclist, imagelist)
-                        }
-                    }
+//                    for (i in 0 until latlist.size) {
+//                        Log.w("Tag", "abcd: Call addMarkerToMap: ${latlist[i]}, ${lonlist[i]}")
+//                        if (latlist[i] != null && lonlist[i] != null) {
+//                            Log.w("Tag", "abcd: Call addMarkerToMap2")
+//                            addMarkerToMap(latlist[i], lonlist[i], mybusnum, niclist, imagelist)
+//                        }
+//                    }
                 }
                 .addOnFailureListener { exception ->
                     Log.e("Tag", "abcd: Error getting documents: ", exception)
