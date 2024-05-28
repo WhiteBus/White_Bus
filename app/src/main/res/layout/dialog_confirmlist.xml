@@ -18,7 +18,7 @@
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:padding="10dp"
-        android:text="현재 강남역에서 대기중인 인원은 4명 입니다." />
+        android:text="현재 정류장에 대기중인 사람이 있습니다." />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,6 +1,5 @@
 package com.google.mediapipe.examples.facelandmarker
 
-import WaitingListAdapter
 import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Geocoder
@@ -64,6 +63,10 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     var lonset = HashSet<Double>()
     var latlist: List<Double> = emptyList<Double>()
     var lonlist: List<Double> = emptyList<Double>()
+    var nicset = HashSet<String>()
+    var imageset = HashSet<String>()
+    var niclist: List<String> = emptyList<String>()
+    var imagelist: List<String> = emptyList<String>()
 
 
 
@@ -190,23 +193,6 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
         Log.w("Tag", "call abcd")
         val uid = auth.uid
 
-//        db.collection("OnStation")
-//            .get()
-//            .addOnSuccessListener { result ->
-//                Log.w("Tag", "abcdstation result: ${result.metadata}")
-//                for (document in result) {
-//                    stationidlist.add(document.data.toString())
-//                    Log.w("Tag", "abcdstation for result: ${result}")
-//
-//                }
-//                // 비동기 작업이 완료된 후 로그 출력
-//                Log.w("Tag", "abcdstation: ${stationidlist}")
-//            }
-//            .addOnFailureListener { exception ->
-//                Toast.makeText(this, "Error getting documents: $exception", Toast.LENGTH_SHORT).show()
-//            }
-
-
         db.collection("DriverUser").document(uid.toString())
             .get()
             .addOnSuccessListener { documentSnapshot ->
@@ -246,9 +232,6 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
             .addOnFailureListener { exception ->
                 Toast.makeText(this, "Error getting documents: $exception", Toast.LENGTH_SHORT).show()
             }
-
-
-
     }
 
     fun fire(sidlis: List<String>) {
@@ -263,6 +246,8 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                         try {
                             val latitude = document.get("latitude")
                             val longitude = document.get("longitude")
+                            val nick = document.get("nickname").toString()
+                            val imageurl = document.get("profileImageUrl").toString()
 
                             // Check if latitude and longitude are of type Number
                             val latDouble = when (latitude) {
@@ -281,12 +266,16 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                                 Log.w("Tag", "abcd coord: ${latDouble}, ${lonDouble}")
                                 latset.add(latDouble)
                                 lonset.add(lonDouble)
+                                nicset.add(nick)
+                                imageset.add(imageurl)
                             } else {
                                 Log.w("Tag", "abcd: Invalid coordinates found")
                             }
 
                             latlist = latset.toList()
                             lonlist = lonset.toList()
+                            niclist = nicset.toList()
+                            imagelist = imageset.toList()
                             Log.w("Tag", "abcd coord: ${latlist}, ${lonlist}")
                         } catch (e: Exception) {
                             Log.e("Tag", "abcd: Error parsing document fields", e)
@@ -297,7 +286,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
                         Log.w("Tag", "abcd: Call addMarkerToMap: ${latlist[i]}, ${lonlist[i]}")
                         if (latlist[i] != null && lonlist[i] != null) {
                             Log.w("Tag", "abcd: Call addMarkerToMap2")
-                            addMarkerToMap(latlist[i], lonlist[i], mybusnum)
+                            addMarkerToMap(latlist[i], lonlist[i], mybusnum, niclist, imagelist)
                         }
                     }
                 }
@@ -309,7 +298,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
 
-    private fun addMarkerToMap(lat: Double, lng: Double, mybusnum: String) {
+    private fun addMarkerToMap(lat: Double, lng: Double, mybusnum: String, niclist: List<String>, imagelist: List<String>) {
         val marker = Marker()
         marker.position = LatLng(lat, lng)
         marker.icon = OverlayImage.fromResource(R.drawable.people) // 커스텀 아이콘 설정
@@ -319,7 +308,7 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         marker.setOnClickListener {
             // 마커 클릭 시 다이얼로그 표시
-            showMarkerDialog(mybusnum)
+            showMarkerDialog(mybusnum, niclist, imagelist)
             true
         }
 
@@ -330,11 +319,10 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
         getAddress(lat, lng)
     }
 
-    private fun showMarkerDialog(mybusnum: String) {
+    private fun showMarkerDialog(mybusnum: String, niclist: List<String>, imagelist: List<String>) {
         val builder = AlertDialog.Builder(this)
         val dialogView = layoutInflater.inflate(R.layout.dialog_confirmlist, null)
         builder.setView(dialogView)
-
 
         val noButton: Button = dialogView.findViewById(R.id.noButton)
         val yesButton: Button = dialogView.findViewById(R.id.yesButton)
@@ -342,15 +330,19 @@ class DriverMainActivity : AppCompatActivity(), OnMapReadyCallback {
         val dialog = builder.create()
         dialog.show()
 
-        // 취소 버튼 클릭 시 다이얼로그 닫기
         noButton.setOnClickListener {
             dialog.dismiss()
         }
 
-        // 확인 버튼 클릭 시 리사이클러 뷰 보여주기
         yesButton.setOnClickListener {
+            val fragment = WaitingViFragment.newInstance(ArrayList(niclist), ArrayList(imagelist))
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container, fragment)
+                .commit()
+            dialog.dismiss()
         }
     }
+
 
 
     private fun getAddress(latitude: Double, longitude: Double) {

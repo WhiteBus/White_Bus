@@ -9,36 +9,29 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.mediapipe.examples.facelandmarker.R
 
-data class User(
-    val profileImageUrl: String = "",
-    val nickname: String = ""
-)
-
-class UserAdapter(private val userList: List<User>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
+class UserAdapter(private val niclist: List<String>, private val imagelist: List<String>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     inner class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val profileImageView: ImageView = itemView.findViewById(R.id.profileImageView)
-        val nicknameTextView: TextView = itemView.findViewById(R.id.nicknameTextView)
+        val profileImageView: ImageView = itemView.findViewById(R.id.passenger_profile_iv)
+        val nicknameTextView: TextView = itemView.findViewById(R.id.passenger_name_tv)
+        val pushbell: ImageView = itemView.findViewById(R.id.pushed_bell_iv)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_user, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_passenger_information, parent, false)
         return UserViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-        val user = userList[position]
-        holder.nicknameTextView.text = user.nickname
-        // 프로필 이미지 로드
-        loadImageFromUrl(holder.profileImageView, user.profileImageUrl)
+        holder.nicknameTextView.text = niclist[position]
+        loadImageFromUrl(holder.profileImageView, imagelist[position])
     }
 
     override fun getItemCount(): Int {
-        return userList.size
+        return niclist.size
     }
 
     private fun loadImageFromUrl(imageView: ImageView, url: String) {
-        // URL에서 이미지를 비트맵으로 로드하는 작업을 비동기로 수행
         Thread {
             try {
                 val inputStream = java.net.URL(url).openStream()
@@ -48,9 +41,8 @@ class UserAdapter(private val userList: List<User>) : RecyclerView.Adapter<UserA
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
-                // 오류 시 기본 이미지 설정
                 imageView.post {
-                    imageView.setImageResource(R.drawable.default_profile_image) // 기본 이미지
+                    imageView.setImageResource(R.drawable.ic_profile)
                 }
             }
         }.start()
