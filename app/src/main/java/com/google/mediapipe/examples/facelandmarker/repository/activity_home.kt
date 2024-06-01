@@ -172,6 +172,10 @@ class activity_home : AppCompatActivity() {
                 val recognizedText = results[0]
                 // 여기에 인식된 텍스트를 원하는 EditText에 설정하는 코드 추가
                 searchBar.setText(recognizedText)
+                // 인식된 텍스트를 Main_vi_Search_des로 전달
+                val intent = Intent(this, Main_vi_Search_des::class.java)
+                intent.putExtra("recognizedText", recognizedText)
+                startActivity(intent)
             }
         }
     }

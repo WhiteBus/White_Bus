@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival.Companion.busTransitCount
 
 private const val TAG = "RIdeBus"
 
@@ -62,7 +63,14 @@ class user_dropin_bus : AppCompatActivity() {
         removebtn.setOnClickListener{
             updateDropInStatus(busNumber, uid.toString())
             //removeBlindToBus(busNumber)
-            val intent = Intent(this@user_dropin_bus, MainActivity::class.java)
+            // busTransitCount 감소시키기
+            busTransitCount--
+            // 조건에 따라 액티비티 이동
+            val intent = if (busTransitCount > 0) {
+                Intent(this@user_dropin_bus, Main_Bus_Arrival::class.java)
+            } else {
+                Intent(this@user_dropin_bus, MainActivity::class.java)
+            }
             startActivity(intent)
         }
     }

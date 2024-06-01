@@ -34,7 +34,7 @@ class OnStationUser : AppCompatActivity() {
         var latitude: String = ""
 
         // Intent로부터 데이터 가져오기
-        currentBusNo = intent.getStringExtra("busNo") ?: ""
+        // currentBusNo = intent.getStringExtra("busNo") ?: ""
 
 
         val userid = auth.currentUser?.uid ?: return

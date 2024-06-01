@@ -1,5 +1,6 @@
 package com.google.mediapipe.examples.facelandmarker.remote.adapter
 
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +14,13 @@ import com.google.mediapipe.examples.facelandmarker.OnStationUser
 import com.google.mediapipe.examples.facelandmarker.R
 import com.google.mediapipe.examples.facelandmarker.remote.dto.TransitInfo
 
+
 class TransitAdapter(private var transitList: List<TransitInfo>) :
     RecyclerView.Adapter<TransitAdapter.TransitViewHolder>() {
+
+    companion object {
+        var busNo: String = ""
+    }
 
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
@@ -45,7 +51,7 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
         holder.sectionDistance.text = "${(transitInfo.distance)/1000} km"
         holder.sectionTime.text = "${transitInfo.sectionTime} min"
 
-        currentBusNo = transitInfo.busNo // 전역 변수에 busNo 저장
+
 
         auth = FirebaseAuth.getInstance()
 
@@ -77,6 +83,8 @@ class TransitAdapter(private var transitList: List<TransitInfo>) :
             intent.putExtra("stationX", stationX)
             intent.putExtra("stationY", stationY)
             // Start the activity using the context from the view
+
+            busNo = transitInfo.busNo // 전역 변수에 busNo 저장
             it.context.startActivity(intent)
         }
     }

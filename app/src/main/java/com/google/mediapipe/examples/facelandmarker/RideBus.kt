@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival.Companion.globalRouteNm
 import com.google.mediapipe.examples.facelandmarker.Main_Bus_Arrival.Companion.globaltotadress
+import com.google.mediapipe.examples.facelandmarker.remote.adapter.TransitAdapter.Companion.busNo
 
 private const val TAG = "RideBus"
 
@@ -36,7 +38,7 @@ class RideBus : AppCompatActivity() {
         var busdrivernumonbus: String = ""
 
         // Intent로부터 데이터 가져오기
-        val busNo = intent.getStringExtra("busNo")
+        // val busNo = intent.getStringExtra("busNo")
         val selectedStationName = globaltotadress// TextView에 데이터 설정
 
         busNoTextView.text = busNo

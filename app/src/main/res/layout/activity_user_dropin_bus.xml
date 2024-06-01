@@ -19,16 +19,8 @@
             tools:ignore="MissingConstraints"
             >
 
-            <android.widget.Button
-                android:id="@+id/busNum_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="303"
-                android:gravity="center"
-                android:textSize="110dp"
-                android:fontFamily="@font/freesentation"
-                android:layout_margin="15dp"/>
             <ImageView
+                android:layout_marginTop="60dp"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"

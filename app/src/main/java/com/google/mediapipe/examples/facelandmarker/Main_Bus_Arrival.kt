@@ -44,7 +44,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
     companion object {
         var globalRouteNm: String? = null
         var globalBusPlateNo: String? = null
-        private var busTransitCount: Int = 0
+        var busTransitCount: Int = 0
 //        var globalstartID: Int = 0
 //        var globalstartX: Double = 0.0
 //        var globalstartY: Double = 0.0
@@ -202,7 +202,7 @@ class Main_Bus_Arrival : AppCompatActivity(), TextToSpeech.OnInitListener {
             call = busArrivalService.getRealtimeBusArrival(
                 lang = 0,
                 stationID = stationID,
-                apiKey = "Quw9eSdgW+WlIHjDbEr8TsYC2p/vb49ruUnyIMB0YZM"
+                apiKey = "AK/JO+KzScwJZFaoH4SuBi602qUO+wx2rbjRsJfLfhE"
             )
             call?.enqueue(object : Callback<RealtimeBusArrivalRes> {
                 override fun onResponse(

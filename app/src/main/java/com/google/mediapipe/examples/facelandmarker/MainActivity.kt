@@ -30,24 +30,25 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(activityMainBinding.root)
-
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
+        setContentView(R.layout.dialog_user_ending)
+//        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(activityMainBinding.root)
+//
+//        val navHostFragment =
+//            supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+//        val navController = navHostFragment.navController
 //        activityMainBinding.navigation.setupWithNavController(navController)
 //        activityMainBinding.navigation.setOnNavigationItemReselectedListener {
 //            // ignore the reselection
 //        }
 
-        val btn1 = findViewById<Button>(R.id.btn1)
-        val txt1 = findViewById<TextView>(R.id.txt1)
-        var num = 0;
-        btn1.setOnClickListener{
-            num++
-            txt1.setText(num.toString());
-        }
+//        val btn1 = findViewById<Button>(R.id.btn1)
+//        val txt1 = findViewById<TextView>(R.id.txt1)
+//        var num = 0;
+//        btn1.setOnClickListener{
+//            num++
+//            txt1.setText(num.toString());
+//        }
     }
 
     override fun onBackPressed() {

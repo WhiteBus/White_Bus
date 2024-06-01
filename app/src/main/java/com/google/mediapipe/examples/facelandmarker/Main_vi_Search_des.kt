@@ -2,6 +2,7 @@ package com.google.mediapipe.examples.facelandmarker
 
 import android.content.Intent
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
@@ -14,8 +15,11 @@ import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationInfo
 import com.google.mediapipe.examples.facelandmarker.remote.dto.SearchStationResponse
 import com.google.mediapipe.examples.facelandmarker.remote.service.SearchStationService
 import com.google.mediapipe.examples.facelandmarker.remote.view.SearchStationView
+import java.util.Locale
 
 class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
+
+    private lateinit var tts: TextToSpeech
 
     private lateinit var searchStationAdapter: SearchStationAdapter
     private lateinit var searchStationService: SearchStationService
@@ -23,6 +27,14 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
     private lateinit var searchEditText: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // TextToSpeech 초기화
+        tts = TextToSpeech(this) { status ->
+            if (status != TextToSpeech.ERROR) {
+                tts.language = Locale.KOREAN
+            }
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vi_search_des)
 
@@ -36,6 +48,13 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
         searchStationService = SearchStationService()
         searchStationService.setSearchStationView(this)
 
+        // 인텐트로 전달된 음성 인식 결과를 받아서 설정
+        val recognizedText = intent.getStringExtra("recognizedText")
+        if (recognizedText != null) {
+            searchEditText.setText(recognizedText)
+            performSearch()
+        }
+
         searchEditText.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -43,13 +62,19 @@ class Main_vi_Search_des : AppCompatActivity(), SearchStationView {
                 performSearch()
             }
         })
+        searchEditText.setOnLongClickListener {
+            speak("이동할 장소를 입력해주세요")
+            true
+        }
     }
-
+    private fun speak(text: String) {
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+    }
     private fun performSearch() {
         val lang = "0"
         val stationName = searchEditText.text.toString()
         val stationClass = 1 //버스정류장
-        val apiKey = "Quw9eSdgW+WlIHjDbEr8TsYC2p/vb49ruUnyIMB0YZM"
+        val apiKey = "AK/JO+KzScwJZFaoH4SuBi602qUO+wx2rbjRsJfLfhE"
         searchStationService.getSearchStation(lang, stationName, stationClass, apiKey)
     }
 
